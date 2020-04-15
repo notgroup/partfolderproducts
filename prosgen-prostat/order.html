@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prosgen</title>
+    <meta name="description" content="#EvdeKal">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.jpg">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css\bootstrap.css">
+    <link rel="stylesheet" href="css\font-awesome.min.css">
+    <link rel="stylesheet" href="css\animate.css">
+    <link rel="stylesheet" href="css\core.css">
+    <link rel="stylesheet" href="css\style-1.css?saxaaa">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Dosis:400,700');
+
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+            font-family: 'Dosis', sans-serif;
+            background-color: #cecece;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        input,
+        select,
+        textarea,
+        input[type="text"],
+        button[type="button"] {
+            -moz-appearance: none;
+            box-shadow: none !important;
+        }
+
+        input:focus,
+        button:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+        }
+
+        [type="submit"] {
+            background: none;
+            border: 0;
+            margin: 0;
+            padding: 0;
+            -moz-appearance: none;
+            box-shadow: none !important;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+        }
+
+        .container {
+            margin: 0 auto;
+            padding: 0 !important;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                width: 768px !important;
+            }
+
+            .rightBar {
+                width: 145px !important;
+                left: 67px;
+                height: 490px !important;
+            }
+        }
+
+
+
+        .container .row {
+            margin: 0 !important;
+        }
+
+        [class*="col-"] {
+            padding: 0 !important;
+        }
+
+        [class*="col-"] img {
+            display: block;
+            width: 100%;
+            border: 0;
+            padding: 0;
+            margin: 0;
+        }
+
+        .form_wrap {
+            padding: 30px 0;
+        }
+
+        .form_wrap>img.back {
+            position: absolute;
+            z-index: -5;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .grid1 {
+            padding: 0 10px;
+            display: grid;
+            grid-template-columns: 25px calc(100% - 25px);
+            align-items: center;
+        }
+
+        .grid1 .self.number {
+            text-align: center;
+            font-size: 2.8em;
+            filter: blur(2.5px);
+            color: #d6dee1;
+        }
+
+        .grid1 .self.form_item {
+            padding: 10px;
+        }
+
+        .grid1 .self.form_item input,
+        .grid1 .self.form_item textarea,
+        .grid1 .self.form_item select {
+            background: url(img/x/form_item_back.jpg?ccc) repeat;
+            background-size: auto 100%;
+            padding: 0 10px;
+            display: block;
+            width: 100%;
+            border: 1px solid #cbcbcb;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0 #ddd !important;
+        }
+
+        .grid1 .self.form_item input {
+            height: 50px;
+        }
+
+        .grid1 .self.form_item select {
+            height: 50px;
+            color: #757575;
+        }
+
+        .grid1 .self.form_item textarea {
+            height: 170px;
+            padding: 10px 10px;
+        }
+
+        .form1_submit_button {
+            background: none;
+            border: 0 !important;
+            margin-bottom: -3px !important;
+        }
+
+
+        label {
+            margin: 0;
+            outline: none
+        }
+
+        .color {
+            display: none;
+        }
+
+        .clock_3 {
+            top: 87.5% !important;
+            color: #000;
+            left: 61% !important;
+        }
+
+        .product-counter_3 {
+            top: 56.5% !important;
+            left: 13%;
+            color: #000;
+        }
+
+        .nname {
+            color: #000;
+            border: 0px;
+            font-size: 2em !important;
+            background: transparent;
+            -webkit-appearance: none;
+            position: absolute;
+            z-index: 9999;
+            bottom: 25%;
+            left: 6%;
+            width: 14%;
+            height: 5% !important;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <a href="#siparisformu"><img class="img-fluid" src="images\siparis1.jpg?csxxsxxxcc"></a>
+                <span class="product-counter_3"></span>
+
+                <select class="nname">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <select class="nname" style="left:29%;width:27%;">
+                    <option value="1">Ocak</option>
+                    <option value="2">Şubat</option>
+                    <option value="3">Mart</option>
+                    <option value="4">Nisan</option>
+                    <option value="4">Mayıs</option>
+                    <option value="4">Haziran</option>
+                    <option value="4">Temmuz</option>
+                    <option value="4">Ağustos</option>
+                    <option value="4">Eylül</option>
+                    <option value="4">Ekim</option>
+                    <option value="4">Kasım</option>
+                    <option value="4">Aralık</option>
+                </select>
+                <select class="nname" style="left:65%;width:27%;">
+                    <option value="1950">1950</option>
+                    <option value="1951">1951</option>
+                    <option value="1952">1952</option>
+                    <option value="1953">1953</option>
+                    <option value="1954">1954</option>
+                    <option value="1955">1955</option>
+                    <option value="1956">1956</option>
+                    <option value="1957">1957</option>
+                    <option value="1958">1958</option>
+                    <option value="1959">1959</option>
+                    <option value="1960">1960</option>
+                    <option value="1961">1961</option>
+                    <option value="1962">1962</option>
+                    <option value="1963">1963</option>
+                    <option value="1964">1964</option>
+                    <option value="1965">1965</option>
+                    <option value="1966">1966</option>
+                    <option value="1967">1967</option>
+                    <option value="1968">1968</option>
+                    <option value="1969">1969</option>
+                    <option value="1970">1970</option>
+                    <option value="1971">1971</option>
+                    <option value="1972">1972</option>
+                    <option value="1973">1973</option>
+                    <option value="1974">1974</option>
+                    <option value="1975">1975</option>
+                    <option value="1976">1976</option>
+                    <option value="1977">1977</option>
+                    <option value="1978">1978</option>
+                    <option value="1979">1979</option>
+                    <option value="1980">1980</option>
+                    <option value="1981">1981</option>
+                    <option value="1982">1982</option>
+                    <option value="1983">1983</option>
+                    <option value="1984">1984</option>
+                    <option value="1985">1985</option>
+                    <option value="1986">1986</option>
+                    <option value="1987">1987</option>
+                    <option value="1988">1988</option>
+                    <option value="1989">1989</option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1992" selected="">1992</option>
+                </select>
+                <select class="nname" style="left:10%;bottom:9%;width:27%;">
+                    <option value="1">Hayır</option>
+                    <option value="2">Evet</option>
+                </select>
+            </div>
+        </div>
+        <style>
+            im.calc_price,
+            im.price,
+            span.deneme2 {
+                direction: rtl;
+                width: 100%;
+                font-weight: bold;
+                font-size: 22px;
+                text-align: center;
+                display: block;
+            }
+
+            span.deneme2 {
+                color: red;
+                font-size: 17px;
+            }
+        </style>
+        <form id="siparisformu" action="https://roket.live/api/checkout/smart" class="thecheckout checkout-form"
+            method="post" autocomplete="off" onsubmit="return false;" data-locale="tr" data-autofocus="1"
+            data-country-code="tr">
+            <input type="hidden" name="domain_name" value="rfufyxi.saglikicin.space">
+            <input type="hidden" name="success_url" value="thanks.php">
+            <input type="hidden" name="adsource" value="2">
+            <input type="hidden" name="ref" value="2">
+            <div class="row" style="background-color: #fff">
+                <div class="product col-sm-6 col-xs-6" style="z-index:1">
+                    <input type="radio" name="Siparis" value="20" id="3" checked="checked">
+                    <img style="width: 100%" src="images\urun1_1.jpg?z?xxxxxxxxxxx" alt="Image" class="product-image">
+                    <img style="width: 100%" src="images\urun1_2.jpg?z?xxxxxxxxxxx" alt="Image"
+                        class="product-image selected">
+                    <input type="radio" name="product_id[]" value="20">
+
+                </div>
+                <div class="product col-sm-6 col-xs-6" style="z-index:1">
+                    <input type="radio" name="Siparis" value="21" id="3" checked="checked">
+                    <img style="width: 100%" src="images\urun2_1.jpg?z?xxxxxxxxxxx" alt="Image" class="product-image">
+                    <img style="width: 100%" src="images\urun2_2.jpg?z?xxxxxxxxxxx" alt="Image"
+                        class="product-image selected">
+                    <input type="radio" name="product_id[]" value="21">
+
+                </div>
+                <div class="product col-sm-6 col-xs-6" style="z-index:1">
+                    <input type="radio" name="Siparis" value="22" id="3" checked="checked">
+                    <img style="width: 100%" src="images\urun3_1.jpg?z?xxxxxxxxxxx" alt="Image" class="product-image">
+                    <img style="width: 100%" src="images\urun3_2.jpg?z?xxxxxxxxxxx" alt="Image"
+                        class="product-image selected">
+                    <input type="radio" name="product_id[]" value="22">
+
+                </div>
+                <div class="product col-sm-6 col-xs-6" style="z-index:1">
+                    <input type="radio" name="Siparis" value="23" id="3" checked="checked">
+                    <img style="width: 100%" src="images\urun4_1.jpg?z?xxxxxxxxxxx" alt="Image" class="product-image">
+                    <img style="width: 100%" src="images\urun4_2.jpg?z?xxxxxxxxxxx" alt="Image"
+                        class="product-image selected">
+                    <input type="radio" name="product_id[]" value="23">
+
+                </div>
+            </div>
+
+
+            <div class="wrapper" style="background-color: #fff">
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <a href="#siparisformu"><img class="img-fluid" src="images\siparis_2.jpg?csscxccc"></a>
+                    </div>
+                </div>
+
+                <div class="container"
+                    style="width: 93% !important;background-color: #fff;padding: 10px !important;margin-top: -3px;">
+                    <div class="form-group">
+                        <input type="text" name="firstname" class="form-control input-lg" placeholder="Ad">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="lastname" class="form-control input-lg" placeholder="Soyad">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone_number" class="form-control input-lg"
+                            placeholder="Telefon Numarası">
+                    </div>
+                    <div class="form-group select-container" style="display:none;">
+                        <select name="country" class="form-control input-lg thecountry"></select>
+                    </div>
+                    <div class="form-group select-container">
+                        <select name="city" class="form-control input-lg thecity"></select>
+                    </div>
+                    <div class="form-group select-container">
+                        <select name="district" class="form-control input-lg smart-district-select"></select>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="address" placeholder="Adresiniz" class="form-control input-lg"></textarea>
+                    </div>
+                    <div class="form-group select-container">
+                        <select name="payment_method" class="form-control input-lg smart-payment-select"></select>
+                    </div>
+                </div><!-- /.container -->
+            </div>
+
+
+            <input type="hidden" name="ref" value="rfufyxi.saglikicin.space">
+
+            <!-- /.wrapper -->
+            <div class="wrapper" style="background-color: #fff">
+                <div class="button-submit-container container text-center">
+                    <input type="image" src="images\submit.jpg?xxxxxxxxxxxcccz" alt="image">
+                </div><!-- /.button-submit-container -->
+
+            </div><!-- /.wrapper -->
+
+            <!-- /.wrapper -->
+
+        </form>
+
+        <div class="row" style="    margin-top: -2px !important;">
+            <div class="col-xs-12">
+                <a href="#siparisformu"><img class="img-fluid" src="images\siparis_4.jpg?cxccx"></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        var smartCheckoutLang = {
+            please_wait: "Lütfen Bekleyin...",
+            close: "Kapat"
+        };
+    </script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/featherlight.min.js"></script>
+    <script src="js/product-counter.js"></script>
+    <script src="js/app.js" id="smart-app-script"></script>
+    <script src="/assets/js/api.js" id="smart-app-script"></script>
+
+    <script>
+
+        var productPath = '/prosgen-prostat/'
+        $("input[name=domain_name]").val(location.hostname);
+        $("input[name=ref]").val((localStorage.getItem('ref') || location.hostname));
+        $("input[name=success_url]").val('success.html');
+    </script>
+    <script>
+        $(function () {
+            var definedDate = new Date(Date.now() + (6 * 60 * 60 * 1000));
+            var countdownExpire = String((definedDate.toLocaleDateString().split('.').reverse().join(
+                '/') + ' ' + definedDate.toLocaleTimeString()).replace('-', '/'));
+            var cookieCountdownExpire = $.cookie(location.hostname);
+            if (cookieCountdownExpire) {
+                countdownExpire = cookieCountdownExpire;
+            } else {
+                $.cookie(location.hostname, countdownExpire);
+            }
+            $(".clock_3").countdown(countdownExpire, function (event) {
+                var $this = $(this).html(event.strftime('' + '<span class="box hour">%H</span>' + '<span class="box minute">%M</span>' + '<span class="box second">%S</span>'));
+            });
+            $(".product-counter_3").productCounter({
+                min: 357,
+                max: 785,
+                minTimeout: 2500,
+                expire: 2700000
+            });
+        });
+    </script>
+    <script src="/assets/js/common.js"></script>
+</body>
+
+</html>

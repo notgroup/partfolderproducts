@@ -1,0 +1,102 @@
+@charset "iso-8859-9";
+/* CSS Document */
+
+.yorumfb {
+    background-image: url("imgfb/fb.html");
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 862px;
+}
+
+.facebook_div {
+    min-height: 605px;
+    width: 639px;
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 11px;
+    color: #808080;
+    margin-top: 0px;
+    float: left;
+    margin-left: 166px;
+    overflow: auto;
+    height: 636px;
+    background-color: rgb(255, 255, 255);
+}
+
+.facebook_div img {
+    border: 0px;
+}
+
+.facebook_div h5 {
+    font-size: 12px;
+    color: rgb(41, 36, 40);
+    font-weight: 700;
+}
+
+.facebook_div p {
+    color: rgb(26, 26, 26);
+    line-height: 14px;
+    font-weight: normal;
+    margin: 8px 0px;
+}
+
+#fbcontainer {
+    border-top-width: thin;
+    border-top-style: solid;
+    border-top-color: #CCC;
+    border-bottom-width: thin;
+    border-bottom-style: solid;
+    border-bottom-color: #CCC;
+    margin-bottom: 5px;
+}
+
+.facebook_comment {
+    padding: 8px 5px;
+    border-bottom-width: thin;
+    border-bottom-style: solid;
+    border-bottom-color: #CCC;
+}
+
+.fbbox {
+    float: left;
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+}
+
+.fbrenk {
+    cursor: pointer;
+    color: rgb(59, 89, 152);
+    text-decoration: none;
+}
+
+.facebook_comment a:hover {
+    text-decoration: underline;
+}
+
+.fbyazi {
+    width: 480px;
+    text-align: left;
+}
+
+.fblink {
+    text-decoration: none;
+    font-size: 11px;
+    color: #999;
+    margin: 5px;
+}
+
+#fbdevami {
+    width: 432px;
+    height: 16px;
+    margin: 10px auto;
+    padding: 8px;
+    background-color: rgb(237, 239, 244);
+    border: 1px solid rgb(216, 223, 234);
+    text-align: center;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+#fbdevami:hover {
+    background-color: #D3DAE4;
+}
