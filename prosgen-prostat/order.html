@@ -6,7 +6,7 @@
     <title>Prosgen</title>
     <meta name="description" content="#EvdeKal">
     <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.jpg">
-
+<base href="/prosgen-prostat/">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="css\bootstrap.css">
     <link rel="stylesheet" href="css\font-awesome.min.css">
@@ -566,7 +566,7 @@
         var productPath = '/prosgen-prostat/'
         $("input[name=domain_name]").val(location.hostname);
         $("input[name=ref]").val((localStorage.getItem('ref') || location.hostname));
-        $("input[name=success_url]").val('success.html');
+        $("input[name=success_url]").val(location.origin + productPath + 'success.html');
     </script>
     <script>
         $(function () {
