@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Dijital Ateş Ölçer - ates.firsatmarket.info</title>
+    <base href="/ates-olcer/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="css/video.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/form/bootstrap.css">
+    <link rel="stylesheet" href="css/form/font-awesome.min.css">
+    <script src="js/form/form.js"></script>
+    <link rel="stylesheet" href="css/form/animate.css">
+    <link rel="stylesheet" href="css/form/core.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <!-- Facebook Pixel Code -->
+
+</head>
+
+<body>
+    <div class="container" style="background-color: white; width: %100; padding: 0;">
+        <div id="siparisformu" style="padding:5px">
+            <form action="https://roket.live/api/checkout/smart"
+            class="thecheckout checkout-form theForm" method="post" autocomplete="off" onsubmit="return false;"
+            data-locale="tr" data-autofocus="1" data-country-code="">
+            <input type="hidden" name="domain_name" value="siparissepeti.site">
+            <input type="hidden" name="success_url" value="thanks.php">
+            <input type="hidden" name="adsource" value="2">
+            <input type="hidden" name="ref" value="">
+            <div class="row" style="background-color: #fff">
+                <label id="0" class="product-element product col-sm-12 col-xs-12" data-box-id="0">
+                    <input type="radio" name="product_id[]" id="product_box" value="25" checked>
+                    <img src="images/9780_1_1.png" class="img-fluid dn paketResim" id="img-25-select">
+                    <img src="images/9780_1_2.png" class="img-fluid selected di paketResim" id="img-25-selected">
+                </label>
+                <label id="1" class="product-element product col-sm-12 col-xs-12" data-box-id="1">
+                    <input type="radio" name="product_id[]" id="product_box" value="26">
+                    <img src="images/9780_2_1.png" class="img-fluid di paketResim" id="img-26-select">
+                    <img src="images/9780_2_2.png" class="img-fluid selected dn paketResim" id="img-26-selected">
+                </label>
+            </div>
+
+
+            <div class="wrapper" style="background-color: #fff">
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <img class="" src="images\adresBilgileri.jpg">
+                    </div>
+                </div>
+
+                <div class="container"
+                style="width: 93% !important;background-color: #fff;padding: 10px !important;margin-top: -3px;"  id="formtop">
+                <div class="form-group">
+                    <input type="text" name="firstname" class="form-control input-lg" placeholder="Ad">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="lastname" class="form-control input-lg" placeholder="Soyad">
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone_number" class="form-control input-lg"
+                    placeholder="Telefon Numarası">
+                </div>
+                <div class="form-group select-container" style="display:none;">
+                    <select name="country" class="form-control input-lg thecountry"></select>
+                </div>
+                <div class="form-group select-container">
+                    <select name="city" class="form-control input-lg thecity"></select>
+                </div>
+                <div class="form-group select-container">
+                    <select name="district" class="form-control input-lg smart-district-select"></select>
+                </div>
+                <div class="form-group">
+                    <textarea name="address" placeholder="Adresiniz" class="form-control input-lg"></textarea>
+                </div>
+                <div class="form-group select-container">
+                    <select name="payment_method" class="form-control input-lg smart-payment-select"></select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="form_btn" id="sp_button">Siparişimi Gönder</button>
+                </div>
+            </div><!-- /.container -->
+        </div>
+        <!-- /.wrapper -->
+    </form>
+</div>
+<a href="#siparisformu"><img src="images/siparis5.png" width="100%"></a>
+<div class="main ortala">
+    <ul class="footer_menu">
+        <li><a target="_blank" href="javascript:;">Mesafeli Satış Sözleşmesi</a></li>
+        <li><a target="_blank" href="javascript:;">Gizlilik Politikası</a></li>
+        <li><a target="_blank" href="javascript:;">Değişim Ve İade Politikası</a></li>
+    </ul>
+    <p><b>Dijital Ateş Ölçer</b><br>
+        <span style="font-size:13px">Copyright 2019 - Tüm hakları saklıdır.</span>
+    </p>
+</div>
+</div>
+<script src="js/form/jquery.cookie.js"></script>
+<script src="js/form/product-counter.js"></script>
+<script src="js/form/app.js?xx" id="theapp"></script>
+<script src="js/form/smooth-scroll.js"></script>
+<script src="/assets/js/api.js" id="smart-app-script"></script>
+<script>
+    var smartCheckoutLang = {
+        please_wait: "Lütfen Bekleyin...",
+        close: "Kapat"
+    };
+
+    var productPath = '/ates-olcer/'
+    $("input[name=domain_name]").val(location.hostname);
+    $("input[name=ref]").val((localStorage.getItem('ref') || location.hostname));
+    $("input[name=success_url]").val(location.origin + productPath + 'success.html');
+</script>
+
+<script src="/assets/js/common.js"></script>
+</body>
+
+</html>
