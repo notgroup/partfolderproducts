@@ -108,9 +108,9 @@
     };
 
 
-    $("input[name=domain_name]").val(location.hostname);
-    $("input[name=ref]").val((localStorage.getItem('ref') || location.hostname));
-    $("input[name=success_url]").val('success.html');
+    $("input[name=ref]").val(localStorage.getItem("ref") || location.hostname);
+    $("input[name=domain_name]").val(window.location.href.replace('order','success'));
+    $("input[name=success_url]").val(window.location.href.replace('order','success'));
 </script>
 
 <script src="/assets/js/common.js"></script>

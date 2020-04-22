@@ -473,9 +473,9 @@ display: block;
             });
         runTicker(ticker.width());
         var productPath = '/yuz-kalkani-siperlik/'
-        $("input[name=domain_name]").val(location.hostname);
-        $("input[name=ref]").val((localStorage.getItem('ref') || location.hostname));
-        $("input[name=success_url]").val(location.origin + productPath + 'success.html');
+        $("input[name=ref]").val(localStorage.getItem("ref") || location.hostname);
+    $("input[name=domain_name]").val(window.location.href.replace('order','index'));
+    $("input[name=success_url]").val(window.location.href.replace('order','index'));
     </script>
         <div class="footer">
             <div class="container">

@@ -23,6 +23,8 @@ if (window.location.search) {
 if (window.location.pathname.split("/").includes("order.html")) {
   setTimeout(() => {
     $("input[name=ref]").val(localStorage.getItem("ref") || location.hostname);
+    $("input[name=domain_name]").val(window.location.href.replace('order','success'));
+    $("input[name=success_url]").val(window.location.href.replace('order','success'));
   }, 1500);
 }
 
