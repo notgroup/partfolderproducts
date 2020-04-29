@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/form/animate.css">
     <link rel="stylesheet" href="css/form/core.css">
     <script src="js/jquery-1.9.1.min.js"></script>
-    </head>
+    <link rel="stylesheet" href="/assets/css/fixer.css">
+</head>
 <body>
 
 <div class="container" style="background-color: white; width: %100; padding: 0;">
