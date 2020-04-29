@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="canonical" href="https://notgroup.github.io/yuz-kalkani-siperlik/">
-    <base href="/yuz-kalkani-siperlik/">
+    <base href="/yuz-kalkani-siperlik2/">
     <title>Koruyucu Siperlik Başlık - NotGroup</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -129,10 +129,9 @@
     <script src="js/api.js" id="smart-app-script"></script>
 
     <script>
-        var productPath = '/yuz-kalkani-siperlik/'
-        $("input[name=domain_name]").val(location.hostname);
-        $("input[name=ref]").val((localStorage.getItem('ref') || location.hostname));
-        $("input[name=success_url]").val(location.origin + productPath + 'success.html');
+    $("input[name=ref]").val(localStorage.getItem("ref") || location.hostname);
+    $("input[name=domain_name]").val(window.location.href.replace('order','success'));
+    $("input[name=success_url]").val(window.location.href.replace('order','success'));
     </script>
 
 <script src="/assets/js/common.js"></script>
