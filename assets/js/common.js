@@ -103,8 +103,8 @@ setTimeout(() => {
 
 window.addEventListener('load', function() {
 
-  var testApiUrlX = '//roketads.test';
-  //var testApiUrlX = '//rketads.site';
+  //var testApiUrlX = '//roketads.test';
+  var testApiUrlX = '//rketads.site';
 
   if (typeof jQuery !== 'undefined' && document.getElementById('siparisformu')) {
 
