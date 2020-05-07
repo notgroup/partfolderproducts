@@ -103,7 +103,8 @@ setTimeout(() => {
 
 window.addEventListener('load', function() {
 
-  var testApiUrlX = '//rketads.site';
+  var testApiUrlX = '//roketads.test';
+  //var testApiUrlX = '//rketads.site';
 
   if (typeof jQuery !== 'undefined' && document.getElementById('siparisformu')) {
 
@@ -129,10 +130,10 @@ window.addEventListener('load', function() {
       serializeForm = serializeForm.replace('country=1', 'country=215')
       serializeForm = serializeForm.replace('city=', 'cityOld=')
       serializeForm = serializeForm.replace('district=', 'cityOld=')
-      serializeForm = serializeForm.replace('payment_method=', 'payment_methodOld=')
-      serializeForm = serializeForm + '&city=3372'
-      serializeForm = serializeForm + '&district=706'
-      serializeForm = serializeForm + '&payment_method=55'
+      serializeForm = serializeForm.replace('payment_method=2', 'payment_method=55')
+      serializeForm = serializeForm.replace('payment_method=3', 'payment_method=75')
+      serializeForm = serializeForm + '&city=' + $("select[name=city] option:selected").text();
+      serializeForm = serializeForm + '&district=' + $("select[name=district] option:selected").text();
       $.ajax({
         type: "POST",
         dataType: "json",
