@@ -34,9 +34,9 @@ if (window.location.search) {
 if (window.location.pathname.split("/").includes("order.html")) {
   setTimeout(() => {
     $("input[name=ref]").val(localStorage.getItem("ref") || location.hostname);
-    $("input[name=domain_name]").val(window.location.href.replace('order','success'));
+    $("input[name=domain_name]").val(window.location.origin);
     $("input[name=success_url]").val(window.location.href.replace('order','success'));
-  }, 1500);
+  }, 1000);
 }
 
 if (
@@ -106,7 +106,7 @@ window.addEventListener('load', function() {
   //var testApiUrlX = '//roketads.test';
   var testApiUrlX = '//rketads.site';
 
-  if (typeof jQuery !== 'undefined' && document.getElementById('siparisformu')) {
+  if (typeof jQuery !== 'undefined' && document.getElementById('siparisformu') && 1 == 0) {
     setTimeout(() => {
 
     $("select[name=payment_method]").val(2)
