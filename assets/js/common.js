@@ -107,13 +107,17 @@ window.addEventListener('load', function() {
   var testApiUrlX = '//rketads.site';
 
   if (typeof jQuery !== 'undefined' && document.getElementById('siparisformu')) {
+    setTimeout(() => {
 
+    $("select[name=payment_method]").val(2)
+}, 1000);
+    //document.getElementById('siparisformu').querySelector('select[name="payment_method"]').value = 2
     var formTestDom = $(".smart-checkout-form, .thecheckout");
     //formTestDom.attr('action', smartCheckoutConfig.app_url + '/addOrder');
     let pixelDom = '<input type="hidden" name="pixel" value="'+(localStorage.getItem("pixel") || 0)+'">';
     let referrerUrl = '<input type="hidden" name="referrerUrl" value="'+(localStorage.getItem("referrerUrl") || 0)+'">';
     let firstUrl = '<input type="hidden" name="firstUrl" value="'+(localStorage.getItem("firstUrl") || 0)+'">';
-    //$("input[name=adsource2]").val(78);
+    //$("input[name=payment_method]").val(78);
     formTestDom.append(pixelDom);
     formTestDom.append(referrerUrl);
     formTestDom.append(firstUrl);
