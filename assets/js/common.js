@@ -31,11 +31,11 @@ if (window.location.search) {
 }
 
 
-if (window.location.pathname.split("/").includes("order.html")) {
+if (document.getElementById('siparisformu')) {
   setTimeout(() => {
     $("input[name=ref]").val(localStorage.getItem("ref") || location.hostname);
     $("input[name=domain_name]").val(window.location.origin);
-    $("input[name=success_url]").val(window.location.href.replace('order','success'));
+    $("input[name=success_url]").val(window.location.origin + window.location.pathname.replace('order.html','').replace('index.html','') + 'success.html');
   }, 1000);
 }
 
@@ -79,7 +79,7 @@ setTimeout(() => {
   noScriptImage.height = "1";
   noScript.appendChild(noScriptImage);
   document.body.appendChild(noScript);
-}, 2000);
+}, 1000);
 }
 
 (function () {
