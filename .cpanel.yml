@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/liberyen/public_html/yedek
+    - /bin/cp * $DEPLOYPATH
