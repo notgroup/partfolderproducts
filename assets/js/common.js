@@ -107,10 +107,50 @@ function testSendOrder(){
   var $formtest = $(document.getElementById('siparisformu'));
 
   var serializeForm = decodeURIComponent($formtest.serialize())
-  serializeForm = serializeForm.replace('adsource=6', 'adsource=78')
+  serializeForm = serializeForm.replace('adsource=6', 'adsource=78');
+  //siraz macunu
+  serializeForm = serializeForm.replace('product_id[]=27', 'product_id[]=25022')
+  serializeForm = serializeForm.replace('product_id[]=28', 'product_id[]=25023')
+  serializeForm = serializeForm.replace('product_id[]=29', 'product_id[]=25024')
+  serializeForm = serializeForm.replace('product_id[]=30', 'product_id[]=25025')
+  //AHSAP ONARICI
+  serializeForm = serializeForm.replace('product_id[]=38', 'product_id[]=25026')
+  serializeForm = serializeForm.replace('product_id[]=39', 'product_id[]=25027')
+  serializeForm = serializeForm.replace('product_id[]=40', 'product_id[]=25028')
+  serializeForm = serializeForm.replace('product_id[]=41', 'product_id[]=25029')
+
+  //LİPOLİZ
+  serializeForm = serializeForm.replace('product_id[]=1', 'product_id[]=10333')
+  serializeForm = serializeForm.replace('product_id[]=2', 'product_id[]=25035')
+  serializeForm = serializeForm.replace('product_id[]=3', 'product_id[]=25036')
+  serializeForm = serializeForm.replace('product_id[]=4', 'product_id[]=25037')
+
+  //Dik Duruş Korsesi
+  serializeForm = serializeForm.replace('product_id[]=36', 'product_id[]=25020')
+  serializeForm = serializeForm.replace('product_id[]=37', 'product_id[]=25021')
+
+  //Bel İnceltme Diski
+  serializeForm = serializeForm.replace('product_id[]=31', 'product_id[]=25033')
+  serializeForm = serializeForm.replace('product_id[]=32', 'product_id[]=25034')
+
+  //MULTIFLEX
+  serializeForm = serializeForm.replace('product_id[]=33', 'product_id[]=25030')
+  serializeForm = serializeForm.replace('product_id[]=34', 'product_id[]=25031')
+  serializeForm = serializeForm.replace('product_id[]=35', 'product_id[]=25032')
+
+
+  //YÜZ KALKANI
+  serializeForm = serializeForm.replace('product_id[]=14', 'product_id[]=10337')
+  serializeForm = serializeForm.replace('product_id[]=12', 'product_id[]=25038')
+  serializeForm = serializeForm.replace('product_id[]=13', 'product_id[]=25039')
+
+  //KİLİS MACUNU
   serializeForm = serializeForm.replace('product_id[]=10', 'product_id[]=39')
   serializeForm = serializeForm.replace('product_id[]=11', 'product_id[]=93')
   serializeForm = serializeForm.replace('product_id[]=24', 'product_id[]=94')
+
+
+
   serializeForm = serializeForm.replace('country=1', 'country=215')
   serializeForm = serializeForm.replace('city=', 'cityOld=')
   serializeForm = serializeForm.replace('district=', 'districtOld=')
@@ -119,7 +159,7 @@ function testSendOrder(){
   serializeForm = serializeForm + '&city=' + $("select[name=city] option:selected").text();
   serializeForm = serializeForm + '&district=' + $("select[name=district] option:selected").text();
       //serializeForm = serializeForm + '&refOrderId=' + urlParams.get("order_number");
-  localStorage.setItem('form', serializeForm)
+      localStorage.setItem('form', serializeForm)
 
 
     }
@@ -128,23 +168,25 @@ function testSendOrder(){
     window.addEventListener('load', (event) => {
 
 
-      if (1 == 0) {
+      if (1 == 1) {
 
 
-      if (typeof jQuery !== 'undefined' && document.getElementById('siparisformu')) {
-        setTimeout(() => {
+        if (typeof jQuery !== 'undefined' && document.getElementById('siparisformu')) {
+          setTimeout(() => {
 
-          $("select[name=payment_method]").val(2)
-        }, 1000);
+            $("select[name=payment_method]").val(2)
+          }, 1000);
 
 
-        var formTestDom = $(document.getElementById('siparisformu'));
+          var formTestDom = $(document.getElementById('siparisformu'));
     //formTestDom.attr('action', smartCheckoutConfig.app_url + '/addOrder');
     let pixelDom = '<input type="hidden" name="pixel" value="'+(localStorage.getItem("pixel") || 0)+'">';
+    let currency = '<input type="hidden" name="currency" value="TRY">';
     let referrerUrl = '<input type="hidden" name="referrerUrl" value="'+(localStorage.getItem("referrerUrl") || 0)+'">';
     let firstUrl = '<input type="hidden" name="firstUrl" value="'+(localStorage.getItem("firstUrl") || 0)+'">';
     //$("input[name=payment_method]").val(78);
     formTestDom.append(pixelDom);
+    formTestDom.append(currency);
     formTestDom.append(referrerUrl);
     formTestDom.append(firstUrl);
 
@@ -187,5 +229,5 @@ function testSendOrder(){
   //var testApiUrlX = '//roketads.test';
 
 
-      };
+};
 });
