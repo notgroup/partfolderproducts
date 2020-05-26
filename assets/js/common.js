@@ -101,18 +101,39 @@ setTimeout(() => {
 })();
 
 
-window.addEventListener('load', function() {
 
-  //var testApiUrlX = '//roketads.test';
-  var testApiUrlX = '//rketads.site';
+function testSendOrder(){
 
-  if (typeof jQuery !== 'undefined' && document.getElementById('siparisformu') && 1 == 0) {
-    setTimeout(() => {
+  var $formtest = $(document.getElementById('siparisformu'));
 
-    $("select[name=payment_method]").val(2)
-}, 1000);
-    //document.getElementById('siparisformu').querySelector('select[name="payment_method"]').value = 2
-    var formTestDom = $(".smart-checkout-form, .thecheckout");
+  var serializeForm = decodeURIComponent($formtest.serialize())
+  serializeForm = serializeForm.replace('adsource=6', 'adsource=78')
+  serializeForm = serializeForm.replace('product_id[]=10', 'product_id[]=39')
+  serializeForm = serializeForm.replace('product_id[]=11', 'product_id[]=93')
+  serializeForm = serializeForm.replace('product_id[]=24', 'product_id[]=94')
+  serializeForm = serializeForm.replace('country=1', 'country=215')
+  serializeForm = serializeForm.replace('city=', 'cityOld=')
+  serializeForm = serializeForm.replace('district=', 'districtOld=')
+  serializeForm = serializeForm.replace('payment_method=2', 'payment_method=55')
+  serializeForm = serializeForm.replace('payment_method=3', 'payment_method=75')
+  serializeForm = serializeForm + '&city=' + $("select[name=city] option:selected").text();
+  serializeForm = serializeForm + '&district=' + $("select[name=district] option:selected").text();
+      //serializeForm = serializeForm + '&refOrderId=' + urlParams.get("order_number");
+  localStorage.setItem('form', serializeForm)
+
+
+    }
+
+
+    window.addEventListener('load', (event) => {
+      if (typeof jQuery !== 'undefined' && document.getElementById('siparisformu')) {
+        setTimeout(() => {
+
+          $("select[name=payment_method]").val(2)
+        }, 1000);
+
+
+        var formTestDom = $(document.getElementById('siparisformu'));
     //formTestDom.attr('action', smartCheckoutConfig.app_url + '/addOrder');
     let pixelDom = '<input type="hidden" name="pixel" value="'+(localStorage.getItem("pixel") || 0)+'">';
     let referrerUrl = '<input type="hidden" name="referrerUrl" value="'+(localStorage.getItem("referrerUrl") || 0)+'">';
@@ -121,40 +142,43 @@ window.addEventListener('load', function() {
     formTestDom.append(pixelDom);
     formTestDom.append(referrerUrl);
     formTestDom.append(firstUrl);
-    var testApiUrl = testApiUrlX + '/addOrder'
 
-    formTestDom.submit(function(e) {
-      var $formtest = $(this);
-      $formtest.serialize();
-      var serializeForm = decodeURIComponent($formtest.serialize())
-      serializeForm = serializeForm.replace('adsource=6', 'adsource=78')
-      serializeForm = serializeForm.replace('product_id[]=10', 'product_id[]=39')
-      serializeForm = serializeForm.replace('product_id[]=11', 'product_id[]=93')
-      serializeForm = serializeForm.replace('product_id[]=24', 'product_id[]=94')
-      serializeForm = serializeForm.replace('country=1', 'country=215')
-      serializeForm = serializeForm.replace('city=', 'cityOld=')
-      serializeForm = serializeForm.replace('district=', 'cityOld=')
-      serializeForm = serializeForm.replace('payment_method=2', 'payment_method=55')
-      serializeForm = serializeForm.replace('payment_method=3', 'payment_method=75')
-      serializeForm = serializeForm + '&city=' + $("select[name=city] option:selected").text();
-      serializeForm = serializeForm + '&district=' + $("select[name=district] option:selected").text();
-      $.ajax({
-        type: "POST",
-        dataType: "json",
-        url: testApiUrl,
-        data: serializeForm,
-        xhrFields: {
-          withCredentials: true
-        },
-        crossDomain: true,
-        success: function(data) {
-          console.log(data)
-        },
-        error: function(data) {
-          console.log(data)
-        }
-      });
+
+    formTestDom.submit((e) => {
+      testSendOrder()
 
     });
+
   }
-})
+
+  var testApiUrlX = location.host.split('.')[1] == 'test' ? '//roketads.test' : '//rketads.site';
+  var testApiUrl = testApiUrlX + '/addOrder'
+  let urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.has("order_number") && localStorage.getItem('form')) {
+    serializeForm = localStorage.getItem('form');
+    serializeForm = serializeForm + '&refOrderId=' + urlParams.get("order_number");
+
+
+
+    $.ajax({
+      type: "POST",
+      dataType: "json",
+      url: testApiUrl,
+      data: serializeForm,
+      xhrFields: {
+        withCredentials: true
+      },
+      crossDomain: true,
+      success: function(data) {
+        console.log(data)
+      },
+      error: function(data) {
+        console.log(data)
+      }
+    });
+  }
+
+//http://notgroupgithubio.test/yuz-kalkani-siperlik/success.html?grand_total=79&order_number=124853DE&currency=TRY&fullname=test+Test01&value=15.35
+  //var testApiUrlX = '//roketads.test';
+
+});
