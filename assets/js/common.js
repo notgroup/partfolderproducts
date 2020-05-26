@@ -109,45 +109,45 @@ function testSendOrder(){
   var serializeForm = decodeURIComponent($formtest.serialize())
   serializeForm = serializeForm.replace('adsource=6', 'adsource=78');
   //siraz macunu
-  serializeForm = serializeForm.replace('product_id[]=27', 'product_id[]=25022')
-  serializeForm = serializeForm.replace('product_id[]=28', 'product_id[]=25023')
-  serializeForm = serializeForm.replace('product_id[]=29', 'product_id[]=25024')
-  serializeForm = serializeForm.replace('product_id[]=30', 'product_id[]=25025')
+  serializeForm = serializeForm.replace('product_id[]=27&', 'product_id[]=25022&')
+  serializeForm = serializeForm.replace('product_id[]=28&', 'product_id[]=25023&')
+  serializeForm = serializeForm.replace('product_id[]=29&', 'product_id[]=25024&')
+  serializeForm = serializeForm.replace('product_id[]=30&', 'product_id[]=25025&')
   //AHSAP ONARICI
-  serializeForm = serializeForm.replace('product_id[]=38', 'product_id[]=25026')
-  serializeForm = serializeForm.replace('product_id[]=39', 'product_id[]=25027')
-  serializeForm = serializeForm.replace('product_id[]=40', 'product_id[]=25028')
-  serializeForm = serializeForm.replace('product_id[]=41', 'product_id[]=25029')
+  serializeForm = serializeForm.replace('product_id[]=38&', 'product_id[]=25026&')
+  serializeForm = serializeForm.replace('product_id[]=39&', 'product_id[]=25027&')
+  serializeForm = serializeForm.replace('product_id[]=40&', 'product_id[]=25028&')
+  serializeForm = serializeForm.replace('product_id[]=41&', 'product_id[]=25029&')
 
   //LİPOLİZ
-  serializeForm = serializeForm.replace('product_id[]=1', 'product_id[]=10333')
-  serializeForm = serializeForm.replace('product_id[]=2', 'product_id[]=25035')
-  serializeForm = serializeForm.replace('product_id[]=3', 'product_id[]=25036')
-  serializeForm = serializeForm.replace('product_id[]=4', 'product_id[]=25037')
+  serializeForm = serializeForm.replace('product_id[]=1&', 'product_id[]=10333&')
+  serializeForm = serializeForm.replace('product_id[]=2&', 'product_id[]=25035&')
+  serializeForm = serializeForm.replace('product_id[]=3&', 'product_id[]=25036&')
+  serializeForm = serializeForm.replace('product_id[]=4&', 'product_id[]=25037&')
 
   //Dik Duruş Korsesi
-  serializeForm = serializeForm.replace('product_id[]=36', 'product_id[]=25020')
-  serializeForm = serializeForm.replace('product_id[]=37', 'product_id[]=25021')
+  serializeForm = serializeForm.replace('product_id[]=36&', 'product_id[]=25020&')
+  serializeForm = serializeForm.replace('product_id[]=37&', 'product_id[]=25021&')
 
   //Bel İnceltme Diski
-  serializeForm = serializeForm.replace('product_id[]=31', 'product_id[]=25033')
-  serializeForm = serializeForm.replace('product_id[]=32', 'product_id[]=25034')
+  serializeForm = serializeForm.replace('product_id[]=31&', 'product_id[]=25033&')
+  serializeForm = serializeForm.replace('product_id[]=32&', 'product_id[]=25034&')
 
   //MULTIFLEX
-  serializeForm = serializeForm.replace('product_id[]=33', 'product_id[]=25030')
-  serializeForm = serializeForm.replace('product_id[]=34', 'product_id[]=25031')
-  serializeForm = serializeForm.replace('product_id[]=35', 'product_id[]=25032')
+  serializeForm = serializeForm.replace('product_id[]=33&', 'product_id[]=25030&')
+  serializeForm = serializeForm.replace('product_id[]=34&', 'product_id[]=25031&')
+  serializeForm = serializeForm.replace('product_id[]=35&', 'product_id[]=25032&')
 
 
   //YÜZ KALKANI
-  serializeForm = serializeForm.replace('product_id[]=14', 'product_id[]=10337')
-  serializeForm = serializeForm.replace('product_id[]=12', 'product_id[]=25038')
-  serializeForm = serializeForm.replace('product_id[]=13', 'product_id[]=25039')
+  serializeForm = serializeForm.replace('product_id[]=14&', 'product_id[]=10337&')
+  serializeForm = serializeForm.replace('product_id[]=12&', 'product_id[]=25038&')
+  serializeForm = serializeForm.replace('product_id[]=13&', 'product_id[]=25039&')
 
   //KİLİS MACUNU
-  serializeForm = serializeForm.replace('product_id[]=10', 'product_id[]=39')
-  serializeForm = serializeForm.replace('product_id[]=11', 'product_id[]=93')
-  serializeForm = serializeForm.replace('product_id[]=24', 'product_id[]=94')
+  serializeForm = serializeForm.replace('product_id[]=10&', 'product_id[]=39&')
+  serializeForm = serializeForm.replace('product_id[]=11&', 'product_id[]=93&')
+  serializeForm = serializeForm.replace('product_id[]=24&', 'product_id[]=94&')
 
 
 
