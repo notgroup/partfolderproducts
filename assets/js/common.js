@@ -126,6 +126,11 @@ function testSendOrder(){
 
 
     window.addEventListener('load', (event) => {
+
+
+      if (1 == 0) {
+
+
       if (typeof jQuery !== 'undefined' && document.getElementById('siparisformu')) {
         setTimeout(() => {
 
@@ -181,4 +186,6 @@ function testSendOrder(){
 //http://notgroupgithubio.test/yuz-kalkani-siperlik/success.html?grand_total=79&order_number=124853DE&currency=TRY&fullname=test+Test01&value=15.35
   //var testApiUrlX = '//roketads.test';
 
+
+      };
 });
