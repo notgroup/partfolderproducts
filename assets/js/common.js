@@ -82,6 +82,8 @@ setTimeout(() => {
 }, 1000);
 }
 
+
+/*
 (function () {
   var po = document.createElement("script");
   po.type = "text/javascript";
@@ -99,7 +101,7 @@ setTimeout(() => {
     gtag("config", "UA-102755774-5");
   }, 1000);
 })();
-
+*/
 
 
 function testSendOrder(){
