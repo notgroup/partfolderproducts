@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Nicozin Sipariş Formu</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="./assets/bootstrap.css">
+    <link rel="stylesheet" href="./assets/font-awesome.min.css">
+    <script type="text/javascript" async="" src="./assets/analytics.js"></script>
+    <script src="./assets/jquery.min.js"></script>
+    <link rel="stylesheet" href="./assets/animate.css">
+    <link rel="stylesheet" href="./assets/core.css">
+    <link rel="stylesheet" href="./assets/style2490.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Dosis:400,700');
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+            font-family: 'Dosis', sans-serif;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        input,
+        select,
+        textarea,
+        input[type="text"],
+        button[type="button"] {
+            -moz-appearance: none;
+            box-shadow: none !important;
+        }
+
+        input:focus,
+        button:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+        }
+
+        [type="submit"] {
+            background: none;
+            border: 0;
+            margin: 0;
+            padding: 0;
+            -moz-appearance: none;
+            box-shadow: none !important;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+        }
+
+        .container {
+            margin: 0 auto;
+            padding: 0 !important;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                width: 768px !important;
+            }
+            .rightBar {
+                width: 145px !important;
+                left: 67px;
+                height: 490px !important;
+            }
+        }
+
+        .container .row {
+            margin: 0 !important;
+        }
+
+        [class*="col-"] {
+            padding: 0 !important;
+        }
+
+        [class*="col-"] img {
+            display: block;
+            width: 100%;
+            border: 0;
+            padding: 0;
+            margin: 0;
+        }
+
+        .form_wrap {
+            padding: 30px 0;
+        }
+
+        .form_wrap>img.back {
+            position: absolute;
+            z-index: -5;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .grid1 {
+            padding: 0 10px;
+            display: grid;
+            grid-template-columns: 25px calc(100% - 25px);
+            align-items: center;
+        }
+
+        .grid1 .self {}
+
+        .grid1 .self.number {
+            text-align: center;
+            font-size: 2.8em;
+            filter: blur(2.5px);
+            color: #d6dee1;
+        }
+
+        .grid1 .self.form_item {
+            padding: 10px;
+        }
+
+        .grid1 .self.form_item input,
+        .grid1 .self.form_item textarea,
+        .grid1 .self.form_item select {
+            background: url(img/x/form_item_back.html) repeat;
+            background-size: auto 100%;
+            padding: 0 10px;
+            display: block;
+            width: 100%;
+            border: 1px solid #cbcbcb;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0 #ddd !important;
+        }
+
+        .grid1 .self.form_item input {
+            height: 50px;
+        }
+
+        .grid1 .self.form_item select {
+            height: 50px;
+            color: #757575;
+        }
+
+        .grid1 .self.form_item textarea {
+            height: 170px;
+            padding: 10px 10px;
+        }
+
+        .form1_submit_button {
+            background: none;
+            border: 0 !important;
+            margin-bottom: -3px !important;
+        }
+
+        .row {
+            padding: 22;
+        }
+
+        #c2c2 {
+            margin-top: 25px;
+        }
+
+        label {
+            margin: 0;
+            outline: none
+        }
+
+        .color {
+            display: none;
+        }
+    </style>
+    <script async="" src="./assets/js"></script>
+    <script>
+        /*
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-102755774-5');*/
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <a href="siparis.html#siparisformu"><img class="img-fluid" src="./assets/siparis10fb7.jpg"></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <a href="siparis.html#siparisformu"><img class="img-fluid" src="./assets/siparis3.jpg"></a>
+            </div>
+        </div>
+        <style>
+            im.calc_price,
+            im.price,
+            span.deneme2 {
+                direction: rtl;
+                width: 100%;
+                font-weight: bold;
+                font-size: 22px;
+                text-align: center;
+                display: block;
+            }
+
+            span.deneme2 {
+                color: red;
+                font-size: 17px;
+            }
+        </style>
+        <form id="siparisformu" action="siparis.php" class="thecheckout checkout-form" method="post" autocomplete="off" onsubmit="return false;" data-locale="tr" data-autofocus="1" data-country-code="tr">
+
+
+
+            <div class="wrapper" style="background-color: #fff">
+                <br>
+                <div class="container">
+                    <div class="form-group">
+                        <input type="text" name="adsoyad" class="form-control input-lg" placeholder="Ad Soyad">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" name="telefon" class="form-control input-lg" placeholder="Telefon Numarası">
+                    </div>
+                    <div class="form-group select-container" style="display:none;">
+                        <select name="country" class="form-control input-lg thecountry"></select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="sehir" class="form-control input-lg" placeholder="Şehir">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="ilce" class="form-control input-lg" placeholder="İlçe">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="teslimat" placeholder="Adresiniz" class="form-control input-lg"></textarea>
+                    </div>
+                    <select name="paymod" class="form-control input-lg smart-payment-select"><option value="">ÖDEME METODU SEÇİNİZ...</option><option value="2">KAPIDA NAKİT ÖDEME</option><option value="1">KAPIDA KREDİ KARTI</option></select>
+                </div>
+                <!-- /.container -->
+            </div>
+            <div class="col-xs-12">
+
+                <a href="siparis.html#siparisformu"><img class="img-fluid" src="./assets/siparis4.jpg"></a>
+            </div>
+            <div class="row" style="background-color: #fff">
+                <div class="product col-sm-6 col-xs-6" style="z-index:1">
+                    <input type="radio" name="Siparis" value="1263" id="3" checked="checked">
+                    <img src="./assets/urun1_1.jpg" alt="Image" class="product-image" id="c2c2">
+                    <img src="./assets/urun1_2.jpg" alt="Image" class="product-image selected" id="c2c2">
+                    <input type="radio" name="urun" value="39:1">
+                </div>
+
+                <div class="product col-sm-6 col-xs-6" style="z-index:1">
+                    <input type="radio" name="Siparis" value="1264" id="3" checked="checked">
+                    <img src="./assets/urun2_1.jpg" alt="Image" class="product-image" id="c2c2">
+                    <img src="./assets/urun2_2.jpg" alt="Image" class="product-image selected" id="c2c2">
+                    <input type="radio" name="urun" value="39:2">
+                </div>
+
+
+            </div>
+
+
+            <!-- /.wrapper -->
+            <div class="wrapper" style="background-color: #b3bcc1">
+                <div class="button-submit-container container text-center">
+                    <input type="image" src="./assets/submit.jpg" onclick="siparisformu.submit();" alt="image">
+                </div>
+                <!-- /.button-submit-container -->
+
+            </div>
+            <!-- /.wrapper -->
+
+            <!-- /.wrapper -->
+
+        </form>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <a href="siparis.html#siparisformu" onclick="siparisformu.submit();"><img class="img-fluid" src="./assets/siparis5.jpg"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="./assets/js(1)"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-132702354-30');
+    </script>
+
+
+
+    <script src="./assets/jquery.min(1).js"></script>
+    <script src="./assets/jquery.countdown.min9336.js"></script>
+    <script src="./assets/jquery.cookie.js"></script>
+    <script src="./assets/product-counter.js"></script>
+    <script>
+        $(function() {
+            var countdownExpire = "2019/07/30 21:22:06";
+            var cookieCountdownExpire = $.cookie("youarecures.cf");
+            if (cookieCountdownExpire) {
+                countdownExpire = cookieCountdownExpire;
+            } else {
+                $.cookie("youarecures.cf", countdownExpire);
+            }
+            $(".clock_3").countdown(countdownExpire, function(event) {
+                var $this = $(this).html(event.strftime('' + '<span class="box hour">%H</span>' + '<span class="box minute">%M</span>' + '<span class="box second">%S</span>'));
+            });
+            $(".product-counter_3").productCounter({
+                min: 357,
+                max: 785,
+                minTimeout: 2500,
+                expire: 2700000
+            });
+        });
+    </script>
+    <script src="./assets/app9336.js" id="theapp"></script>
+    <script>
+        var smartCheckoutLang = {
+            please_wait: "Lütfen Bekleyin...",
+            close: "Kapat"
+        };
+    </script>
+
+    <link rel="stylesheet" href="./assets/app8205.css" id="smart-app-css">
+    <link rel="stylesheet" href="./assets/override.html">
+
+
+    <!-- Mirrored from youarecures.cf/siparis.php?ref=youarecures.cf by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Jul 2019 15:23:15 GMT -->
+</body>
+
+</html>

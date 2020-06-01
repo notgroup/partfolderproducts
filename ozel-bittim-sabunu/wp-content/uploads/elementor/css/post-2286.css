@@ -1,0 +1,71 @@
+.elementor-2286 .elementor-element.elementor-element-51903bd8 {
+    text-align: center;
+}
+
+.elementor-2286 .elementor-element.elementor-element-51903bd8 .elementor-heading-title {
+    color: #000000;
+    font-family: "Poppins", Sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.elementor-2286 .elementor-element.elementor-element-51903bd8>.elementor-widget-container {
+    margin: 0px 0px 0px 0px;
+}
+
+.elementor-2286 .elementor-element.elementor-element-47b53fe3 .elementor-text-editor {
+    text-align: center;
+}
+
+.elementor-2286 .elementor-element.elementor-element-47b53fe3 {
+    color: #000000;
+    font-family: "Poppins", Sans-serif;
+    font-size: 16px;
+    line-height: 1.1em;
+}
+
+.elementor-2286 .elementor-element.elementor-element-47b53fe3>.elementor-widget-container {
+    margin: -6px 0px 0px 0px;
+}
+
+#elementor-popup-modal-2286 .dialog-message {
+    width: 420px;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+}
+
+#elementor-popup-modal-2286 {
+    justify-content: center;
+    align-items: center;
+    pointer-events: all;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#elementor-popup-modal-2286 .dialog-close-button {
+    display: block;
+    font-size: 24px;
+}
+
+#elementor-popup-modal-2286 .dialog-widget-content {
+    animation-duration: 1.2s;
+    box-shadow: 2px 2px 40px 1px rgba(0, 0, 0, 0.09);
+}
+
+#elementor-popup-modal-2286 .dialog-close-button:hover i {
+    color: #ff0798;
+}
+
+@media(max-width:767px) {
+    .elementor-2286 .elementor-element.elementor-element-51903bd8 .elementor-heading-title {
+        font-size: 24px;
+    }
+    .elementor-2286 .elementor-element.elementor-element-51903bd8>.elementor-widget-container {
+        margin: 0px 0px 0px 0px;
+    }
+    .elementor-2286 .elementor-element.elementor-element-47b53fe3>.elementor-widget-container {
+        margin: -10px 0px 0px 0px;
+    }
+    #elementor-popup-modal-2286 .dialog-message {
+        width: 90vw;
+    }
+}

@@ -9,25 +9,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="theme-color" content="#af1329">
     <title>Şiraz Macunu Sipariş </title>
-    <meta name="description" content="Beewax Ahşap Onarıcı">
-    <meta name="keywords" content="Beewax Ahşap Onarıcı">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Beewax Ahşap Onarıcı">
-    <meta property="og:description" content="NC Market Beewax Ahşap Onarıcı">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link href="./orderfiles/sticky-navigation.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="/beewax-ahsap-yenileme/styles/custom/style.css">
-    <link rel="stylesheet" href="./orderfiles/bootstrap.css">
-    <link href="./orderfiles/owl.carousel.css" rel="stylesheet">
-    <link href="./orderfiles/owl.theme.css" rel="stylesheet">
-    <link href="./orderfiles/style_v8.css" rel="stylesheet" type="text/css">
-    <style>
-        body {
-            font-family: 'Montserrat';
-            font-size: 22px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Dosis:400,700');
+        
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+            
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+        display: block;
+        }
+        body {
+        line-height: 1;
+        font-family: 'Dosis', sans-serif;
+            background-color: #737478;
+        }
+        ol, ul {
+        list-style: none;
+        }
+        blockquote, q {
+        quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+        content: '';
+        content: none;
+        }
+        table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        }			
+        input, select, textarea, input[type="text"],button[type="button"] { -moz-appearance: none;box-shadow: none !important; }
+        input:focus, button:focus, textarea:focus, select:focus { outline: none; }
+        
+        [type="submit"]{    background: none;
+        border: 0;
+        margin: 0;
+        padding: 0; -moz-appearance: none;box-shadow: none !important; }
+        input:focus, textarea:focus, select:focus { outline: none; }
+        
+        .container {
+        margin:0 auto;
+        padding:0 !important;
+        }
+        @media (min-width: 768px) {
+        .container {
+        width:768px !important;
+        }
+        .rightBar {
+        width: 145px !important;
+        left: 67px;
+        height: 490px !important;
+        }
+        }
+        
+        
+        
+        .container .row {
+        margin:0 !important;
+        }
+        
+        [class*="col-"] {
+        padding:0 !important;
+        }
+        [class*="col-"] img {
+        display:block;
+        width:100%;
+        border:0;
+        padding:0;
+        margin:0;
+        }
+        
+        .form_wrap{padding:30px 0;}
+        .form_wrap > img.back{position:absolute;z-index:-5;left:0;top:0;width:100%;height:100%;}
+        .grid1{padding:0 10px;display:grid;grid-template-columns:25px calc(100% - 25px);align-items:center;}
+        .grid1 .self{}
+        .grid1 .self.number{text-align:center;font-size:2.8em;filter: blur(2.5px);color:#d6dee1;}
+        .grid1 .self.form_item{padding:10px;}
+        .grid1 .self.form_item input,
+        .grid1 .self.form_item textarea,
+        .grid1 .self.form_item select{
+        background:url(img/x/form_item_back.jpg?ccc) repeat;background-size:auto 100%;
+        padding:0 10px;
+        display:block;width:100%;
+        border:1px solid #cbcbcb;
+        box-sizing:border-box;
+        border-radius:10px;
+        box-shadow:0px 0px 10px 0 #ddd!important;
+        }
+        .grid1 .self.form_item input{height:50px;}
+        .grid1 .self.form_item select{height:50px;color: #757575;}
+        .grid1 .self.form_item textarea{height:170px;padding:10px 10px;}
+        
+        .form1_submit_button {
+        background: none;
+        border: 0 !important;
+        margin-bottom: -3px !important;
+        }
+        
+        
+        label{margin:0;outline:none}
+        
+        .color {display:none;}
+        .clock_3 {
+            top: 86% !important;
+            color: #000;
+            left: 47% !important;
+        }
+        .product-counter_3 {
+            top: 85.5% !important;
+            left: 28%;
+        }
+        
+    </style>
+ <link rel="stylesheet" href="../assets/css/fixer.css">
 
 </head>
 
@@ -35,10 +154,7 @@
 
     <!--container-->
     <style>
-        body {
-            background: url(images/tfn2.png) repeat;
-            background-color: #373737;
-        }
+
 
         h1,
         h2,
@@ -143,7 +259,7 @@ background-color: #ce8215 !important;
                 "country_code": "TR"
             }, null];
         </script>
-        <link rel="stylesheet" href="./orderfiles/form.css">
+        <link rel="stylesheet" href="./orderfiles/css/form.css">
         <script>
             $(function () {
                 $(".pack").on('click', function () {
@@ -184,13 +300,13 @@ background-color: #ce8215 !important;
                     <div class="order-form-title">Tedavi Seti Seçiniz;</div>
 
                     <div class="radio">
-                        <input type="radio" name="product_id[]" id="paket1" value="38" class="pack">
+                        <input type="radio" name="product_id[]" id="paket1" value="42" class="pack">
                         <label for="paket1"><img src="./orderfiles/paket1.png" alt=""></label>
                         <div class="package-price" data-stock_id="42" data-price_catid="3" data-price="70" data-kar="">
                             70 TL</div>
                     </div>
                     <div class="radio">
-                        <input type="radio" name="product_id[]" id="paket2" value="39" class="pack">
+                        <input type="radio" name="product_id[]" id="paket2" value="43" class="pack">
                         <label for="paket2"><img src="./orderfiles/paket2.png" alt=""></label>
                         <div class="package-price" data-stock_id="43" data-price_catid="3" data-price="150" data-kar="">
                             150 TL, Ücretsiz Teslimat!</div>
@@ -334,17 +450,12 @@ background-color: #ce8215 !important;
 
 
                 <button class="order-form-submit" type="submit"><img src="./orderfiles/button-red.png" alt=""></button>
-                <div class="form-checkbox">
-                    <input type="checkbox" id="sozlesme" checked="">
-                    <label for="sozlesme"> <strong>Ön Bilgilendirme Formu ve Mesafeli Satış Sözleşmesini
-                            okudum.</strong>
-                    </label>
-                </div>
+
                 <input type="hidden" name="locale" value="tr">
             </form>
 
         </div>
-        <script src="./orderfiles/boot.js"></script>
+
         <script src="./orderfiles/bootstrap.min.js"></script>
         <script src="./orderfiles/jquery.mask.min.js"></script>
         <script src="./orderfiles/messages.min.js"></script>
@@ -480,8 +591,8 @@ background-color: #ce8215 !important;
             });
         });
     </script>
-    <script src="./orderfiles/api.js" id="smart-app-script"></script>
-    <script src="./orderfiles/common.js"></script>
+ <script src="../assets/js/api.js" id="smart-app-script"></script>
+ <script src="../assets/js/common.js?commonv=4"></script>
 
 </body>
 

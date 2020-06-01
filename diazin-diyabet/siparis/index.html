@@ -1,0 +1,781 @@
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <link rel="stylesheet" href="css/style9.css">
+
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js" type="text/javascript"></script>
+
+    <title>Siparis</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100767583-9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-100767583-9');
+    </script>
+
+
+    <style type="text/css">
+        .radieos1 .part1 input[type=radio]:checked~label {
+            -webkit-box-shadow: inset 0px 0px 39px -6px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: inset 0px 0px 39px -6px rgba(0, 0, 0, 0.75);
+            box-shadow: inset 0px 0px 39px -6px rgba(0, 0, 0, 0.75);
+            background-color: #e5e6e8;
+        }
+
+        @media screen and (max-width: 1040px) {
+            .leftawiDiv span b {
+                font-size: 3.4vw;
+                font-weight: 900;
+                line-height: 3.6vw;
+            }
+        }
+
+        .leftawiDiv span b {
+            font-family: 'ProximaBold';
+        }
+
+        .leftawiDiv span {
+            font-family: 'ProximaLight';
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="bannerCounterDiv">
+
+            <span class="titleSpan">KULLANICILARIMIZIN ISRARI ÜZERİNE </span>
+
+            <span class="subtitleSpan">%50 İNDİRİM <br> <u>SINIRLI SAYIDA STOK</u></span>
+
+            <div class="outerCounter">
+
+                <div class="counter">
+
+                    <div class="kalanurun">
+
+                        <span>KALAN STOK</span>
+
+                        <p id="quata2" class="quata2"></p>
+
+                    </div>
+
+                    <div class="sayac">
+
+                        <span>KALAN SÜRE</span>
+
+                        <div class="defaultCountdown"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="bigContainer">
+
+        <div class="mother">
+
+            <div class="formDiv" id="form">
+
+                <div class="container">
+                    <form class="theForm" action="https://crm.tooples.com/form-post-v2" method="post" onsubmit="return rezo();" id="idokeyform1" data-ajax="false">
+                        <input type="hidden" name="action" value="sendorder" />
+                        <input type="hidden" name="siteID" value="3" />
+                        <input type="hidden" name="product_id" value="3" />
+
+                        <input type="hidden" name="account" value="" />
+                        <input type="hidden" name="pixel" value="" />
+                        <input name="return_url" value="https://www.diazinsatisi.com/onay.php?pixel=" type="hidden">
+                        <input name="fail_url" value="https://www.diazinsatisi.com/hata.html" type="hidden">
+
+                        <div class="RightInput">
+
+                            <div class="sertifika">
+                                <img src="img/sertifika1.png">
+                            </div>
+
+                            <div class="inputTitle">İLETİŞİM BİLGİLERİNİZ</div>
+
+                            <div class="Start1">
+                                <input type="text" name="adsoyad" id="fname" required="required" placeholder="Ad Soyad">
+                                <input type="text" name="telefon" id="telefon" required="required" placeholder="Tel No" />
+                                <label for="fname"><font color="white"></font></label>
+
+
+
+                                <select class="inputt2" id="sehir" name="sehir" required="required">
+                           <option value="">Şehir Seçiniz</option>
+                                                                                                                        <option value="3315">Adana</option>
+                                  
+                                                                                                <option value="3316">Adıyaman</option>
+                                  
+                                                                                                <option value="3317">Afyonkarahisar</option>
+                                  
+                                                                                                <option value="3318">Ağrı</option>
+                                  
+                                                                                                <option value="3319">Aksaray</option>
+                                  
+                                                                                                <option value="3320">Amasya</option>
+                                  
+                                                                                                <option value="3321">Ankara</option>
+                                  
+                                                                                                <option value="3322">Antalya</option>
+                                  
+                                                                                                <option value="3323">Ardahan</option>
+                                  
+                                                                                                <option value="3324">Artvin</option>
+                                  
+                                                                                                <option value="3325">Aydın</option>
+                                  
+                                                                                                <option value="3326">Balıkesir</option>
+                                  
+                                                                                                <option value="3327">Bartın</option>
+                                  
+                                                                                                <option value="3328">Batman</option>
+                                  
+                                                                                                <option value="3329">Bayburt</option>
+                                  
+                                                                                                <option value="3330">Bilecik</option>
+                                  
+                                                                                                <option value="3331">Bingöl</option>
+                                  
+                                                                                                <option value="3332">Bitlis</option>
+                                  
+                                                                                                <option value="3333">Bolu</option>
+                                  
+                                                                                                <option value="3334">Burdur</option>
+                                  
+                                                                                                <option value="3335">Bursa</option>
+                                  
+                                                                                                <option value="3336">Çanakkale</option>
+                                  
+                                                                                                <option value="3337">Çankırı</option>
+                                  
+                                                                                                <option value="3338">Çorum</option>
+                                  
+                                                                                                <option value="3339">Denizli</option>
+                                  
+                                                                                                <option value="3340">Diyarbakır</option>
+                                  
+                                                                                                <option value="3341">Düzce</option>
+                                  
+                                                                                                <option value="3342">Edirne</option>
+                                  
+                                                                                                <option value="3343">Elazığ</option>
+                                  
+                                                                                                <option value="3344">Erzincan</option>
+                                  
+                                                                                                <option value="3345">Erzurum</option>
+                                  
+                                                                                                <option value="3346">Eskişehir</option>
+                                  
+                                                                                                <option value="3347">Gaziantep</option>
+                                  
+                                                                                                <option value="3348">Giresun</option>
+                                  
+                                                                                                <option value="3349">Gümüşhane</option>
+                                  
+                                                                                                <option value="3350">Hakkari</option>
+                                  
+                                                                                                <option value="3351">Hatay</option>
+                                  
+                                                                                                <option value="3352">Iğdır</option>
+                                  
+                                                                                                <option value="3353">Isparta</option>
+                                  
+                                                                                                <option value="3354">İstanbul</option>
+                                  
+                                                                                                <option value="3355">İzmir</option>
+                                  
+                                                                                                <option value="3356">Kahramanmaraş</option>
+                                  
+                                                                                                <option value="3357">Karabük</option>
+                                  
+                                                                                                <option value="3358">Karaman</option>
+                                  
+                                                                                                <option value="3359">Kars</option>
+                                  
+                                                                                                <option value="3360">Kastamonu</option>
+                                  
+                                                                                                <option value="3361">Kayseri</option>
+                                  
+                                                                                                <option value="3362">Kilis</option>
+                                  
+                                                                                                <option value="3363">Kırıkkale</option>
+                                  
+                                                                                                <option value="3364">Kırklareli</option>
+                                  
+                                                                                                <option value="3365">Kırşehir</option>
+                                  
+                                                                                                <option value="3366">Kocaeli</option>
+                                  
+                                                                                                <option value="3367">Konya</option>
+                                  
+                                                                                                <option value="3368">Kütahya</option>
+                                  
+                                                                                                <option value="3369">Malatya</option>
+                                  
+                                                                                                <option value="3370">Manisa</option>
+                                  
+                                                                                                <option value="3371">Mardin</option>
+                                  
+                                                                                                <option value="3372">Mersin</option>
+                                  
+                                                                                                <option value="3373">Muğla</option>
+                                  
+                                                                                                <option value="3374">Muş</option>
+                                  
+                                                                                                <option value="3375">Nevşehir</option>
+                                  
+                                                                                                <option value="3376">Niğde</option>
+                                  
+                                                                                                <option value="3377">Ordu</option>
+                                  
+                                                                                                <option value="3378">Osmaniye</option>
+                                  
+                                                                                                <option value="3379">Rize</option>
+                                  
+                                                                                                <option value="3380">Sakarya</option>
+                                  
+                                                                                                <option value="3381">Samsun</option>
+                                  
+                                                                                                <option value="3382">Şanlıurfa</option>
+                                  
+                                                                                                <option value="3383">Siirt</option>
+                                  
+                                                                                                <option value="3384">Sinop</option>
+                                  
+                                                                                                <option value="3385">Şırnak</option>
+                                  
+                                                                                                <option value="3386">Sivas</option>
+                                  
+                                                                                                <option value="3387">Tekirdağ</option>
+                                  
+                                                                                                <option value="3388">Tokat</option>
+                                  
+                                                                                                <option value="3389">Trabzon</option>
+                                  
+                                                                                                <option value="3390">Tunceli</option>
+                                  
+                                                                                                <option value="3391">Uşak</option>
+                                  
+                                                                                                <option value="3392">Van</option>
+                                  
+                                                                                                <option value="3393">Yalova</option>
+                                  
+                                                                                                <option value="3394">Yozgat</option>
+                                  
+                                                                                                <option value="3395">Zonguldak</option>
+                                  
+                              
+                           
+                    </select>
+                                <select class="inputt2" id="ilce" name="ilce" required="required"></select>
+
+
+                                <textarea cols="40" rows="8" name="teslimat" placeholder="Adresiniz" required></textarea>
+
+                                <select name="paymod">
+
+                               <option   value="1">Kapıda Kredi Kartı Öde</option>
+
+                               <option   value="2">Kapıda Nakit Öde</option>
+
+                           </select>
+
+                            </div>
+
+                        </div>
+
+                        <div class="leftCounters">
+
+                            <div class="radieos1">
+
+                                <div class="part1" id="one">
+
+                                    <input type="radio" name="urun" id="60" value="1">
+
+                                    <label for="60">
+
+                                    <div class="fyatDiv">
+
+
+
+                                         <span> <b>1 Adet Dia ZİN</b></span>
+                                        
+                                        <p>15 Günlük Kullanım ile:Kan Şekeri Dengelenecek</p>
+										<p>&nbsp;</p>
+                                        <strong>Gerçek Fiyatı <br> <h1>118 TL</h1></strong>
+										
+                                        <div class="simdifiyat"><span>Şimdi </span> <br> <h3>39 TL <br> <small> 9 TL Kargo Ücreti</small></h3></div>
+                                    </div>
+
+                                    <img  src="img/1.png" alt="">
+
+                                </label>
+
+                                    <div class="check">
+
+                                        <div class="inside"></div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="part1" id="two">
+
+                                    <input type="radio" name="urun" id="61" value="2" checked>
+
+                                    <label for="61">
+
+                                    <div class="fyatDiv">
+									
+                                        <small>Dr. Saraçoğlu Tavsiyesi</small>
+										<p> 45 Günlük Kullanım ile:: “Bu tedavi seti ile hastalarımın rahatsızlıklarının %70’i geçti.”</p>
+										<span><font color="green"> <b> &nbsp; 3 Adet Dia ZİN</b></font></span>
+										<p>&nbsp;</p>
+                                        <strong>Gerçek Fiyatı <br> <h1>354 TL</h1></strong>
+                                        <div class="simdifiyat"><span>Şimdi </span> <br> <h3>117 TL <br> 
+                                        <small>Ücretsiz Kargo</small></h3></div>
+                                    </div>
+
+                                    <img src="img/3.png" alt="">
+
+                                </label>
+
+                                    <div class="check">
+
+                                        <div class="inside"></div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="part1" id="three">
+
+                                    <input type="radio" name="urun" id="62" value="4">
+
+                                    <label for="62">
+
+                                    <div class="fyatDiv">
+
+                                        
+                                        <small>Dr. Canan KARATAY Reçetesi</small>
+                                        <p>Tedavi Garantili: “Şeker hastalığını bitireceğini Garanti Ediyorum.”</p>
+										<span><font color="green"> <b>6 Adet Dia ZİN + 1 Adet Hediye</b></font></span>
+									
+										
+										<p>&nbsp;</p>
+                                        <strong>Gerçek Fiyatı <br> <h1>708 TL</h1></strong>
+                                        <div class="simdifiyat"><span>Şimdi </span> <br> <h3>209 TL <br> 
+                                        <small>Ücretsiz Kargo</small></h3></div>
+                                    </div>
+
+                                    <img src="img/6.png" alt="">
+
+                                </label>
+
+                                    <div class="check">
+
+                                        <div class="inside"></div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="btnzDiv dgozuk">
+
+                                <div class="fbtnDiv">
+
+                                    <div class="btnDivInnerlool1">
+                                        <button type="submit" class="ucmgonder" onclick="return rezo();" data-theme="b">SEPETE AT</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="lastInfos dgozuk">
+
+
+
+                            </div>
+
+                            <div class="lastInfos dgozuk">
+
+
+                            </div>
+
+                            <div class="btnzDiv mgozuk">
+
+                                <div class="fbtnDiv">
+
+                                    <div class="btnDivInnerlool1">
+
+                                        <button type="submit" class="ucmgonder">SEPETE AT</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <script>
+                            function rezo() {
+                                var telefon = document.getElementById('telefon').value;
+                                if (telefon.length < '11') {
+                                    alert(' Telefon Numarası 11 karakterden az olamaz.');
+                                    return false;
+                                }
+                            }
+                        </script>
+
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/jquery.countdown.js"></script>
+    <script src="js/featherlight.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#telefon').mask('0 (000) 000-00-00', {
+                placeholder: "0 (XXX) XXX-XX-XX"
+            });
+        });
+
+        $("#telefon").keyup(function() {
+            var value = $(this).val();
+            value = value.replace(/^./, '0');
+            $(this).val(value);
+        });
+        $("#sehir").on('change', function() {
+            if ($.trim($("#sehir").val()) != '') {
+                $.ajax({
+                    url: 'db.php',
+                    data: {
+                        zone_id: $("#sehir").val()
+                    },
+                    dataType: 'json',
+                    type: "get",
+                    success: function(data) {
+                        $("#ilce").empty().append('<option value="">İlçe Seçiniz</option>');
+                        $(data).each(function(index, value) {
+                            $("#ilce").append('<option value="' + value.id + '">' + value.name + '</option>');
+                        });
+                    }
+                });
+            } else {
+                $("#ilce").empty();
+            }
+
+        });
+
+        $(function() {
+
+            $('.defaultCountdown').countdown({
+
+                until: +899,
+
+                format: 'YDHMS',
+
+                layout: '<div id="timer">' +
+
+
+
+                    '<div id="vals">' +
+
+
+
+                    '<div id="h" class="numbs">{hnn} :</div>' +
+
+                    '<div id="m" class="numbs">{mnn} :</div>' +
+
+                    '<div id="s" class="numbs">{snn}</div>' +
+
+                    '</div>' +
+
+
+
+                    '<div id="timer_over"></div>' +
+
+                    '</div>'
+
+            });
+
+        });
+    </script>
+
+    <script>
+        var timer = $.cookie("gji_timer5");
+
+
+
+        if ($.cookie("gji_timer5") == null) {
+
+            timer = 105;
+
+            $.cookie("gji_timer5", timer);
+
+        }
+
+
+
+
+        $(document).ready(function() {
+
+            $('input:radio').change(function() {
+
+                $(".selecto").html("Paketi Seç");
+
+                $(this).next().find(".selecto").html("Seçilen Paket");
+
+            });
+
+        });
+
+
+
+
+
+        function ilceler() {
+
+            var il = $("#il").val();
+            $("#ilce").attr('disabled', 'disabled');
+            $.post("comnet/formdexcc/inc/ilce.html", {
+                il: il
+            }, function(e) {
+
+                $("#ilce").find("option").remove();
+                $("#ilce").append(e);
+                $("#ilce").attr('disabled', false);
+            })
+        }
+
+
+        var timer = $.cookie("timer71");
+
+
+
+        if ($.cookie("timer71") == null) {
+
+            timer = 105;
+
+            $.cookie("timer71", timer);
+
+        }
+
+
+
+        function tahsin() {
+
+
+
+            var r = Math.floor(Math.random() * 4) + 1;
+
+
+
+            if (r == 4) {
+
+
+
+                timer = timer - 1;
+
+
+
+                if (timer < 6) {
+                    timer = 5;
+                }
+
+                if (timer > 99 && timer > 9) {
+
+                    var yaz = "0" + "<font style=\"color:ffffff\">" + timer + "</font>";
+
+                } else if (timer <= 99 && timer > 9) {
+
+                    var yaz = "00" + "<font style=\"color:ffffff\">" + timer + "</font>";
+
+                } else if (timer < 10) {
+
+                    var yaz = "000" + "<font style=\"color:ffffff\">" + timer + "</font>";
+
+                } else {
+
+                    var yaz = timer;
+
+                }
+
+                $.cookie("timer71", timer);
+
+
+
+                $('.quata2').html(yaz);
+
+                if (timer == 6) {
+
+                    clearInterval(interval);
+
+                }
+
+            }
+
+        }
+
+        tahsin();
+
+        var interval = setInterval(tahsin, 1000);
+    </script>
+
+
+</body>
+
+</html>
+<script type="text/javascript">
+    var idoButonText = "SEPETE AT";
+
+    $("a").mouseenter(function() {
+        var text = $(this).text().trim().replace(/(<([^>]+)>)/ig, "");
+        if (text !== "") {
+            $("a").attr("idokeylink", text);
+        }
+    })
+
+
+
+    $("a img").mouseenter(function() {
+        var text = $(this).attr("src");
+        $("a").attr("idokeylink", text);
+        $("a img").attr("idokeylink", text);
+    })
+
+
+
+    $("a").click(function() {
+        var name = $(this).attr("idokeylink");
+        if (name !== "") {
+            $.post(window.location.pathname, {
+                name: name
+            }, function(goback) {});
+        }
+    })
+
+
+
+
+
+    function idokeygoform(formid) {
+
+        var adsoyad = $('#' + formid + ' *[name="v52851"]').val();
+        var telefon = $('#' + formid + ' *[name="o20906"]').val();
+        var urun_id = $('#' + formid + ' *[name="a17737"]').val();
+        var ilidver = $('#' + formid + ' *[name="t31330"]').val();
+        var adres = $('#' + formid + ' *[name="c30392"]').val();
+        if (ilidver == "") {
+            alert("LÜTFEN İLİNİZİ SEÇİNİZ SEÇİNİZ");
+            $('#' + formid + ' *[name="t31330"]').css("background-color", "#f2dede");
+            $('#' + formid + ' *[name="t31330"]').focus();
+            return false;
+        }
+
+
+
+        if (urun_id == 0) {
+            alert("LÜTFEN ÜRÜN SEÇİNİZ");
+            $('#' + formid + ' *[name="a17737"]').css("background-color", "#f2dede");
+            $('#' + formid + ' *[name="a17737"]').focus();
+            return false;
+        }
+
+
+
+        if (adres == "") {
+            alert("LÜTFEN ADRESİNİZİ YAZINIZ");
+            $('#' + formid + ' *[name="c30392"]').css("background-color", "#f2dede");
+            $('#' + formid + '  *[name="c30392"]').focus();
+            return false;
+        }
+
+
+
+        if (telefon === "" || telefon === "Telefon Numaranız") {
+            alert("Lütfen Telefon Numaranızı Giriniz");
+            $('#' + formid + ' *[name="o20906"]').css("background-color", "#f2dede");
+            $('#' + formid + ' *[name="o20906"]').focus();
+            return false;
+        } else if (adsoyad == "" || adsoyad === "Adınız ve Soyadınız") {
+            alert("Lütfen Adınızı ve Soyadınızı Giriniz");
+            $('#' + formid + ' *[name="v52851"]').css("background-color", "#f2dede");
+            $('#' + formid + ' *[name="v52851"]').focus();
+            return false;
+        } else {
+            return true;
+            $('.ucmgonder').attr('disabled', true);
+        }
+    }
+
+
+
+    function gonder(formid) {
+        var data = $("#" + formid).serialize();
+        $.post("Posting-4.ido", data, function(donenVeri) {});
+    }
+
+
+
+    function checkChar(formid) {
+        var EnUst = 10;
+        var txt = $('#' + formid + ' *[name="o20906"]').val();
+        txt = txt.replace("+905", "5");
+        txt = txt.replace("+90", "");
+        var KacRakamVar = txt.length;
+        var KalanNeKadar = EnUst - KacRakamVar;
+        if (KacRakamVar > 9) {
+            gonder(formid);
+        }
+    }
+</script>
