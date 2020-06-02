@@ -1,0 +1,4 @@
+.select-container::after {
+    right: auto !important;
+    left: 30px;
+}
