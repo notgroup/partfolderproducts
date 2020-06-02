@@ -2,7 +2,7 @@
 
 if (location.protocol !== 'https:') {
   //window.location.replace(location.href);
-  window.location = document.URL.replace("http://", "https://");
+  //window.location = document.URL.replace("http://", "https://");
 }
 
 
