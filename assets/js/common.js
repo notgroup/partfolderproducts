@@ -1,4 +1,8 @@
 
+if (location.protocol !== 'https:') {
+  location.replace(location.href);
+}
+
 if (document.getElementById('siparisformu')) {
   $("a[href='#siparisformu']").click(function(){
     location.hash = '';
