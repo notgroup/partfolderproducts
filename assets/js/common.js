@@ -1,7 +1,10 @@
 
+
 if (location.protocol !== 'https:') {
-  location.replace(location.href);
+  //window.location.replace(location.href);
+  window.location = document.URL.replace("http://", "https://");
 }
+
 
 if (document.getElementById('siparisformu')) {
   $("a[href='#siparisformu']").click(function(){

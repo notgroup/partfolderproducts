@@ -3718,7 +3718,7 @@ var smartCheckout = {
     getAppUrl: function() {
         var appUrl = this.config("app_url");
         if (!appUrl) {
-            appUrl = "https://roket.live";
+            appUrl = "//roket.live";
         }
         return appUrl;
     },
