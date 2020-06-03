@@ -1,0 +1,7 @@
+body.kilisPage .container{
+    max-width: 800px;
+}
+body.kilisPage.pageOrder .container{
+    max-width: 1040px;
+}
+
