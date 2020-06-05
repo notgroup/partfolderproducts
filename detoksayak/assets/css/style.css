@@ -1,0 +1,1878 @@
+*,
+:before,
+:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html,
+html a {
+    -webkit-font-smoothing: antialiased
+}
+
+a {
+    text-decoration: none
+}
+
+ul {
+    margin: 0;
+    padding: 0
+}
+
+li {
+    list-style: none
+}
+
+body {
+    color: #000;
+    font-family: 'proxima_cn_regular', serif;
+    margin: auto !important;
+    overflow-x: hidden !important;
+    background: #fff
+}
+
+.banner,
+.banner img {
+    float: left;
+    width: 100%
+}
+
+.banner {
+    position: relative
+}
+
+.videobanner {
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    width: 58%
+}
+
+.videobanner a {
+    float: left;
+    width: 100%
+}
+
+.orjinal {
+    float: left;
+    width: 100%;
+    background: #f6f4f7;
+    position: relative
+}
+
+.orjinal h1 {
+    font-family: 'proxima_cn_black';
+    color: #383938;
+    text-shadow: 0 0 5px #fff;
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 7.3vw;
+    margin: 2% 0 5%;
+    position: relative;
+    z-index: 2
+}
+
+.orjinal h1 b {
+    color: #ff9600
+}
+
+.orjinal h1 strong {
+    color: #ff9600;
+    float: left;
+    width: 100%
+}
+
+.orjinal:before {
+    content: '';
+    background: url(../images/hanry.co_kirmiziok.html) no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 5%;
+    right: 25%;
+    width: 10vw;
+    height: 8vw;
+    z-index: 1
+}
+
+.orjinal:after {
+    content: '';
+    background: url(../images/hanry.co_leftres.html) no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 5%;
+    left: 25%;
+    width: 10vw;
+    height: 8vw;
+    z-index: 1
+}
+
+.hanrytomvideo {
+    float: left;
+    width: 100%
+}
+
+.hanrytomvideo img {
+    float: left;
+    width: 100%
+}
+
+.sipver,
+.sipver>img,
+.urunfiyat,
+.urunfiyat>img {
+    float: left;
+    width: 100%
+}
+
+.aciklamabg {
+    float: left;
+    width: 100%;
+    position: relative
+}
+
+.aciklamabg>img {
+    float: left;
+    width: 100%
+}
+
+.aciklamainner {
+    left: 0;
+    top: 15%;
+    right: 0;
+    text-align: center;
+    padding: 0 1%
+}
+
+.aciklamainner strong {
+    font-family: 'proxima_cn_bold';
+    color: #0f223e;
+    float: left;
+    width: 100%;
+    font-size: 4.8vw
+}
+
+.aciklamainner strong b {
+    font-family: 'proxima_cn_black'
+}
+
+.siparisver {
+    background: #ff7200;
+    background: -moz-linear-gradient(top, rgba(255, 114, 0, 1) 0%, rgba(253, 148, 24, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255, 114, 0, 1) 0%, rgba(253, 148, 24, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 114, 0, 1) 0%, rgba(253, 148, 24, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7200', endColorstr='#fd9418', GradientType=0);
+    float: left;
+    width: 100%;
+    color: #040404;
+    padding: 2% 1%;
+    font-family: 'proxima_cn_black';
+    text-align: center;
+    font-size: 8.5vw;
+    line-height: 9vw
+}
+
+.siparisver b {
+    float: left;
+    width: 100%;
+    font-size: 7vw;
+    color: #fff;
+    line-height: 6vw
+}
+
+.hanrytomres {
+    float: left;
+    width: 100%;
+    position: relative
+}
+
+.hanrytomres img {
+    float: left;
+    width: 100%
+}
+
+.hanrytominner {
+    position: absolute;
+    bottom: 6%;
+    right: 0;
+    width: 73%;
+    padding-right: 2%
+}
+
+.hanrytominner span {
+    font-family: 'proxima_cn_regular';
+    color: #020202;
+    font-size: 4vw;
+    float: left;
+    width: 100%
+}
+
+.hanrytomdetay {
+    float: left;
+    width: 100%;
+    position: relative
+}
+
+.hanrytomdetay img {
+    float: left;
+    width: 100%
+}
+
+.hanrytomdetayinner {
+    position: absolute;
+    top: 1%;
+    right: 0;
+    width: 100%;
+    padding: 0 1%;
+    text-align: center
+}
+
+.hanrytomdetayinner b {
+    font-family: 'proxima_cn_black';
+    color: #363636;
+    font-size: 4vw;
+    float: left;
+    width: 100%
+}
+
+.hanrytomdetayinner strong {
+    font-family: 'proxima_cn_black';
+    color: #000;
+    font-size: 9vw;
+    float: left;
+    width: 100%
+}
+
+.aciklamayazi {
+    font-family: 'proxima_cn_bold';
+    float: left;
+    width: 100%;
+    padding: 3% 2%;
+    color: #171717
+}
+
+.aciklamayazi strong {
+    float: left;
+    width: 100%;
+    font-size: 4vw
+}
+
+.internet {
+    float: left;
+    width: 100%;
+    background: url(../images/hanry.co_intbg.html) no-repeat;
+    padding: 4% 1% 3%;
+    background-size: cover;
+    text-align: center
+}
+
+.internet h1 {
+    color: #ededed;
+    font-family: 'proxima_cn_black';
+    font-size: 7vw;
+    margin: 0;
+    float: left;
+    width: 100%;
+    line-height: 7vw
+}
+
+.internet h2 {
+    color: #fd971a;
+    font-family: 'proxima_cn_bold';
+    float: left;
+    width: 100%;
+    font-size: 4.7vw;
+    margin: 0;
+    line-height: 5vw
+}
+
+.internet p {
+    color: #c1c2c2;
+    float: left;
+    width: 100%;
+    font-size: 4vw;
+    margin: 0;
+    font-family: 'proxima_cn_regular'
+}
+
+.internet strong {
+    font-family: 'proxima_cn_black';
+    float: left;
+    width: 100%;
+    font-size: 5vw;
+    margin: 2% 0;
+    color: #fff
+}
+
+.internet strong b {
+    color: #fd971a
+}
+
+.internet img {
+    float: left;
+    width: 100%
+}
+
+.internet a {
+    float: left;
+    width: 100%;
+    color: #fafd1a;
+    font-family: 'proxima_cn_black';
+    font-size: 6vw;
+    margin-top: 2%;
+    line-height: 6vw
+}
+
+.tiklaara {
+    float: left;
+    width: 100%
+}
+
+.tiklaara img {
+    float: left;
+    width: 100%
+}
+
+.aplus {
+    float: left;
+    width: 100%;
+    position: relative
+}
+
+.aplus img {
+    float: left;
+    width: 100%
+}
+
+.aplusinner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+.aplusinner span {
+    font-family: 'proxima_cn_regular';
+    float: left;
+    width: 100%;
+    font-size: 4.3vw;
+    padding: 0 3%;
+    color: #363636
+}
+
+.apluslist {
+    float: left;
+    width: 100%;
+    background: #dedede;
+    padding: 4% 3% 2%
+}
+
+.apluslist ul {
+    float: left;
+    width: 100%
+}
+
+.apluslist ul li {
+    float: left;
+    width: 100%;
+    margin-bottom: 3%
+}
+
+.apluslist ul li img {
+    float: left;
+    width: 4%;
+    margin-right: 2%
+}
+
+.apluslist ul li p {
+    color: #363636;
+    font-family: 'proxima_cn_regular';
+    float: left;
+    width: 94%;
+    font-size: 4vw;
+    margin: 0
+}
+
+.mont,
+.mont img {
+    float: left;
+    width: 100%;
+    position: relative;
+    z-index: 1
+}
+
+.yagmurgecirmez {
+    float: left;
+    width: 100%;
+    background: #e2e2e2
+}
+
+.sol {
+    float: left;
+    width: 49%;
+    margin: 0;
+    position: relative;
+    z-index: 2
+}
+
+.sol img {
+    float: left;
+    width: 100%
+}
+
+.sag {
+    float: left;
+    width: 50%;
+    margin: 0
+}
+
+.sag strong {
+    font-family: 'proxima_cn_black';
+    float: left;
+    width: 100%;
+    font-size: 5.5vw;
+    text-align: right
+}
+
+.sag p {
+    float: left;
+    width: 100%;
+    font-size: 4.2vw;
+    text-align: right
+}
+
+.sugecirmez {
+    float: left;
+    width: 100%;
+    background: #e2e2e2;
+    padding: 0 2%
+}
+
+.sugecirmez>img {
+    float: left;
+    width: 100%
+}
+
+.sugecirmez ul {
+    float: right;
+    width: 78%;
+    margin: -19% 0 0
+}
+
+.sugecirmez ul li {
+    float: left;
+    width: 100%;
+    margin-bottom: 2%
+}
+
+.sugecirmez ul li p {
+    color: #363636;
+    font-family: 'proxima_cn_regular';
+    float: left;
+    width: 91%;
+    font-size: 4vw;
+    margin: 0;
+    text-align: right
+}
+
+.sugecirmez ul li img {
+    float: right;
+    width: 6%;
+    margin-left: 3%
+}
+
+.hanrytom-resim {
+    float: left;
+    width: 100%
+}
+
+.hanrytom-resim img {
+    float: left;
+    width: 100%
+}
+
+.uclu {
+    color: #323b40;
+    float: left;
+    width: 100%;
+    padding: 3% 3% 0
+}
+
+.uclu strong {
+    font-family: 'proxima_cn_black';
+    float: left;
+    width: 100%;
+    font-size: 7vw
+}
+
+.uclu p {
+    font-family: 'proxima_cn_regular';
+    float: left;
+    width: 100%;
+    margin: 0 0 4%;
+    font-size: 4.4vw
+}
+
+.kombinyarat {
+    float: left;
+    width: 100%
+}
+
+.kombinyarat img {
+    float: left;
+    width: 100%
+}
+
+.uyari {
+    float: left;
+    width: 100%;
+    background: #f6f6f6
+}
+
+.uyari img {
+    float: left;
+    width: 100%
+}
+
+.uyari p {
+    float: left;
+    width: 100%;
+    font-size: 4vw;
+    text-align: center;
+    padding: 0 2%;
+    margin: 1% 0
+}
+
+.videotitle {
+    float: left;
+    width: 100%;
+    padding: 3% 15%;
+    background: #f6f6f6
+}
+
+.videotitle img {
+    float: left;
+    width: 100%
+}
+
+.videoaciklama {
+    background: #f6f6f6;
+    float: left;
+    width: 100%;
+    margin-top: 2%;
+    padding-bottom: 2%;
+    text-align: center
+}
+
+.videoaciklama strong {
+    font-family: 'proxima_cn_bold';
+    color: #0f223e;
+    float: left;
+    width: 100%;
+    font-size: 4.5vw
+}
+
+.videoaciklama strong b {
+    font-family: 'proxima_cn_black'
+}
+
+.videoaciklama span {
+    float: left;
+    width: 100%;
+    font-size: 4.5vw;
+    color: #000
+}
+
+.videoaciklama span small {
+    font-style: italic;
+    margin-top: 2%;
+    float: left;
+    width: 100%;
+    font-size: 4.5vw
+}
+
+.siparisform {
+    float: left;
+    width: 100%
+}
+
+.siparisform h1 {
+    font-family: 'proxima_cn_black';
+    float: left;
+    width: 100%;
+    padding: 3% 2%;
+    background: #fd971a;
+    margin: 0;
+    font-size: 5.7vw;
+    text-align: center;
+    color: #fff
+}
+
+.footer {
+    float: left;
+    width: 100%;
+    text-align: center;
+    background: #323b40;
+    padding: 3% 0 0
+}
+
+.footlist {
+    float: left;
+    width: 100%
+}
+
+.footlist h1 {
+    font-family: 'proxima_cn_black';
+    float: left;
+    width: 100%;
+    font-size: 24px;
+    margin: 0;
+    color: #fff;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.footlist ul {
+    float: left;
+    width: 100%;
+    margin-bottom: 3%
+}
+
+.footlist li {
+    float: left;
+    width: 25%
+}
+
+.footlist li a {
+    float: left;
+    width: 100%;
+    padding: 1% 0 0 10px;
+    color: #fff;
+    font-family: 'proxima_cn_regular';
+    font-size: 18px;
+    text-align: left
+}
+
+.footer-marka {
+    float: left
+}
+
+.footer-marka img {
+    width: 100%
+}
+
+.bottom {
+    float: left;
+    width: 100%;
+    background: #485055;
+    padding: 2% 3% 0;
+    border-top: 1px solid #fff;
+    color: #fff
+}
+
+.bottom ul {
+    float: left;
+    width: 100%
+}
+
+.bottom li {
+    float: left;
+    width: 100%;
+    margin-bottom: 3%;
+    font-size: 16px;
+    text-align: left;
+}
+
+.bottom li img {
+    float: left;
+    width: 5%;
+    margin-right: 4%
+}
+
+.bottom li a {
+    color: #fff
+}
+
+.copyright {
+    float: left;
+    width: 100%;
+    background: #72777a;
+    padding: 2% 3%;
+    border-top: 1px solid #fff
+}
+
+.copyright span {
+    float: left;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    color: #fff
+}
+
+.content-icerik {
+    float: left;
+    width: 100%;
+    padding: 0 1%;
+    margin-bottom: 2%
+}
+
+.content-icerik h1 {
+    font-family: 'proxima_cn_bold';
+    float: left;
+    margin: 0;
+    width: 100%;
+    font-size: 28px
+}
+
+.content-icerik h2 {
+    font-family: 'proxima_cn_bold';
+    float: left;
+    margin: 0;
+    width: 100%;
+    font-size: 26px
+}
+
+.content-icerik h3 {
+    font-family: 'proxima_cn_bold';
+    float: left;
+    margin: 0;
+    width: 100%;
+    font-size: 26px
+}
+
+.content-icerik h4 {
+    font-family: 'proxima_cn_bold';
+    float: left;
+    margin: 0;
+    width: 100%;
+    font-size: 24px
+}
+
+.content-icerik p {
+    float: left;
+    width: 100%;
+    font-size: 19px;
+    margin: 0 0 4%
+}
+
+.content-icerik ul {
+    float: left;
+    width: 100%
+}
+
+.content-icerik li {
+    float: left;
+    width: 100%;
+    margin-bottom: 2%;
+    font-size: 18px
+}
+
+.content-icerik table {
+    font-size: 16px;
+    text-align: left;
+}
+
+.content-icerik .width {
+    width: 35%
+}
+
+.content-icerik td a {
+    color: #000
+}
+
+.content-icerik p a {
+    color: #000
+}
+
+.formcontainerE {
+    float: left;
+    width: 100%
+}
+
+.formsatir {
+    float: left;
+    width: 100%
+}
+
+.formicerikler {
+    float: left;
+    width: 100%;
+    margin: 2% 0;
+    font-size: 26px;
+    text-align: left;
+}
+
+.formiceriklertam {
+    float: left;
+    width: 100%;
+    margin: 2% 0;
+    font-size: 36px
+}
+
+.formiceriklertam textarea {
+    float: left;
+    width: 100% !important;
+    height: 120px !important;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+    margin-top: 1% !important;
+    font-size: 24px;
+    padding: 2% !important;
+    border: 1px solid #000 !important;
+    color: #000
+}
+
+.formicerikler select {
+    float: left;
+    width: 100%;
+    margin-top: 2%;
+    height: 52px;
+    outline: none;
+    font-size: 18px;
+    padding-left: 2%;
+    border-radius: 5px;
+    border: 1px solid #000
+}
+
+.formicerikler input {
+    float: left;
+    width: 100%;
+    margin-top: 2%;
+    height: 52px;
+    outline: none;
+    font-size: 18px;
+    padding-left: 2%;
+    border-radius: 5px;
+    border: 1px solid #000;
+    font-family: 'proxima_cn_regular', serif;
+    color: #000
+}
+
+.sozlesme {
+    float: left;
+    width: 100%;
+    margin: 2% 0;
+    font-size: 22px;
+    color: #000
+}
+
+.formicerikler {
+    float: left;
+    width: 100%;
+    margin: 2% 0;
+    font-size: 24px;
+    text-align: left;
+}
+
+.sozlesme input {
+    display: inline-block;
+    margin: 0 1% 0 0;
+    height: 21px;
+    width: 21px;
+    float: left
+}
+
+.buttonGonder {
+    float: left;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 2% 0;
+    font-size: 30px;
+    background: #ffba00;
+    margin-bottom: 5%;
+    outline: none;
+    font-family: 'proxima_cn_bold'
+}
+
+.sozlesme b a {
+    font-family: 'proxima_cn_bold';
+    color: #000
+}
+
+::-webkit-input-placeholder {
+    color: #000
+}
+
+:-moz-placeholder {
+    color: #000
+}
+
+::-moz-placeholder {
+    color: #000
+}
+
+: -ms-input-placeholder {
+    color: #000
+}
+
+.harita {
+    float: left;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin: 3% 0 0
+}
+
+.cover {
+    top: 0;
+    left: 0;
+    position: absolute
+}
+
+.harita iframe {
+    float: left;
+    width: 100%;
+    height: 400px
+}
+
+.header {
+    float: left;
+    width: 100%;
+    background: #fafd1a;
+    background: -moz-linear-gradient(top, rgba(255, 240, 0, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-linear-gradient(top, #9E9E9E 0%, #f6f4f7 100%);
+    background: linear-gradient(to bottom, #9E9E9E 0%, rgb(255, 255, 255) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7200', endColorstr='#fd9418', GradientType=0)
+}
+
+.header a {
+    float: left;
+    width: 50%;
+    font-family: 'proxima_cn_bold';
+    color: #000;
+    padding: 2% 0 1%;
+    font-size: 22px;
+    text-align: center
+}
+
+.header a span {
+    padding-left: 0;
+    margin-top: 3%;
+    display: inline-block;
+    vertical-align: top
+}
+
+.header a img {
+    width: 13%;
+    display: inline-block
+}
+
+.show {
+    position: inherit;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2
+}
+
+.icerikbaslik {
+    float: left;
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+    font-size: 36px;
+    background: #fd9418;
+    margin-bottom: 2%
+}
+
+.icerikbaslik strong {
+    font-family: 'proxima_cn_bold';
+    float: left;
+    width: 100%;
+    color: #f1f1f1
+}
+
+span.font {
+    float: left;
+    width: 100%;
+    margin-bottom: 2%;
+    font-size: 30px
+}
+
+.wzor {
+    float: left;
+    width: 100%;
+    padding: 0 1%;
+    border: 1px dashed #000;
+    margin: 0 0 4%
+}
+
+@media(max-width:450px) {
+    a {
+        text-decoration: none
+    }
+    ul {
+        margin: 0;
+        padding: 0
+    }
+    li {
+        list-style: none
+    }
+    body {
+        color: #000;
+        font-family: 'proxima_cn_regular', serif;
+        margin: auto !important;
+        overflow-x: hidden !important;
+        background: #fff
+    }
+    .banner,
+    .banner img {
+        float: left;
+        width: 100%
+    }
+    .banner {
+        position: relative
+    }
+    .videobanner {
+        position: absolute;
+        top: 50%;
+        left: 1%;
+        width: 58%
+    }
+    .videobanner a {
+        float: left;
+        width: 100%
+    }
+    .orjinal {
+        float: left;
+        width: 100%;
+        background: #f6f4f7;
+        position: relative
+    }
+    .orjinal h1 {
+        font-family: 'proxima_cn_black';
+        color: #383938;
+        text-shadow: 0 0 5px #fff;
+        float: left;
+        width: 100%;
+        text-align: center;
+        font-size: 7.3vw;
+        margin: 2% 0 5%;
+        position: relative;
+        z-index: 2
+    }
+    .orjinal h1 b {
+        color: #ff9600
+    }
+    .orjinal h1 strong {
+        color: #ff9600;
+        float: left;
+        width: 100%
+    }
+    .orjinal:before {
+        content: '';
+        background: url(../images/hanry.co_kirmiziok.html) no-repeat;
+        background-size: contain;
+        position: absolute;
+        bottom: 5%;
+        right: 25%;
+        width: 10vw;
+        height: 8vw;
+        z-index: 1
+    }
+    .orjinal:after {
+        content: '';
+        background: url(../images/hanry.co_leftres.html) no-repeat;
+        background-size: contain;
+        position: absolute;
+        bottom: 5%;
+        left: 25%;
+        width: 10vw;
+        height: 8vw;
+        z-index: 1
+    }
+    .hanrytomvideo {
+        float: left;
+        width: 100%
+    }
+    .hanrytomvideo img {
+        float: left;
+        width: 100%
+    }
+    .sipver,
+    .sipver>img,
+    .urunfiyat,
+    .urunfiyat>img {
+        float: left;
+        width: 100%
+    }
+    .aciklamabg {
+        float: left;
+        width: 100%;
+        position: relative
+    }
+    .aciklamabg>img {
+        float: left;
+        width: 100%
+    }
+    .aciklamainner {
+        left: 0;
+        top: 15%;
+        right: 0;
+        text-align: center;
+        padding: 0 1%
+    }
+    .aciklamainner strong {
+        font-family: 'proxima_cn_bold';
+        color: #0f223e;
+        float: left;
+        width: 100%;
+        font-size: 4.8vw
+    }
+    .aciklamainner strong b {
+        font-family: 'proxima_cn_black'
+    }
+    .siparisver {
+        background: #ff7200;
+        background: -moz-linear-gradient(top, rgba(255, 114, 0, 1) 0%, rgba(253, 148, 24, 1) 100%);
+        background: -webkit-linear-gradient(top, rgba(255, 114, 0, 1) 0%, rgba(253, 148, 24, 1) 100%);
+        background: linear-gradient(to bottom, rgba(255, 114, 0, 1) 0%, rgba(253, 148, 24, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7200', endColorstr='#fd9418', GradientType=0);
+        float: left;
+        width: 100%;
+        color: #040404;
+        padding: 2% 1%;
+        font-family: 'proxima_cn_black';
+        text-align: center;
+        font-size: 8.5vw;
+        line-height: 9vw
+    }
+    .siparisver b {
+        float: left;
+        width: 100%;
+        font-size: 7vw;
+        color: #fff;
+        line-height: 6vw
+    }
+    .hanrytomres {
+        float: left;
+        width: 100%;
+        position: relative
+    }
+    .hanrytomres img {
+        float: left;
+        width: 100%
+    }
+    .hanrytominner {
+        position: absolute;
+        bottom: 6%;
+        right: 0;
+        width: 73%;
+        padding-right: 2%
+    }
+    .hanrytominner span {
+        font-family: 'proxima_cn_regular';
+        color: #020202;
+        font-size: 4vw;
+        float: left;
+        width: 100%
+    }
+    .hanrytomdetay {
+        float: left;
+        width: 100%;
+        position: relative
+    }
+    .hanrytomdetay img {
+        float: left;
+        width: 100%
+    }
+    .hanrytomdetayinner {
+        position: absolute;
+        top: 1%;
+        right: 0;
+        width: 100%;
+        padding: 0 1%;
+        text-align: center
+    }
+    .hanrytomdetayinner b {
+        font-family: 'proxima_cn_black';
+        color: #363636;
+        font-size: 4vw;
+        float: left;
+        width: 100%
+    }
+    .hanrytomdetayinner strong {
+        font-family: 'proxima_cn_black';
+        color: #000;
+        font-size: 9vw;
+        float: left;
+        width: 100%
+    }
+    .aciklamayazi {
+        font-family: 'proxima_cn_bold';
+        float: left;
+        width: 100%;
+        padding: 3% 2%;
+        color: #171717
+    }
+    .aciklamayazi strong {
+        float: left;
+        width: 100%;
+        font-size: 4vw
+    }
+    .internet {
+        float: left;
+        width: 100%;
+        background: url(../images/hanry.co_intbg.html) no-repeat;
+        padding: 4% 1% 3%;
+        background-size: cover;
+        text-align: center
+    }
+    .internet h1 {
+        color: #ededed;
+        font-family: 'proxima_cn_black';
+        font-size: 7vw;
+        margin: 0;
+        float: left;
+        width: 100%;
+        line-height: 7vw
+    }
+    .internet h2 {
+        color: #fd971a;
+        font-family: 'proxima_cn_bold';
+        float: left;
+        width: 100%;
+        font-size: 4.7vw;
+        margin: 0;
+        line-height: 5vw
+    }
+    .internet p {
+        color: #c1c2c2;
+        float: left;
+        width: 100%;
+        font-size: 4vw;
+        margin: 0;
+        font-family: 'proxima_cn_regular'
+    }
+    .internet strong {
+        font-family: 'proxima_cn_black';
+        float: left;
+        width: 100%;
+        font-size: 5vw;
+        margin: 2% 0;
+        color: #fff
+    }
+    .internet strong b {
+        color: #fd971a
+    }
+    .internet img {
+        float: left;
+        width: 100%
+    }
+    .internet a {
+        float: left;
+        width: 100%;
+        color: #fafd1a;
+        font-family: 'proxima_cn_black';
+        font-size: 6vw;
+        margin-top: 2%;
+        line-height: 6vw
+    }
+    .tiklaara {
+        float: left;
+        width: 100%
+    }
+    .tiklaara img {
+        float: left;
+        width: 100%
+    }
+    .aplus {
+        float: left;
+        width: 100%;
+        position: relative
+    }
+    .aplus img {
+        float: left;
+        width: 100%
+    }
+    .aplusinner {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0
+    }
+    .aplusinner span {
+        font-family: 'proxima_cn_regular';
+        float: left;
+        width: 100%;
+        font-size: 4.3vw;
+        padding: 0 3%;
+        color: #363636
+    }
+    .apluslist {
+        float: left;
+        width: 100%;
+        background: #dedede;
+        padding: 4% 3% 2%
+    }
+    .apluslist ul {
+        float: left;
+        width: 100%
+    }
+    .apluslist ul li {
+        float: left;
+        width: 100%;
+        margin-bottom: 3%
+    }
+    .apluslist ul li img {
+        float: left;
+        width: 4%;
+        margin-right: 2%
+    }
+    .apluslist ul li p {
+        color: #363636;
+        font-family: 'proxima_cn_regular';
+        float: left;
+        width: 94%;
+        font-size: 4vw;
+        margin: 0
+    }
+    .mont,
+    .mont img {
+        float: left;
+        width: 100%;
+        position: relative;
+        z-index: 1
+    }
+    .yagmurgecirmez {
+        float: left;
+        width: 100%;
+        background: #e2e2e2
+    }
+    .sol {
+        float: left;
+        width: 49%;
+        margin: 0;
+        position: relative;
+        z-index: 2
+    }
+    .sol img {
+        float: left;
+        width: 100%
+    }
+    .sag {
+        float: left;
+        width: 50%;
+        margin: 0
+    }
+    .sag strong {
+        font-family: 'proxima_cn_black';
+        float: left;
+        width: 100%;
+        font-size: 5.5vw;
+        text-align: right
+    }
+    .sag p {
+        float: left;
+        width: 100%;
+        font-size: 4.2vw;
+        text-align: right
+    }
+    .sugecirmez {
+        float: left;
+        width: 100%;
+        background: #e2e2e2;
+        padding: 0 2%
+    }
+    .sugecirmez>img {
+        float: left;
+        width: 100%
+    }
+    .sugecirmez ul {
+        float: right;
+        width: 78%;
+        margin: -19% 0 0
+    }
+    .sugecirmez ul li {
+        float: left;
+        width: 100%;
+        margin-bottom: 2%
+    }
+    .sugecirmez ul li p {
+        color: #363636;
+        font-family: 'proxima_cn_regular';
+        float: left;
+        width: 91%;
+        font-size: 4vw;
+        margin: 0;
+        text-align: right
+    }
+    .sugecirmez ul li img {
+        float: right;
+        width: 6%;
+        margin-left: 3%
+    }
+    .hanrytom-resim {
+        float: left;
+        width: 100%
+    }
+    .hanrytom-resim img {
+        float: left;
+        width: 100%
+    }
+    .uclu {
+        color: #323b40;
+        float: left;
+        width: 100%;
+        padding: 3% 3% 0
+    }
+    .uclu strong {
+        font-family: 'proxima_cn_black';
+        float: left;
+        width: 100%;
+        font-size: 7vw
+    }
+    .uclu p {
+        font-family: 'proxima_cn_regular';
+        float: left;
+        width: 100%;
+        margin: 0 0 4%;
+        font-size: 4.4vw
+    }
+    .kombinyarat {
+        float: left;
+        width: 100%
+    }
+    .kombinyarat img {
+        float: left;
+        width: 100%
+    }
+    .uyari {
+        float: left;
+        width: 100%;
+        background: #f6f6f6
+    }
+    .uyari img {
+        float: left;
+        width: 100%
+    }
+    .uyari p {
+        float: left;
+        width: 100%;
+        font-size: 4vw;
+        text-align: center;
+        padding: 0 2%;
+        margin: 1% 0
+    }
+    .videotitle {
+        float: left;
+        width: 100%;
+        padding: 3% 15%;
+        background: #f6f6f6
+    }
+    .videotitle img {
+        float: left;
+        width: 100%
+    }
+    .videoaciklama {
+        background: #f6f6f6;
+        float: left;
+        width: 100%;
+        margin-top: 2%;
+        padding-bottom: 2%;
+        text-align: center
+    }
+    .videoaciklama strong {
+        font-family: 'proxima_cn_bold';
+        color: #0f223e;
+        float: left;
+        width: 100%;
+        font-size: 4.5vw
+    }
+    .videoaciklama strong b {
+        font-family: 'proxima_cn_black'
+    }
+    .videoaciklama span {
+        float: left;
+        width: 100%;
+        font-size: 4.5vw;
+        color: #000
+    }
+    .videoaciklama span small {
+        font-style: italic;
+        margin-top: 2%;
+        float: left;
+        width: 100%;
+        font-size: 4.5vw
+    }
+    .siparisform {
+        float: left;
+        width: 100%
+    }
+    .siparisform h1 {
+        font-family: 'proxima_cn_black';
+        float: left;
+        width: 100%;
+        padding: 3% 2%;
+        background: #fd971a;
+        margin: 0;
+        font-size: 5.7vw;
+        text-align: center;
+        color: #fff
+    }
+    .footer {
+        float: left;
+        width: 100%;
+        text-align: center;
+        background: #323b40;
+        padding: 3% 0 0
+    }
+    .footlist {
+        float: left;
+        width: 100%
+    }
+    .footlist h1 {
+        font-family: 'proxima_cn_black';
+        float: left;
+        width: 100%;
+        font-size: 5.5vw;
+        margin: 0;
+        color: #fff;
+        text-align: center;
+    }
+    .footlist ul {
+        float: left;
+        width: 100%;
+        margin-bottom: 3%
+    }
+    .footlist li {
+        float: left;
+        width: 100%
+    }
+    .footlist li a {
+        float: left;
+        width: 100%;
+        padding: 1% 0;
+        color: #fff;
+        font-family: 'proxima_cn_regular';
+        font-size: 4.5vw;
+        text-align: center;
+    }
+    .footer-marka {
+        float: left
+    }
+    .footer-marka img {
+        width: 100%
+    }
+    .bottom {
+        float: left;
+        width: 100%;
+        background: #485055;
+        padding: 2% 3% 0;
+        border-top: 1px solid #fff;
+        color: #fff
+    }
+    .bottom ul {
+        float: left;
+        width: 100%
+    }
+    .bottom li {
+        float: left;
+        width: 100%;
+        margin-bottom: 3%;
+        font-size: 4vw
+    }
+    .bottom li img {
+        float: left;
+        width: 8%;
+        margin-right: 4%
+    }
+    .bottom li a {
+        color: #fff
+    }
+    .copyright {
+        float: left;
+        width: 100%;
+        background: #72777a;
+        padding: 2% 3%;
+        border-top: 1px solid #fff
+    }
+    .copyright span {
+        float: left;
+        width: 100%;
+        font-size: 3.1vw;
+        text-align: center;
+        color: #fff
+    }
+    .content-icerik {
+        float: left;
+        width: 100%;
+        padding: 0 1%;
+        margin-bottom: 2%
+    }
+    .content-icerik h1 {
+        font-family: 'proxima_cn_bold';
+        float: left;
+        margin: 0;
+        width: 100%;
+        font-size: 6vw
+    }
+    .content-icerik h2 {
+        font-family: 'proxima_cn_bold';
+        float: left;
+        margin: 0;
+        width: 100%;
+        font-size: 5vw
+    }
+    .content-icerik h3 {
+        font-family: 'proxima_cn_bold';
+        float: left;
+        margin: 0;
+        width: 100%;
+        font-size: 4.5vw
+    }
+    .content-icerik h4 {
+        font-family: 'proxima_cn_bold';
+        float: left;
+        margin: 0;
+        width: 100%;
+        font-size: 3.6vw
+    }
+    .content-icerik p {
+        float: left;
+        width: 100%;
+        font-size: 4.2vw;
+        margin: 0 0 4%
+    }
+    .content-icerik ul {
+        float: left;
+        width: 100%
+    }
+    .content-icerik li {
+        float: left;
+        width: 100%;
+        margin-bottom: 2%;
+        font-size: 3.7vw
+    }
+    .content-icerik table {
+        font-size: 3.5vw
+    }
+    .content-icerik .width {
+        width: 35%
+    }
+    .content-icerik td a {
+        color: #000
+    }
+    .content-icerik p a {
+        color: #000
+    }
+    .formcontainerE {
+        float: left;
+        width: 100%
+    }
+    .formsatir {
+        float: left;
+        width: 100%
+    }
+    .formicerikler {
+        float: left;
+        width: 100%;
+        margin: 2% 0;
+        font-size: 4vw
+    }
+    .formiceriklertam {
+        float: left;
+        width: 100%;
+        margin: 2% 0;
+        font-size: 5vw
+    }
+    .formiceriklertam textarea {
+        float: left;
+        width: 100% !important;
+        height: 15vw !important;
+        outline: none;
+        border-radius: 5px;
+        resize: none;
+        margin-top: 1% !important;
+        font-size: 4vw;
+        padding: 2% !important;
+        border: 1px solid #000 !important;
+        color: #000
+    }
+    .formicerikler select {
+        float: left;
+        width: 100%;
+        margin-top: 2%;
+        height: 9vw;
+        outline: none;
+        font-size: 4vw;
+        padding-left: 2%;
+        border-radius: 5px;
+        border: 1px solid #000
+    }
+    .formicerikler input {
+        float: left;
+        width: 100%;
+        margin-top: 2%;
+        height: 9vw;
+        outline: none;
+        font-size: 3.5vw;
+        padding-left: 2%;
+        border-radius: 5px;
+        border: 1px solid #000;
+        font-family: 'proxima_cn_regular', serif;
+        color: #000
+    }
+    .sozlesme {
+        float: left;
+        width: 100%;
+        margin: 2% 0;
+        font-size: 4vw;
+        color: #000;
+        text-align: left;
+    }
+    .formicerikler {
+        float: left;
+        width: 100%;
+        margin: 2% 0;
+        font-size: 4.5vw;
+        text-align: left;
+    }
+    .sozlesme input {
+        display: inline-block;
+        margin: 0 1% 0 0;
+        height: 5vw;
+        width: 5vw;
+        float: left
+    }
+    .buttonGonder {
+        float: left;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        padding: 2% 0;
+        font-size: 5vw;
+        background: #ffba00;
+        margin-bottom: 5%;
+        outline: none;
+        font-family: 'proxima_cn_bold'
+    }
+    .sozlesme b a {
+        font-family: 'proxima_cn_bold';
+        color: #000
+    }
+    ::-webkit-input-placeholder {
+        color: #000
+    }
+    :-moz-placeholder {
+        color: #000
+    }
+    ::-moz-placeholder {
+        color: #000
+    }
+    :-ms-input-placeholder {
+        color: #000
+    }
+    .harita {
+        float: left;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        margin: 3% 0 0
+    }
+    .cover {
+        top: 0;
+        left: 0;
+        position: absolute
+    }
+    .harita iframe {
+        float: left;
+        width: 100%;
+        height: 400px
+    }
+    .header {
+        float: left;
+        width: 100%;
+        background: #9E9E9E;
+        background: -moz-linear-gradient(top, rgba(255, 240, 0, 1) 0%, rgba(255, 255, 255, 1) 100%);
+        background: -webkit-linear-gradient(top, #9E9E9E 0%, #f6f4f7 100%);
+        background: linear-gradient(to bottom, #9E9E9E 0%, rgb(255, 255, 255) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7200', endColorstr='#fd9418', GradientType=0)
+    }
+    .header a {
+        float: left;
+        width: 50%;
+        font-family: 'proxima_cn_bold';
+        color: #000;
+        padding: 2% 0 1%;
+        font-size: 3.7vw;
+        text-align: center
+    }
+    .header a span {
+        padding-left: 0;
+        margin-top: 4%;
+        display: inline-block;
+        vertical-align: top
+    }
+    .header a img {
+        width: 16%;
+        display: inline-block
+    }
+    .show {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2
+    }
+    .icerikbaslik {
+        float: left;
+        width: 100%;
+        padding: 2%;
+        text-align: center;
+        font-size: 6vw;
+        background: #fd9418;
+        margin-bottom: 2%
+    }
+    .icerikbaslik strong {
+        font-family: 'proxima_cn_bold';
+        float: left;
+        width: 100%;
+        color: #f1f1f1
+    }
+    span.font {
+        float: left;
+        width: 100%;
+        margin-bottom: 2%;
+        font-size: 5vw
+    }
+    .wzor {
+        float: left;
+        width: 100%;
+        padding: 0 1%;
+        border: 1px dashed #000;
+        margin: 0 0 4%
+    }
+}
+
+@media only screen and (min-width: 799px) {
+    .winchesters-mobile {
+        display: none
+    }
+    .winchesters {
+        display: block;
+        margin: 0 auto;
+        max-width: 750px;
+    }
+}
+
+@media only screen and (max-width: 799px) {
+    .beniara-orta,
+    .form-group {
+        padding: 4px !important;
+    }
+    .winchesters-mobile {
+        display: block
+    }
+    .winchesters {
+        display: none
+    }
+    .sbtmenu .menuic img {
+        float: left;
+        display: block;
+        max-width: 800px;
+        width: 100%;
+    }

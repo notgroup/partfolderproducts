@@ -1,0 +1,1722 @@
+@-webkit-viewport {
+    width: device-width;
+}
+
+@-moz-viewport {
+    width: device-width;
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+@-o-viewport {
+    width: device-width;
+}
+
+@viewport {
+    width: device-width;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+html a {
+    -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('../fonts/Dosis.ttf');
+}
+
+@font-face {
+    font-family: 'Brandon_blk';
+    src: url('../fonts/Brandon_blk.otf');
+}
+
+@font-face {
+    font-family: 'Gotham-Light';
+    src: url('../fonts/Gotham-Light.otf');
+}
+
+@font-face {
+    font-family: 'GothamNarrow-Ultra';
+    src: url('../fonts/GothamNarrow-Ultra.otf');
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    color: #000;
+    font-family: 'Dosis', serif;
+    margin: auto !important;
+    overflow-x: hidden !important;
+    background: #fff;
+}
+
+.sticky {
+    z-index: 999999;
+    right: 0;
+    left: 0;
+}
+
+.teader {
+    float: left;
+    width: 100%;
+    padding: 4%;
+    margin-bottom: 3%;
+}
+
+.formbg {
+    float: left;
+    width: 100%;
+    padding: 0%;
+    background: #f2f2f2;
+    margin-bottom: 4%;
+    position: relative;
+}
+
+.formbg>strong {
+    float: left;
+    width: 100%;
+    color: #00336c;
+    font-size: 7.5vw;
+    font-family: 'GothamNarrow-Ultra', sans-serif;
+    padding-left: 4%;
+    padding-bottom: 4%;
+    position: relative;
+    line-height: 8vw;
+    z-index: 999;
+}
+
+.formbg>p {
+    float: left;
+    width: 100%;
+    color: #00336c;
+    font-size: 3.5vw;
+    padding-left: 4%;
+    position: relative;
+    line-height: 4vw;
+    padding-bottom: 5%;
+    z-index: 999;
+}
+
+.formbg>span {
+    float: left;
+    width: 100%;
+    color: #00336c;
+    font-size: 4.5vw;
+    font-family: 'Brandon_blk', sans-serif;
+    padding-left: 4%;
+    position: relative;
+    line-height: 5vw;
+    z-index: 999;
+    padding-bottom: 2%;
+}
+
+.formbg>strong b {
+    color: #e56a26;
+    font-size: 9vw;
+}
+
+.formbg>strong b small {
+    font-size: 7.5vw;
+}
+
+.formbg>h1 {
+    font-family: 'Dosis', sans-serif;
+    float: left;
+    width: 100%;
+    font-size: 5.7vw;
+    text-align: center;
+    color: #003366;
+    margin-bottom: 3%;
+}
+
+.formbg>strong>b {}
+
+.formbg form>b {
+    font-family: 'Dosis', sans-serif;
+    float: left;
+    width: 100%;
+    margin-bottom: 2%;
+    font-size: 4.5vw;
+    font-weight: 900;
+    color: #003366;
+}
+
+.formbg form>p {
+    float: left;
+    width: 100%;
+    margin: 3% 0;
+    color: #fff;
+    line-height: 4.5vw;
+    background: #6d91ac;
+    padding: 2%;
+    font-family: 'Dosis', sans-serif;
+    border-radius: 7px;
+    font-size: 4vw;
+}
+
+.input {
+    float: left;
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+.input input {
+    float: left;
+    width: 100%;
+    font-family: 'Dosis', serif;
+    font-size: 4vw;
+    border: none;
+    padding: 3% 0 3% 3%;
+    color: #003366;
+    outline: none;
+    border-radius: 7px;
+}
+
+.input textarea {
+    float: left;
+    width: 100%;
+    font-family: 'Dosis', serif;
+    font-size: 4vw;
+    border: none;
+    padding: 3% 0 3% 3%;
+    color: #003366;
+    outline: none;
+    border-radius: 7px;
+}
+
+.tip {
+    float: left;
+    width: 50%;
+}
+
+.tipiner {
+    float: left;
+    padding-left: 4%;
+    width: 77%;
+}
+
+.tipiner p {
+    float: left;
+    width: 100%;
+    margin: 0;
+    color: #003366;
+    font-size: 4vw;
+    line-height: 8vw;
+    font-family: 'Dosis', sans-serif;
+    font-weight: normal;
+}
+
+.tip input[type=radio]:not(old) {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    opacity: 0;
+    display: none;
+}
+
+.tip input[type=radio]:not(old)+label>span {
+    display: inline-block;
+    float: left;
+    width: 8vw;
+    height: 8vw;
+    margin: 0;
+    border: 1vw solid #96adc2;
+    border-radius: 100%;
+    background: #fff;
+    vertical-align: bottom;
+}
+
+.tip input[type=radio]:not(old):checked+label>span>span {
+    display: block;
+    width: 90%;
+    height: 90%;
+    margin: 5% 0 0 5%;
+    background: #003366;
+    border-radius: 100%;
+}
+
+.tip input[type=radio]:not(old)+label {
+    float: left;
+    width: 100%;
+}
+
+.radyo {
+    float: left;
+    width: 100%;
+    position: relative;
+    background: #fff;
+    margin-bottom: 3%;
+    padding: 2% 2% 5% 2%;
+    border: 1px solid #a3c1d6;
+}
+
+.radyo img {
+    float: left;
+    width: 29%;
+    position: absolute;
+    left: 0;
+    clear: left;
+    bottom: 0;
+    margin-top: 7%;
+    padding-left: 5%;
+}
+
+.radyo input[type=radio]:not(old) {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    opacity: 0;
+    display: none;
+}
+
+.radyo input[type=radio]:not(old)+label>span {
+    display: inline-block;
+    float: left;
+    width: 8vw;
+    height: 8vw;
+    margin: 0;
+    border: 1vw solid #96adc2;
+    border-radius: 100%;
+    background: #fff;
+    vertical-align: bottom;
+    position: absolute;
+    left: 4%;
+    top: 7%;
+}
+
+.radyo input[type=radio]:not(old):checked+label>span>span {
+    display: block;
+    background: #003366;
+    border-radius: 100%;
+    width: 90%;
+    height: 90%;
+    margin: 5% 0 0 5%;
+}
+
+.radyo input[type=radio]:not(old)+label {
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.asd {
+    float: right;
+    width: 73%;
+    color: #003366;
+    padding-left: 2%;
+}
+
+.asd>strong {
+    float: left;
+    width: 100%;
+    font-size: 3.5vw;
+    font-family: 'Dosis';
+    line-height: 4vw;
+}
+
+.asd>strong b {
+    color: #ff3f00;
+}
+
+.asd>span {
+    float: left;
+    width: 100%;
+    font-size: 4vw;
+    margin: 2% 0;
+    color: #ff9226;
+    font-family: 'Dosis';
+    line-height: 4vw;
+}
+
+.asd>p {
+    float: left;
+    width: 100%;
+    margin: 0 0 2% 0;
+    font-size: 4vw;
+    font-family: 'Dosis';
+    line-height: 4vw;
+}
+
+.asd>b {
+    float: left;
+    width: 100%;
+    font-family: 'Dosis';
+    color: #ff9226;
+    margin-top: 1%;
+    font-size: 7vw;
+    line-height: 6vw;
+}
+
+.asd>small {
+    float: left;
+    width: 100%;
+    font-size: 3.5vw;
+    font-family: 'Dosis';
+}
+
+.sdf {
+    float: right;
+    width: 70%;
+    color: #003366;
+    padding-left: 4%;
+}
+
+.fgh {
+    position: absolute;
+    bottom: 0;
+}
+
+.sdf>strong {
+    float: left;
+    width: 100%;
+    font-size: 4.5vw;
+    font-family: 'GothamNarrow-Ultra', sans-serif;
+    line-height: 5vw;
+    font-weight: 900;
+}
+
+.sdf>small {
+    float: left;
+    width: 100%;
+    margin: 0 0 2% 0;
+    font-size: 3vw;
+    font-family: 'Dosis';
+    color: #ffffff;
+    line-height: 4vw;
+}
+
+.sdf>strong b {
+    color: #ff3f00;
+}
+
+.sdf>span {
+    float: left;
+    width: 100%;
+    color: #ff9226;
+    font-size: 3.7vw;
+    margin: 1% 0;
+    font-family: 'Dosis', sans-serif;
+    line-height: 5vw;
+}
+
+.sdf>span span {
+    background: #ffefbf;
+    border-radius: 7px;
+    padding: 1% 2%;
+    display: inline-block;
+}
+
+.sdf>p {
+    float: left;
+    width: 100%;
+    margin: 0 0 2% 0;
+    font-size: 3.6vw;
+    font-family: 'Dosis';
+    color: #ff9226;
+    line-height: 4vw;
+}
+
+.sdf>p span {
+    background: #ff9226;
+    border-radius: 7px;
+    padding: 1% 2%;
+    color: #fff;
+    display: inline-block;
+}
+
+.sdf>h1 {
+    margin: 0;
+    float: left;
+    width: 45%;
+    font-size: 7vw;
+    font-weight: normal;
+    font-family: 'GothamNarrow-Ultra', sans-serif;
+    line-height: 7vw;
+    text-decoration: line-through;
+    color: #003366;
+    padding-right: 3%;
+}
+
+.sdf>b {
+    float: left;
+    width: 55%;
+    font-family: 'GothamNarrow-Ultra', sans-serif;
+    font-size: 7vw;
+    line-height: 5vw;
+    color: #ff9226;
+    margin-top: 1%;
+    font-weight: 900;
+}
+
+.sdf>b small {
+    float: left;
+    width: 100%;
+    font-size: 3vw;
+    font-family: 'Dosis';
+    color: #003366;
+}
+
+.border {
+    box-shadow: 0px 0px 10px #96adc2;
+}
+
+.genelsayacdiv {
+    font-family: 'Dosis';
+    float: right;
+    width: 100%;
+    margin-bottom: 5%;
+    padding: 4%;
+    position: relative;
+    z-index: 999;
+    background-color: #fff;
+}
+
+.kalanurun {
+    float: right;
+    width: 30%;
+}
+
+.kalanurun h1 {
+    float: left;
+    width: 100%;
+    font-size: 4vw;
+    font-weight: 900;
+    text-align: left;
+    color: #003366;
+    font-family: 'Brandon_blk', sans-serif;
+    line-height: 4vw;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.kalanurun strong {
+    float: left;
+    width: 100%;
+    font-size: 3vw;
+    font-weight: 900;
+    text-align: left;
+    color: #003366;
+    font-family: 'Dosis', sans-serif;
+    line-height: 4vw;
+    margin-bottom: 2%;
+    display: flex;
+    text-align: center;
+    font-weight: normal;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.kalanurun p {
+    display: inline-block;
+    background: #003366;
+    color: #fff;
+    width: 63%;
+    font-size: 9vw;
+    margin: 0;
+    line-height: 13vw;
+    font-weight: 900;
+    border-radius: 7px;
+    text-align: center;
+    margin-left: 18%;
+}
+
+.sayac {
+    float: left;
+    width: 65%;
+}
+
+.sayac strong {
+    float: left;
+    font-weight: 900;
+    width: 100%;
+    font-size: 4vw;
+    text-align: left;
+    color: #003366;
+    line-height: 4vw;
+    margin-bottom: 2%;
+    font-family: 'Brandon_blk', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#vals {
+    width: 100%;
+    float: left;
+}
+
+.formbg form {
+    float: left;
+    width: 100%;
+    padding: 3% 3%;
+}
+
+.numbs {
+    color: #ffffff;
+    width: 31% !important;
+    margin-right: 3%;
+    background: #e10d0c !important;
+    border-radius: 7px;
+    font-weight: 900;
+    line-height: 13vw !important;
+    font-family: 'Dosis', sans-serif;
+    font-size: 9vw !important;
+}
+
+#h {
+    float: left;
+    width: 28%;
+    font-size: 7vw;
+    font-weight: 900;
+    font-family: 'Dosis', sans-serif;
+    line-height: 10vw;
+    background: #fff;
+    text-align: center;
+    font-weight: 900;
+}
+
+#m {
+    float: left;
+    width: 28%;
+    font-size: 7vw;
+    font-weight: 600;
+    line-height: 10vw;
+    background: #fff;
+    text-align: center;
+}
+
+#s {
+    float: left;
+    width: 28%;
+    font-size: 7vw;
+    font-weight: 600;
+    line-height: 10vw;
+    background: #fff;
+    text-align: center;
+    margin: 0 !important;
+}
+
+.labs {
+    font-size: 3vw;
+    color: #003366;
+    width: 33.3%;
+    font-family: 'Dosis', sans-serif;
+    float: left;
+    text-align: center;
+    font-weight: normal;
+    padding: 0 1%;
+}
+
+.labs:last-child {
+    margin-right: 0;
+}
+
+.defaultCountdown {
+    float: left;
+    width: 100%;
+}
+
+.buton {
+    float: left;
+    width: 100%;
+    padding: 0 10%;
+}
+
+.buton button {
+    background: rgba(255, 211, 77, 1);
+    background: -moz-linear-gradient(top, rgba(255, 211, 77, 1) 0%, rgba(232, 114, 30, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 211, 77, 1)), color-stop(100%, rgba(232, 114, 30, 1)));
+    background: -webkit-linear-gradient(top, rgba(255, 211, 77, 1) 0%, rgba(232, 114, 30, 1) 100%);
+    background: -o-linear-gradient(top, rgba(255, 211, 77, 1) 0%, rgba(232, 114, 30, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 211, 77, 1) 0%, rgba(232, 114, 30, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 211, 77, 1) 0%, rgba(232, 114, 30, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd34d', endColorstr='#e8721e', GradientType=0);
+    float: left;
+    width: 100%;
+    border: none;
+    font-family: 'GothamNarrow-Ultra', sans-serif;
+    outline: none;
+    font-weight: 900;
+    padding: 4% 0;
+    font-size: 5vw;
+    border-radius: 7px;
+}
+
+.yorumlar {
+    float: left;
+    width: 100%;
+    padding: 0 3%;
+    margin-bottom: 3%;
+}
+
+.baslik {
+    float: left;
+    width: 100%;
+}
+
+.baslik span {
+    color: #003366;
+    float: left;
+    width: 100%;
+    font-size: 8vw;
+    line-height: 8vw;
+    margin-bottom: 1%;
+}
+
+.baslik img {
+    float: left;
+    width: 70%;
+}
+
+.yorumlar {
+    float: left;
+    width: 100%;
+    padding: 2% 3%;
+}
+
+.yorumlar ul {
+    float: left;
+    width: 100%;
+}
+
+.yorumlar li {
+    float: left;
+    width: 100%;
+    border-bottom: 2px solid #e6eef4;
+    padding: 3% 0;
+}
+
+.yorumlar li:last-child {
+    border: none;
+}
+
+.yorumlar li>p {
+    margin: 0 0 3% 0;
+    font-size: 4vw;
+    line-height: 4.5vw;
+    float: left;
+    width: 100%;
+    color: #525252;
+}
+
+.yorumlar li>b {
+    float: left;
+    width: 100%;
+    font-size: 4vw;
+}
+
+.yorumlar li>img {
+    float: left;
+    width: 85%;
+    margin-bottom: 3%;
+}
+
+.degerlendirme {
+    float: left;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+::-webkit-input-placeholder {
+    color: #003366;
+}
+
+:-moz-placeholder {
+    color: #003366;
+}
+
+::-moz-placeholder {
+    color: #003366;
+}
+
+:-ms-input-placeholder {
+    color: #003366;
+}
+
+.yorumyyaz {
+    float: left;
+    width: 100%;
+    margin-bottom: 3%;
+    margin-top: 6%;
+}
+
+.yorumsol {
+    float: left;
+    width: 55%;
+    padding-right: 2%;
+}
+
+.yorumsol a {
+    float: left;
+    width: 100%;
+    line-height: 5vw;
+    font-weight: bold;
+    font-size: 4.3vw;
+    color: #4199ba;
+}
+
+.yorumsag {
+    float: left;
+    width: 45%;
+}
+
+.yorumsag p {
+    margin: 0;
+    float: left;
+    width: 100%;
+    font-size: 4.3vw;
+    line-height: 5vw;
+}
+
+.tell {
+    float: left;
+    width: 100%;
+    font-family: 'Dosis';
+    color: #4199ba;
+    font-size: 8vw;
+    line-height: 8vw;
+    font-weight: 900;
+    margin: 5% 0;
+}
+
+.tell span {
+    font-family: 'Dosis', serif;
+    float: left;
+    width: 100%;
+    font-size: 5vw;
+    line-height: 5vw;
+    font-weight: normal;
+}
+
+.yoruminput {
+    float: left;
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+.yoruminput input {
+    float: left;
+    width: 100%;
+    font-family: 'Dosis', serif;
+    font-size: 4vw;
+    padding: 3% 0 3% 3%;
+    color: #003366;
+    outline: none;
+    border-radius: 7px;
+    border: 1px solid #003366;
+}
+
+.yoruminput textarea {
+    float: left;
+    width: 100%;
+    font-family: 'Dosis', serif;
+    font-size: 4vw;
+    padding: 3%;
+    color: #003366;
+    outline: none;
+    border-radius: 7px;
+    border: 1px solid #003366;
+    resize: none;
+    line-height: 4vw;
+    height: 25vw;
+}
+
+.dosyaekle {
+    float: left;
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+.dosyaekle label {
+    float: left;
+    width: 100%;
+    font-family: 'Dosis', serif;
+    font-size: 4vw;
+    padding: 3% 0 3% 3%;
+    color: #003366;
+    outline: none;
+    border-radius: 7px;
+    border: 1px solid #003366;
+}
+
+.dosyaekle input {
+    display: none;
+}
+
+.kaydetgonder {
+    float: left;
+    width: 100%;
+}
+
+.kaydetgonder button {
+    float: left;
+    width: 100%;
+    background: #00b22d;
+    border: none;
+    color: #fff;
+    font-weight: 900;
+    border-radius: 7px;
+    font-size: 5vw;
+    font-family: 'Dosis';
+    line-height: 5vw;
+    padding: 4% 0;
+}
+
+.degerlendirme>span {
+    float: left;
+    width: 100%;
+    font-size: 6vw;
+    line-height: 6vw;
+    margin-bottom: 2%;
+    color: #003366;
+}
+
+.sabahdetoxinner li img {
+    margin-top: 2%;
+}
+
+.sabahdetoxinner {
+    top: 36%;
+}
+
+.recete p {
+    font-size: 3.5vw;
+}
+
+.is-sticky .gozukarama {
+    display: block !important;
+}
+
+.degerlendirme {
+    position: relative;
+}
+
+.degerlendirme:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.degerlendirme .rating-xl {
+    font-size: 6.5vw;
+}
+
+.border {
+    border-width: 3px;
+    border-color: #F00;
+    ox-shadow: none;
+    background: #FFFBFF;
+    -webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.75);
+}
+
+.degerlen {
+    float: left;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.degerlen>span {
+    float: left;
+    width: 100%;
+    font-size: 6vw;
+    line-height: 6vw;
+    margin-bottom: 2%;
+    color: #003366;
+}
+
+.cevap {
+    float: right;
+    width: 90%;
+    padding-left: 5%;
+    border-left: 1px dashed #d6d6d6;
+    margin-top: 1%;
+}
+
+.yorumlar li>.cevap p {
+    margin: 4% 0 3% 0;
+    font-size: 4vw;
+    float: left;
+    width: 100%;
+    line-height: 4.5vw;
+}
+
+.yorumlar li>.cevap b {
+    float: left;
+    width: 100%;
+    font-weight: 900;
+    font-size: 4vw;
+}
+
+.yorumlar li>.cevap img {
+    float: left;
+    width: 85%;
+    margin-bottom: 3%;
+}
+
+.header {
+    float: left;
+    width: 100%;
+    background-color: #fff;
+    padding: 5% 3%;
+}
+
+.logo {
+    float: left;
+    width: 45%;
+}
+
+.global {
+    float: right;
+    width: 40%;
+    margin-top: 1%;
+}
+
+.firstBanner {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.firstBanner div {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    width: 65%;
+}
+
+.bannerImg {
+    float: left;
+    width: 100%;
+}
+
+.firstBanner div h1 {
+    float: left;
+    width: 100%;
+    color: #f70672;
+    font-size: 7vw;
+    font-family: 'Gotham-Light', sans-serif;
+    font-weight: normal;
+}
+
+.firstBanner div h1 b {
+    font-weight: 900;
+    font-family: 'GothamNarrow-Ultra', sans-serif;
+}
+
+.firstBanner div h2 {
+    float: left;
+    width: 100%;
+    color: #000a46;
+    font-size: 4vw;
+    font-family: 'GothamNarrow-Ultra', sans-serif;
+}
+
+.firstBanner div h2 b {
+    color: #02bcc6;
+    font-size: 3vw;
+}
+
+.firstBanner div h3 {
+    float: left;
+    width: 100%;
+    color: #000a46;
+    font-size: 5vw;
+    font-family: 'GothamNarrow-Ultra', sans-serif;
+}
+
+.firstBanner div p {
+    float: left;
+    width: 70%;
+    color: #000a48;
+    font-size: 3.2vw;
+    font-family: 'Dosis', sans-serif;
+}
+
+.firstBanner div ul {
+    float: left;
+    width: 100%;
+    padding-left: 6%;
+}
+
+.firstBanner div ul li {
+    color: #000a48;
+    font-size: 2.5vw;
+    font-family: 'Dosis', sans-serif;
+    position: relative;
+    float: left;
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+.firstBanner div ul li:before {
+    content: '';
+    position: absolute;
+    left: -6%;
+    top: 31%;
+    width: 2vw;
+    height: 2vw;
+    background-image: url("../images/corr.png");
+    background-size: 100% 100%;
+}
+
+.bton {
+    float: left;
+    position: relative;
+    width: 62% !important;
+    padding: 3% 0;
+    z-index: 10;
+    text-align: center;
+}
+
+.bton a {
+    text-decoration: none;
+    color: #000;
+    float: left;
+    width: 100%;
+    padding: 2% 5%;
+    background-color: #ffc926;
+    border-radius: 2vw;
+    border: none;
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.75);
+    font-family: 'GothamNarrow-Ultra', sans-serif;
+    font-weight: 900;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.firstBanner div img {
+    position: absolute;
+    right: -1%;
+    bottom: 0%;
+    width: 57%;
+    z-index: 9;
+}
+
+.secondBanner {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.secondBanner img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40%;
+}
+
+.secondBanner div {
+    float: right;
+    width: 60%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+}
+
+.secondBanner div h2 {
+    float: left;
+    width: 100%;
+    color: #02bcc6;
+    font-size: 5.5vw;
+    font-family: 'Gotham-Light', sans-serif;
+    font-weight: normal;
+    padding-left: 4%;
+}
+
+.secondBanner div h2 b {
+    font-weight: 900;
+    font-family: 'GothamNarrow-Ultra', sans-serif;
+}
+
+.secondBanner div h1 {
+    float: left;
+    width: 100%;
+    color: #035194;
+    padding-left: 4%;
+    font-size: 6vw;
+    font-family: 'GothamNarrow-Ultra', sans-serif;
+}
+
+.secondBanner div p {
+    float: left;
+    width: 88%;
+    font-size: 3.2vw;
+    color: #858585;
+    padding-left: 4%;
+}
+
+.secondBanner div img {
+    float: left;
+    width: 100%;
+    position: static !important;
+    padding: 5% 0;
+}
+
+.thirdBanner {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.thirdBanner img {
+    float: left;
+    width: 100%;
+}
+
+.innerBannerTree {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    padding-top: 3%;
+}
+
+.innerBannerTree h1 {
+    float: left;
+    width: 100%;
+    color: #004e92;
+    font-size: 6vw;
+    font-family: 'GothamNarrow-Ultra', sans-serif;
+}
+
+.innerBannerTree p {
+    float: left;
+    width: 88%;
+    font-size: 3.2vw;
+    line-height: 4.5vw;
+    color: #858585;
+    padding-bottom: 20%;
+}
+
+.bton1 {
+    float: left;
+    position: relative;
+    width: 87% !important;
+    padding: 0% 0;
+    margin-top: -7%;
+    z-index: 10;
+    text-align: center;
+}
+
+.bton1 a {
+    text-decoration: none;
+    color: #000;
+    float: left;
+    width: 100%;
+    padding: 2% 5%;
+    background-color: #ffc926;
+    border-radius: 2vw;
+    border: none;
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.75);
+    font-family: 'GothamNarrow-Ultra', sans-serif;
+    font-weight: 900;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.FourthBanner {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.FourthBanner img {
+    float: right;
+    width: 51%;
+}
+
+.innerBannerFour {
+    position: absolute;
+    left: 2%;
+    top: 0;
+    width: 50%;
+    padding-top: 3%;
+}
+
+.innerBannerFour h1 {
+    float: left;
+    width: 100%;
+    color: #004e92;
+    font-size: 6vw;
+    font-family: 'GothamNarrow-Ultra', sans-serif;
+}
+
+.innerBannerFour span {
+    float: left;
+    width: 84%;
+    font-size: 3.2vw;
+    line-height: 4vw;
+    color: #004e92;
+    padding-bottom: 1%;
+    font-family: 'Gotham-Light', sans-serif;
+}
+
+.innerBannerFour p {
+    float: left;
+    width: 84%;
+    font-size: 3.2vw;
+    line-height: 4.5vw;
+    color: #858585;
+}
+
+.btlAbso {
+    position: absolute;
+    right: -14%;
+    bottom: -6%;
+    width: 80% !important;
+}
+
+.imagesDiv {
+    float: left;
+    width: 100%;
+    padding: 0 0%;
+    position: relative;
+    z-index: 10;
+    -webkit-box-shadow: 0px 20px 69px -22px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 20px 69px -22px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 20px 69px -22px rgba(0, 0, 0, 0.75);
+}
+
+.imagesDiv div {
+    float: left;
+    width: 50%;
+    padding: 2%;
+}
+
+.imagesDiv div img {
+    float: left;
+    width: 100%;
+}
+
+.fifthBanner {
+    float: left;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    background-color: #dee6ea;
+}
+
+.fifthBanner img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 45%;
+}
+
+.fifthBanner div {
+    float: right;
+    width: 51%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+
+.fifthBanner div h2 {
+    float: left;
+    width: 100%;
+    color: #02bcc6;
+    font-size: 5.5vw;
+    font-family: 'Gotham-Light', sans-serif;
+    font-weight: normal;
+    padding-left: 4%;
+}
+
+.fifthBanner div h2 b {
+    font-weight: 900;
+    font-family: 'GothamNarrow-Ultra', sans-serif;
+}
+
+.fifthBanner div h1 {
+    float: left;
+    width: 100%;
+    color: #035194;
+    padding-left: 4%;
+    font-size: 6vw;
+    font-family: 'GothamNarrow-Ultra', sans-serif;
+}
+
+.fifthBanner div h3 {
+    float: left;
+    width: 84%;
+    font-size: 6.5vw;
+    line-height: 8vw;
+    color: #004e92;
+    padding-bottom: 1%;
+    font-family: 'Gotham-Light', sans-serif;
+    padding-left: 4%;
+}
+
+.fifthBanner div p {
+    float: left;
+    width: 88%;
+    font-size: 3.2vw;
+    color: #858585;
+    padding-left: 4%;
+    padding-top: 6%;
+}
+
+.fifthBanner div img {
+    float: left;
+    width: 100%;
+    position: static !important;
+    padding: 5% 0;
+}
+
+.bton2 {
+    float: left;
+    position: relative;
+    width: 100% !important;
+    padding: 5% 5%;
+    z-index: 10;
+    text-align: center;
+}
+
+.bton2 a {
+    text-decoration: none;
+    color: #000;
+    float: left;
+    width: 100%;
+    padding: 2% 5%;
+    background-color: #ffc926;
+    border-radius: 2vw;
+    border: none;
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.75);
+    font-family: 'GothamNarrow-Ultra', sans-serif;
+    font-weight: 900;
+    font-size: 4vw;
+    text-align: center;
+}
+
+.whiteDiv {
+    float: left;
+    width: 100%;
+    padding: 3% 0;
+}
+
+.whiteDiv h1 {
+    float: left;
+    width: 100%;
+    color: #02bcc6;
+    font-size: 7.5vw;
+    font-family: 'GothamNarrow-Ultra', sans-serif;
+    padding-left: 4%;
+}
+
+.whiteDiv h2 {
+    float: left;
+    width: 100%;
+    color: #00336c;
+    font-size: 5.5vw;
+    font-family: 'GothamNarrow-Ultra', sans-serif;
+    padding-left: 4%;
+}
+
+.whiteDiv p {
+    float: left;
+    width: 100%;
+    font-size: 3.2vw;
+    color: #858585;
+    padding-left: 4%;
+    padding-top: 2%;
+}
+
+.noterDiv {
+    float: left;
+    width: 100%;
+}
+
+.noterDiv img {
+    float: left;
+    width: 100%;
+}
+
+.ceterizedDiv {
+    float: left;
+    width: 100%;
+    background-color: #02bcc6;
+    padding: 6% 0;
+}
+
+.ceterizedDiv h1 {
+    float: left;
+    width: 100%;
+    color: #fff;
+    line-height: 10vw;
+    font-size: 6.5vw;
+    font-family: 'Brandon_blk', sans-serif;
+    text-align: center;
+}
+
+.ceterizedDiv h2 {
+    float: left;
+    width: 100%;
+    color: #fff;
+    font-size: 5vw;
+    font-family: 'Brandon_blk', sans-serif;
+    text-align: center;
+}
+
+.ceterizedDiv h3 {
+    float: left;
+    width: 100%;
+    color: #c7ebee;
+    font-weight: normal;
+    font-size: 4vw;
+    padding: 0 19%;
+    font-family: 'Brandon_blk', sans-serif;
+    text-align: center;
+}
+
+.ceterizedDiv1 {
+    float: left;
+    width: 100%;
+    background-color: #ebf3f4;
+    padding: 4% 0;
+}
+
+.ceterizedDiv1 h1 {
+    float: left;
+    width: 100%;
+    color: #07b7c1;
+    font-size: 4vw;
+    font-family: 'Brandon_blk', sans-serif;
+    text-align: center;
+}
+
+.ceterizedDiv1 h2 {
+    float: left;
+    width: 100%;
+    color: #063c70;
+    font-size: 4vw;
+    font-family: 'Brandon_blk', sans-serif;
+    text-align: center;
+    padding-top: 3%;
+}
+
+.ceterizedDiv1 h2 b {
+    font-size: 5vw;
+}
+
+.whiteDiv1 {
+    float: left;
+    width: 100%;
+    padding: 4% 0;
+}
+
+.whiteDiv1 h1 {
+    float: left;
+    width: 100%;
+    color: #02bcc6;
+    text-align: center;
+    font-size: 14.5vw;
+    font-family: 'GothamNarrow-Ultra', sans-serif;
+    padding-left: 4%;
+}
+
+.theHalfDiv {
+    float: left;
+    width: 100%;
+    background-color: #d5eff2;
+    position: relative;
+}
+
+.half {
+    float: left;
+    width: 50%;
+    background-color: #d5eff2;
+    padding: 2% 0;
+}
+
+.half h1 {
+    float: left;
+    width: 100%;
+    color: #00336c;
+    padding-left: 4%;
+    font-size: 6vw;
+    font-family: 'GothamNarrow-Ultra', sans-serif;
+}
+
+.half p {
+    float: left;
+    width: 100%;
+    font-size: 2.5vw;
+    color: #858585;
+    padding-left: 4%;
+    padding-top: 2%;
+    font-family: 'Gotham-Light', sans-serif;
+}
+
+.half img {
+    float: left;
+    width: 100%;
+}
+
+.half div {
+    float: left;
+    width: 50%;
+    padding: 0 1% 0 1%;
+}
+
+.half div h2 {
+    float: left;
+    width: 100%;
+    padding-left: 4%;
+    font-size: 2.5vw;
+    font-family: 'GothamNarrow-Ultra', sans-serif;
+}
+
+.half div h1 {
+    float: left;
+    width: 100%;
+    font-size: 4vw;
+    font-family: 'GothamNarrow-Ultra', sans-serif;
+}
+
+.half div p {
+    float: left;
+    width: 100%;
+    font-size: 2.5vw;
+    color: #858585;
+    text-align: center;
+    padding: 0;
+}
+
+.half1 {
+    float: left;
+    width: 50%;
+    background-color: #ebf7f9;
+    padding: 2% 0;
+}
+
+.half1 h1 {
+    float: left;
+    width: 100%;
+    color: #02bcc6;
+    padding-left: 4%;
+    font-size: 6vw;
+    font-family: 'GothamNarrow-Ultra', sans-serif;
+}
+
+.half1 p {
+    float: left;
+    width: 100%;
+    font-size: 2.5vw;
+    color: #858585;
+    padding-left: 4%;
+    padding-top: 2%;
+    font-family: 'Gotham-Light', sans-serif;
+}
+
+.half1 img {
+    float: left;
+    width: 100%;
+}
+
+.half1 div {
+    float: left;
+    width: 50%;
+    padding: 0 1% 0 1%;
+}
+
+.half1 div h2 {
+    float: left;
+    width: 100%;
+    font-size: 2.5vw;
+    padding-left: 4%;
+    font-family: 'GothamNarrow-Ultra', sans-serif;
+}
+
+.half1 div h1 {
+    float: left;
+    width: 100%;
+    font-size: 4vw;
+    font-family: 'GothamNarrow-Ultra', sans-serif;
+}
+
+.half1 div p {
+    float: left;
+    width: 100%;
+    font-size: 2.5vw;
+    color: #858585;
+    text-align: center;
+    padding: 0;
+}
+
+.black {
+    color: #000 !important;
+}
+
+.orang {
+    color: #ff8000 !important;
+}
+
+.pink {
+    color: #f70672 !important;
+}
+
+.yaellow {
+    color: #85b200 !important;
+}
+
+.absoForm {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+.sdf>p span {
+    color: #fff;
+    background-color: #ff9226;
+}

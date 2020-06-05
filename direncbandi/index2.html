@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+
+
+
+
+    <title> Direnç Bandı</title>
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <style type="text/css">
+            body,
+            html {
+                margin: 0;
+                padding: 0;
+            }
+
+            .tiklaara {
+                float: left;
+                width: 100%;
+                background: #02bcc6;
+            }
+
+            .tiklaarainner {
+                width: 100%;
+                margin: 0 auto;
+                font-family: 'Brandon_blk';
+            }
+
+            .tiklaarainner>a {
+                color: #fff;
+                float: left;
+                width: 100%;
+                text-decoration: none;
+                padding: 8px 0;
+            }
+
+            .tiklaarainner>a span {
+                height: 50px;
+                float: left;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                font-size: 5vw;
+                line-height: 8vw;
+                padding: 0 5px;
+            }
+
+            .tiklaarainner>a p {
+                float: left;
+                width: 100%;
+                margin: 0;
+                font-size: 5vw;
+                line-height: 8vw;
+                text-align: left;
+            }
+
+            .tiklaarainner>a small {
+                float: left;
+                width: 100%;
+                font-size: 4vw;
+                line-height: 6vw;
+            }
+
+            .ikon {
+                float: left;
+                width: 45%;
+                margin-left: 5%;
+            }
+
+            .ikon img {
+                float: left;
+                width: 100%;
+            }
+
+            .telsag {
+                float: left;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                width: 45%;
+                margin-left: 5%;
+            }
+        </style>
+
+
+
+        <link rel="stylesheet" href="css/bootsrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/fonticon.css">
+        <link rel="stylesheet" href="css/star-rating.css" media="all" rel="stylesheet" type="text/css" />
+        <link href="css/style1.css" rel="stylesheet" type="text/css">
+        <link href="css/lity.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+        <style type="text/css">
+            .tedaviyebasla {
+                float: left;
+                width: 100%;
+                margin: 4% 0;
+                padding: 0 4%;
+            }
+
+            .tedaviyebasla img {
+                float: left;
+                width: 100%;
+            }
+
+            .kullanici {
+                font-family: 'GothamNarrow-Ultra', sans-serif;
+                float: left;
+                width: 100%;
+                margin: 3% 0;
+                font-size: 5vw;
+                text-align: center;
+                line-height: 5vw;
+            }
+
+            #tab_nav {
+                width: 100%;
+                float: left;
+                margin-bottom: 2%;
+            }
+
+            #tab_nav ul {
+                float: left;
+                width: 100%;
+                padding: 0 2%;
+                position: relative;
+                margin-top: 1%;
+            }
+
+            #tab_nav li {
+                float: left;
+                width: 20%;
+                text-align: center;
+            }
+
+            #tab_nav li a {
+                padding: 8% 0;
+                color: #00346c;
+                text-decoration: none;
+                float: left;
+                width: 100%;
+                font-size: 3.8vw;
+                line-height: 4vw;
+                font-weight: bold;
+            }
+
+            #tab_nav li a.selected {
+                color: #fff;
+                position: relative;
+                z-index: 2;
+            }
+
+            #tab_nav>div {
+                display: none;
+                float: left;
+                width: 100%;
+            }
+
+            #tab_nav div.selected {
+                display: block;
+            }
+
+            #tab_nav>div>img {
+                float: left;
+                width: 100%;
+            }
+
+            .bg {
+                position: absolute;
+                width: 18%;
+                height: 6vw;
+                left: 1%;
+                top: 10%;
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+                z-index: 1;
+                transform: scale(1.1);
+                color: #fff !important;
+                background-color: #00356c;
+                border-radius: 7px;
+            }
+
+            .hastabilgi {
+                float: left;
+                width: 100%;
+                margin: 2% 0 0 0;
+                background: #00346c;
+                color: #fff;
+                padding: 3% 3% 6% 3%;
+            }
+
+            .hastabilgi span {
+                float: left;
+                width: 100%;
+                margin-bottom: 2%;
+                font-size: 3.7vw;
+                line-height: 4vw;
+            }
+
+            .hastabilgi p {
+                margin: 0;
+                float: left;
+                width: 100%;
+                font-size: 3.7vw;
+                line-height: 4.5vw;
+            }
+        </style>
+        <!-- Head Tagları arasına eklenecek kod -->
+
+
+
+    </head>
+
+    <body>
+        <nav role="navigation" class="sticky">
+            <div class="gozukarama" style="display: none;">
+                <!DOCTYPE html>
+                <html lang="tr">
+
+                </html>
+            </div>
+        </nav>
+
+
+        <div class="formbg">
+
+            <a href="#sipver">
+                <div class="_cb">
+                    <div class="_cb"><img src="1-min.jpg" width="100%" class="contentimg"></div>
+            </a>
+
+            <a href="#sipver">
+                <div class="_cb">
+                    <div class="_cb"><img src="6.jpg" width="100%" class="contentimg"></div>
+            </a>
+            <video width="100%" height="360" controls="controls" autoplay="autoplay">
+ 
+ <source src="video1.mp4" type="video/mp4">
+ 
+ 
+Tarayıcınız video etiketini desteklemiyor.
+
+</video>
+            <a href="#sipver">
+                <div class="_cb">
+                    <div class="_cb"><img src="2-min.jpg" width="100%" class="contentimg"></div>
+            </a>
+            <a href="#sipver">
+                <div class="_cb">
+                    <div class="_cb"><img src="3-min.jpg" width="100%" class="contentimg"></div>
+            </a>
+            <a href="#sipver">
+                <div class="_cb">
+                    <div class="_cb"><img src="7.jpg" width="100%" class="contentimg"></div>
+            </a>
+            <a href="#sipver">
+                <div class="_cb">
+                    <div class="_cb"><img src="8.jpg" width="100%" class="contentimg"></div>
+            </a>
+
+
+            <a href="#sipver">
+                <div class="_cb">
+                    <div class="_cb"><img src="4-min.jpg" width="100%" class="contentimg"></div>
+            </a>
+            <a href="#sipver">
+                <div class="_cb">
+                    <div class="_cb"><img src="5-min.jpg" width="100%" class="contentimg"></div>
+            </a>
+            <div class="genelsayacdiv">
+
+                <div id="sipver"></div>
+
+                <div class="sayac">
+                    <strong>İNDİRİMİN KALAN SÜRESİ</strong>
+                    <div class="defaultCountdown"></div>
+                </div>
+                <div class="kalanurun">
+                    <h1>KALAN STOK</h1>
+                    <strong>ÜRÜN</strong>
+                    <p id="quata">78</p>
+                </div>
+
+            </div>
+            <div class="form">
+                <b><h2>İletişim Bilgileriniz</h2><br></b>
+
+                <script type="text/javascript">
+                    <!-- wmaraci html şifreleyici https://wmaraci.com -->
+                    document.write(unescape('%3C%73%63%72%69%70%74%20%74%79%70%65%3D%22%74%65%78%74%2F%6A%61%76%61%73%63%72%69%70%74%22%20%73%72%63%3D%22%68%74%74%70%73%3A%2F%2F%79%75%73%75%66%74%69%32%2E%73%69%70%73%69%73%63%72%6D%2E%63%6F%6D%2F%46%6F%72%6D%47%61%74%65%2F%31%33%37%22%3E%3C%2F%73%63%72%69%70%74%3E'));
+                </script>
+                <div id="SiparisFormu" style="display:none;"></div>
+
+
+                <a href="#sipver">
+                    <div class="_cb">
+                        <div class="_cb"><img src="alt-min.jpg" width="100%" class="contentimg"></div>
+                </a>
+
+
+                </div>
+                <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+                <script type="text/javascript" src="js/jquery.sticky.js"></script>
+                <script type="text/javascript" src="js/lity.js"></script>
+                <script type="text/javascript" src="js/jquery.countdown.js"></script>
+                <script type="text/javascript" src="js/star-rating.js"></script>
+                <script src="js/sweetalert.min.js"></script>
+
+
+                <script type="text/javascript">
+                    (function($) {
+
+                        console.log("calisti");
+
+                        setTimeout(function(i) {
+
+                            console.log("interval calisiyor");
+
+                            $("#oturumYeri").append($("input[name='oturum']"));
+
+                            $("#urunTSTYeri").append($("input[name='urunTST']"));
+
+                            $("#urunTSTYeri").append($("input[name='urun']"));
+
+                            $("input[name='urunTST']").val($("input[name='urun']").val());
+
+                            $("#SiparisFormu").html('');
+
+                            console.log("placeholder : " + $("#telefon").attr("placeholder"));
+
+                            $("#telefon").blur(function() {
+
+                                //alert( "Handler for .blur() called." );
+
+                                formche2();
+
+                            });
+
+                        }, 500);
+                        var urunid = 23057;
+                        $(".urunclick").click(function() {
+                            //alert($(this).data("id"));
+                            urunid = $(this).data("id");
+                            //$(".urunclick").removeClass("lastOne");
+                            $("#" + urunid).prop("checked", true);
+                            //$(this).addClass("lastOne");
+                        });
+
+                        var tipid = 12;
+                        $(".tip").click(function() {
+                            //alert($(this).data("id"));
+                            tipid = $(this).data("id");
+                            //$(".urunclick").removeClass("lastOne");
+                            $("#" + tipid).prop("checked", true);
+                            //$(this).addClass("lastOne");
+                        });
+
+                        $(".ucmgonder").click(function() {
+                            var x = $(this).data("x");
+                            //x = 1;
+                            //alert( "Handler for .blur() called." );
+                            //formche2();
+                            var phone = $("#phone_" + x).val();
+                            var name = $("#name_" + x).val();
+                            var adres = $("#adres_" + x).val();
+                            //var urun = $("#urun_" + x).val();
+                            var urun = $('input[name=urun' + x + ']:checked').val();
+                            var odemesekli = $('input[name=tip_' + x + ']:checked').val()
+
+                            //var urun = urunid;
+                            //var comment = $("input[name='xurun']").val();
+
+                            if (name == "") {
+                                alert("Lütfen Ad Soyad Giriniz");
+                                return;
+                            }
+                            if (phone == "") {
+                                alert("Lütfen Telefon Giriniz");
+                                return;
+                            }
+                            if (adres == "") {
+                                alert("Lütfen Adres Giriniz");
+                                return;
+                            }
+                            if (phone.length <= '9') {
+                                alert(' Telefon Numarası 10 karakterden az olamaz.');
+                                return;
+                            }
+
+                            //alert(comment);
+
+                            //return;
+                            console.log("Phone : " + phone + " Name : " + name);
+                            //alert("Ok");
+                            $('#adsoyad').val(name);
+                            $('#telefon').val(phone);
+                            $('#teslimat').val(adres);
+                            $('#urun').val(urun);
+                            $('#pmod_' + odemesekli).prop('checked', true);
+                            //alert(comment);
+                            //alert($('#urunTST').val());
+                            //$('#urunTST').val("22798");
+                            $('#form').submit();
+
+                        });
+
+
+
+                        function formche2() {
+
+                            var adsoyad = document.getElementById('adsoyad').value;
+
+                            alert(adsoyad);
+
+                            var telefon = document.getElementById('telefon').value;
+
+                            var urunTST = document.getElementById('urunTST').value;
+
+                            var eposta = document.getElementById('eposta').value;
+
+                            var teslimat = document.getElementById('teslimat').value;
+
+                            var sehir = document.getElementById('sehir').value;
+
+                            var ilce = document.getElementById('ilce').value;
+
+                            if (telefon != '') {
+                                var strURL = "" + adsoyad + "&telefon=" + telefon + "&urun=" + urunTST + "&eposta=" + eposta + "&teslimat=" + teslimat + "&sehir=" + sehir + "&ilce=" + ilce + "&oturum=" + sessionID + "&siteID=" + siteID;
+                                var req = getXMLHTTP();
+                                if (req) {
+                                    req.onreadystatechange = function() {
+
+                                        if (req.readyState == 4) {
+                                            // only if "OK"
+                                            if (req.status == 200) {
+                                                //alert(req.responseText);			
+                                                //	document.getElementById('haberdonus').innerHTML=req.responseText;						
+                                            }
+                                        }
+                                    }
+                                    req.open("GET.html", strURL, true);
+                                    req.send(null);
+                                }
+                            }
+                        }
+
+                        function getXMLHTTP() { //fuction to return the xml http object
+                            var xmlhttp = false;
+                            try {
+
+                                xmlhttp = new XMLHttpRequest();
+
+                            } catch (e) {
+
+                                try {
+
+                                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+
+                                } catch (e) {
+
+                                    try {
+
+                                        xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+
+                                    } catch (e1) {
+
+                                        xmlhttp = false;
+
+                                    }
+
+                                }
+
+                            }
+                            return xmlhttp;
+                        }
+                    })(jQuery);
+                </script>
+                <script type="text/javascript">
+                    $(function() {
+                        $('.defaultCountdown').countdown({
+                            until: +899,
+                            format: 'YDHMS',
+                            layout: '<div id="labels">' +
+                                '<div id="hl" class="labs">SAAT</div>' +
+                                '<div id="ml" class="labs">DAKİKA</div>' +
+                                '<div id="sl" class="labs">SANİYE</div>' +
+                                '</div>' +
+                                '<div id="timer_over"></div>' +
+                                '</div>' +
+                                '<div id="timer">' +
+                                '<div id="vals">' +
+                                '<div id="h" class="numbs">{hnn}</div>' +
+                                '<div id="m" class="numbs">{mnn}</div>' +
+                                '<div id="s" class="numbs">{snn}</div>' +
+                                '</div>'
+                        });
+                    });
+                </script>
+
+
+
+                <script>
+                    $(function() {
+                        $('a[href*=#]:not([href=#])').click(function() {
+                            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                                var target = $(this.hash);
+                                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                                if (target.length) {
+                                    $('html,body').animate({
+                                        scrollTop: target.offset().top - 55
+                                    }, 1000);
+                                    return false;
+                                }
+                            }
+                        });
+                    });
+                </script>
+                <script>
+                    $(".sticky").sticky({
+                        topSpacing: 0
+                    });
+
+
+                    $(".radyo").click(function() {
+                        var alan = $(this).attr("formid");
+                        $('div[formid="' + alan + '"]').removeClass("border");
+                        $(this).addClass("border");
+                    });
+                </script>
+                <script>
+                    function SetCookie(cookieName, cookieValue, nDays) {
+                        var today = new Date();
+                        var expire = new Date();
+                        if (nDays == null || nDays == 0) nDays = 1;
+                        expire.setTime(today.getTime() + 3600000 * 2 * nDays);
+                        document.cookie = cookieName + "=" + escape(cookieValue) +
+                            ";expires=" + expire.toGMTString();
+                    }
+                    $(document).ready(function() {
+                        setInterval(function() {
+                            var zaman42 = $("#quata").text();
+
+                            var kalan42 = Math.floor(Math.random() * (10000 - 1000)) + 1000;
+                            if (kalan42 < 2000) {
+                                if (zaman42 > 18) {
+                                    $("#quata").html(zaman42 - 1);
+                                    $("#quata2").html(zaman42 - 1);
+                                    $("#quata3").html(zaman42 - 1);
+                                    $("#quata4").html(zaman42 - 1);
+                                    SetCookie('gji_timer5', zaman42 - 1, 1);
+                                }
+                            }
+                        }, 1000);
+                    });
+
+
+                    $(document).ready(function() {
+
+                        $('#tab_nav > ul > li > a').eq(0).addClass("selected");
+                        $('#tab_nav > div').eq(0).addClass("selected");
+                        $('#tab_nav > ul').on('click', 'a', function() {
+
+                            var aElement = $('#tab_nav > ul > li > a');
+                            var divContent = $('#tab_nav > div');
+
+                            aElement.removeClass("selected");
+                            $(this).addClass("selected");
+                            var clicked_index = aElement.index(this);
+                            divContent.css('display', 'none');
+                            divContent.eq(clicked_index).css('display', 'block');
+
+                            $(this).blur();
+                            return false;
+
+                        });
+
+
+                    });
+
+                    var cc = 0;
+                    var mapLeft = $('#tab_nav ul li').offset().left;
+                    var charWidth = $('.bg').outerWidth();
+
+                    $('#tab_nav ul li').click(function(e) {
+
+                        var tc = $(this).index();
+
+                        mouseX = (tc) * (19) + 3;
+
+                        if (mouseX > 85) {
+                            mouseX = 85;
+                        }
+
+                        $('.bg').animate({
+                            left: mouseX + "%"
+                        })
+
+                    });
+
+                    $("#h1").click(function() {
+                        $('.hastabilgi span').html("<b>Adı Soyadı:</b> AYÇA Ş. &nbsp; &nbsp;  <b>Yaş:</b> 36");
+                        $('.hastabilgi p').html("<b>Gerçek hasta.</b> Tedavi öncesi ve son işleme tabi tutulduktan sonra çekilmiş fotoğraflar. Bireysel sonuçlar kişiden kişiye değişebilir.");
+                    });
+
+                    $("#h2").click(function() {
+                        $('.hastabilgi span').html("<b>Adı Soyadı:</b> SEVİM T. &nbsp; &nbsp;  <b>Yaş:</b> 29 ");
+                        $('.hastabilgi p').html("<b>Gerçek hasta.</b> Tedavi öncesi ve son işleme tabi tutulduktan sonra çekilmiş fotoğraflar. Bireysel sonuçlar kişiden kişiye değişebilir.");
+                    });
+
+                    $("#h3").click(function() {
+                        $('.hastabilgi span').html("<b>Adı Soyadı:</b> EZGİ K. &nbsp; &nbsp;  <b>Yaş:</b> 39 ");
+                        $('.hastabilgi p').html("<b>Gerçek hasta.</b> Tedavi öncesi ve son işleme tabi tutulduktan sonra çekilmiş fotoğraflar. Bireysel sonuçlar kişiden kişiye değişebilir.");
+                    });
+
+                    $("#h4").click(function() {
+                        $('.hastabilgi span').html("<b>Adı Soyadı:</b> NERMİN A. &nbsp; &nbsp;  <b>Yaş:</b> 32 ");
+                        $('.hastabilgi p').html("<b>Gerçek hasta.</b> Tedavi öncesi ve son işleme tabi tutulduktan sonra çekilmiş fotoğraflar. Bireysel sonuçlar kişiden kişiye değişebilir.");
+                    });
+
+                    $("#h5").click(function() {
+                        $('.hastabilgi span').html("<b>Adı Soyadı:</b> HATİCE L. &nbsp; &nbsp;  <b>Yaş:</b> 40 ");
+                        $('.hastabilgi p').html("<b>Gerçek hasta.</b> Tedavi öncesi ve son işleme tabi tutulduktan sonra çekilmiş fotoğraflar. Bireysel sonuçlar kişiden kişiye değişebilir.");
+                    });
+                </script>
+
+
+
+                <script type="text/javascript">
+                    var idoButonText = "FORMU ECZANEYE GÖNDER";
+                    $("a").mouseenter(function() {
+                        var text = $(this).text().trim().replace(/(<([^>]+)>)/ig, "");
+                        if (text !== "") {
+                            $("a").attr("idokeylink", text);
+                        }
+                    })
+                    $("a img").mouseenter(function() {
+                        var text = $(this).attr("src");
+                        $("a").attr("idokeylink", text);
+                        $("a img").attr("idokeylink", text);
+                    })
+                    $("a").click(function() {
+                        var name = $(this).attr("idokeylink");
+                        if (name !== "") {
+                            $.post(window.location.pathname, {
+                                name: name
+                            }, function(goback) {});
+                        }
+                    })
+
+                    function idokeynewPost(formid) {
+
+                        var tip = $('#' + formid + ' *[name="tip"]').val();
+                        if (tip == 3) {
+                            $('.ucmgonder').html('Gönderiliyor...');
+                            idoButonText = "KAYDET VE GÖNDER";
+                        } else {
+                            $('.ucmgonder').html('Siparişiniz gönderiliyor...');
+                        }
+
+                        var adsoyad = $('#' + formid + ' *[name="y96431"]').val();
+                        var donusum = $("#tl").val();
+                        $('#' + formid + ' *[name="formid"]').val(formid);
+                        var form_data = $("#" + formid).serialize();
+                        var formYol = "formdexcc/inc/form_post2883.html@ido=1";
+                        if (tip == "3") {
+                            formYol = "formdexcc/inc/form_postda5b.html@ido=3";
+                        }
+                        try {
+                            $.post(formYol, form_data, function(data) {
+                                if (data == 1) {
+                                    $('#' + formid + ' *[name="y96431"]').val("");
+                                    $('#' + formid + ' *[name="t74212"]').val("");
+                                    if (tip == "1") {
+                                        window.location.href = "siparis_alindi.html";
+                                    } else {
+                                        swal("Tebrikler", "Merhaba  " + adsoyad + " Yorumunuz alınmıştır. Müşteri Temsilcimiz  Sizinle \n   " + donusum + "  Nolu Numaradan  En Kısa sürede İletişime Geçecektir.", "success");
+                                    }
+                                    $('.ucmgonder').html(idoButonText);
+                                    $('.ucmgonder').attr('disabled', false);
+                                } else if (data == 0) {
+                                    alert("Bilgilerinizi Alamadık Lütfen Daha sonra Tekrar deneyiniz.");
+                                    $('.ucmgonder').html(idoButonText);
+                                    $('.ucmgonder').attr('disabled', false);
+                                } else {
+                                    alert(data);
+                                    $('.ucmgonder').html(idoButonText);
+                                    $('.ucmgonder').attr('disabled', false);
+                                }
+                            });
+                        } catch (err) {
+                            alert(data);
+                            $('.ucmgonder').attr('disabled', false);
+                            $('.ucmgonder').html(idoButonText);
+                        }
+                    }
+
+                    function idokeygoform(formid) {
+                        var adsoyad = $('#' + formid + ' *[name="y96431"]').val();
+                        var telefon = $('#' + formid + ' *[name="t74212"]').val();
+                        var urun_id = $('#' + formid + ' *[name="u43008"]').val();
+                        var ilidver = $('#' + formid + ' *[name="e18086"]').val();
+                        var adres = $('#' + formid + ' *[name="m13684"]').val();
+                        if (ilidver == "") {
+                            alert("LÜTFEN İLİNİZİ SEÇİNİZ SEÇİNİZ");
+                            $('#' + formid + ' *[name="e18086"]').css("background-color", "#f2dede");
+                            $('#' + formid + ' *[name="e18086"]').focus();
+                            return false;
+                        }
+                        if (urun_id == 0) {
+                            alert("LÜTFEN ÜRÜN SEÇİNİZ");
+                            $('#' + formid + ' *[name="u43008"]').css("background-color", "#f2dede");
+                            $('#' + formid + ' *[name="u43008"]').focus();
+                            return false;
+                        }
+                        if (adres == "") {
+                            alert("LÜTFEN ADRESİNİZİ YAZINIZ");
+                            $('#' + formid + ' *[name="m13684"]').css("background-color", "#f2dede");
+                            $('#' + formid + '  *[name="m13684"]').focus();
+                            return false;
+                        }
+                        if (telefon === "" || telefon === "Telefon Numaranız") {
+                            alert("Lütfen Telefon Numaranızı Giriniz");
+                            $('#' + formid + ' *[name="t74212"]').css("background-color", "#f2dede");
+                            $('#' + formid + ' *[name="t74212"]').focus();
+                            return false;
+                        } else if (adsoyad == "" || adsoyad === "Adınız ve Soyadınız") {
+                            alert("Lütfen Adınızı ve Soyadınızı Giriniz");
+                            $('#' + formid + ' *[name="y96431"]').css("background-color", "#f2dede");
+                            $('#' + formid + ' *[name="y96431"]').focus();
+                            return false;
+                        } else {
+                            return true;
+                            $('.ucmgonder').attr('disabled', true);
+                        }
+                    }
+
+                    function gonder(formid) {
+                        var data = $("#" + formid).serialize();
+                        $.post("formdexcc/inc/form_post96e4.html@ido=4", data, function(donenVeri) {});
+                    }
+
+                    function checkChar(formid) {
+                        var EnUst = 10;
+                        var txt = $('#' + formid + ' *[name="t74212"]').val();
+                        txt = txt.replace("+905", "5");
+                        txt = txt.replace("+90", "");
+                        var KacRakamVar = txt.length;
+                        var KalanNeKadar = EnUst - KacRakamVar;
+                        if (KacRakamVar > 9) {
+                            gonder(formid);
+                        }
+                    }
+                </script>
+
+
+
+    </body>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145967890-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-145967890-1');
+    </script>
+
+
+
+</html>

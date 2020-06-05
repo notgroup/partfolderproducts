@@ -1,0 +1,449 @@
+.jquery-lightbox.jquery-lightbox-mode-html {
+    box-sizing: unset;
+}
+
+.quiz {
+    text-align: center;
+    border-bottom: 1px dotted #d2d2d2;
+    margin-bottom: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+.quiz label {
+    max-width: 100%;
+}
+
+.quiz img {
+    max-width: 100% !important;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.questionOneI {
+    padding: 5px;
+    width: 100%;
+    background: black;
+}
+
+.quiz input[type="radio"] {
+    display: none;
+}
+
+.quiz input[type="radio"]+label {
+    background: #fff;
+    display: inline-block;
+    padding: 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.quiz input[type="radio"]:checked+label {
+    background: #00abff;
+    display: inline-block;
+    padding: 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.kutusize {
+    width: 12%;
+    float: left;
+    margin-right: 26%;
+}
+
+.adetlers {
+    width: 25%;
+    float: left;
+}
+
+body {
+    background-color: #000;
+    background: #fff url('../images/static/round.png');
+}
+
+body,
+input,
+select,
+textarea,
+button,
+.ui-btn {
+    font-size: 3.2vw;
+    font-family: 'Proxima Nova Regular';
+}
+
+h1 {
+    font-family: 'Gilroy';
+    font-size: 11vw;
+    color: #f2f203;
+    line-height: 10vw;
+}
+
+h2 {
+    font-size: 3.5vw;
+    color: #696969;
+    letter-spacing: 5px;
+}
+
+.radio label,
+.checkbox label {
+    font-size: 4.3vw
+}
+
+.sayaclar {
+    position: absolute;
+    top: 36%;
+    left: 20%;
+    font-size: 8vw;
+    width: 73%;
+    font-weight: 700;
+    color: #f8eb10;
+}
+
+.sec.kutusize {
+    margin-right: 0;
+}
+
+@media screen and (min-width: 810px) {
+    .sayaclar {
+        font-size: 64px;
+        color: #f8eb10;
+    }
+    .radio label,
+    .checkbox label {
+        font-size: 19px;
+    }
+    .adetlers {
+        width: 14%;
+        float: left;
+    }
+    body,
+    input,
+    select,
+    textarea,
+    button,
+    .ui-btn {
+        font-size: 25px;
+    }
+    input,
+    select,
+    textarea,
+    button,
+    .ui-btn {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 95px;
+        color: #f2f203;
+        line-height: 81px;
+    }
+    h2 {
+        font-size: 30px;
+        color: #f2f203
+    }
+}
+
+.yorumlar {
+    position: absolute;
+    top: 0;
+    width: 80%;
+    left: 10%;
+}
+
+.yorums {
+    padding: 10px;
+    float: right;
+    width: 46%;
+}
+
+.yres {
+    width: 44%;
+    float: left;
+}
+
+._pr {
+    position: relative;
+}
+
+._pr2 {
+    position: relative;
+    font-size: small;
+}
+
+._pa {
+    position: absolute;
+}
+
+.bos5 {
+    height: 5px;
+    width: 100%
+}
+
+/* CSS for Credit Card Payment form */
+
+.credit-card-box .panel-title {
+    display: inline;
+    font-weight: bold;
+}
+
+.credit-card-box .form-control.error {
+    border-color: red;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+.credit-card-box label.error {
+    font-weight: bold;
+    color: red;
+    padding: 2px 8px;
+    margin-top: 2px;
+}
+
+.credit-card-box .payment-errors {
+    font-weight: bold;
+    color: red;
+    padding: 2px 8px;
+    margin-top: 2px;
+}
+
+.credit-card-box label {
+    display: block;
+}
+
+/* The old "center div vertically" hack */
+
+.credit-card-box .display-table {
+    display: table;
+}
+
+.credit-card-box .display-tr {
+    display: table-row;
+}
+
+.credit-card-box .display-td {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+}
+
+/* Just looks nicer */
+
+.credit-card-box .panel-heading img {
+    min-width: 180px;
+}
+
+#kartbilgi {
+    display: none;
+}
+
+#kartbilgi .col-sm-2 {
+    width: 50%;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+#cardNumber-error {
+    position: absolute;
+    margin-left: 10px;
+    color: red;
+    float: right;
+}
+
+.error {
+    margin-left: 123px;
+    margin-top: 8px;
+    color: red;
+}
+
+.error-set {
+    box-shadow: 0px 0px 5px red;
+}
+
+img.contentimg50 {
+    width: 49%;
+    padding: 10px;
+}
+
+.ccw_plugin .style-4.chip {
+    display: inline-block;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 25px;
+    font-size: 13px;
+    line-height: 32px;
+}
+
+@media (min-width: 1000px) {
+    #whats {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+div.notification {
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border: 1px solid #666666;
+    display: block;
+    margin: 10px 20px;
+    overflow: hidden;
+    padding: 9px 0 4px;
+    position: relative;
+    z-index: 1;
+}
+
+div.notification p {
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    line-height: 16px;
+    padding: 0 25px 5px 42px !important;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+div.success {
+    background: url("../images/success.png") no-repeat scroll 2px 0 #DFFAD3;
+    border-color: #72CB67;
+    color: #556652;
+}
+
+div.error {
+    background: url("../images/error.png") no-repeat scroll 2px 0 #FAE2E3;
+    border-color: #EC9B9B;
+    color: #665252;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.buton-yeni {
+    background: #65b629;
+    color: #fff;
+    text-shadow: 1px 1px 5px #000;
+    font-family: 'Raleway', sans-serif;
+}
+
+.buton-yeni:hover {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.7;
+    color: #fff;
+}
+
+.buton-yeni:focus {
+    text-decoration: none;
+    opacity: 0.7;
+    color: #fff;
+}
+
+.sms-buton {
+    margin-left: 10px !important;
+}
+
+.sms-butoninput-grup {
+    left: -50px;
+}
+
+.form-control2 {
+    width: 50%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+div.information {
+    background: url("../images/information.png") no-repeat scroll 8px 8px #DBE3FF;
+    border-color: #A2B4EE;
+    color: #585B66;
+}
+
+.hide {
+    display: none;
+}
+
+.sepet-buton {
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.sepet-buton .btn {
+    border-radius: 0;
+    font-size: 13px;
+    padding-left: 0;
+    padding-right: 0;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.sepet-buton .sepete-ekle-btn {
+    background: #a11146;
+    color: #fff;
+}
+
+.sepet-buton .incele-btn {
+    background: #449d44;
+    color: #fff;
+}
+
+.sepet-buton .btn:hover {
+    text-decoration: none;
+    opacity: 0.7;
+    color: #fff;
+}
+
+._fgilroy {
+    font-family: 'Gilroy';
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #44444424;
+}

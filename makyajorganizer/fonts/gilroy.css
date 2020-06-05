@@ -1,0 +1,29 @@
+/*https://fontstorage.com/converter/#gilroy*/
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('gilroy-300-normal.woff2') format('woff2'), url('gilroy-300-normal.woff') format('woff'), url('gilroy-300-normal.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('gilroy-800-normal.woff2') format('woff2'), url('gilroy-800-normal.woff') format('woff'), url('gilroy-800-normal.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Proxima Nova Regular'), url('ProximaNova-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Proxima Nova Bold'), url('ProximaNova-Bold.woff') format('woff');
+}

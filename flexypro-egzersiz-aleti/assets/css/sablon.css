@@ -1,0 +1,810 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('fonts/Dosis-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Dosis-Regular';
+    src: url('fonts/Dosis-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'proxima_cn_regular';
+    src: url('fonts/proximanovacond-regular-webfont.eot');
+    src: url('fonts/proximanovacond-regular-webfontd41dd41d.eot?#iefix') format('embedded-opentype'), url('fonts/proximanovacond-regular-webfont.html') format('woff2'), url('fonts/proximanovacond-regular-webfont.woff') format('woff'), url('fonts/proximanovacond-regular-webfont.svg#proxima_cn_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_cn_bold';
+    src: url('fonts/proximanovacond-bold-webfont.eot');
+    src: url('fonts/proximanovacond-bold-webfontd41dd41d.eot?#iefix') format('embedded-opentype'), url('fonts/proximanovacond-bold-webfont.html') format('woff2'), url('fonts/proximanovacond-bold-webfont.woff') format('woff'), url('fonts/proximanovacond-bold-webfont.svg#proxima_cn_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_cn_black';
+    src: url('fonts/proximanovacond-black-webfont.eot');
+    src: url('fonts/proximanovacond-black-webfontd41dd41d.eot?#iefix') format('embedded-opentype'), url('fonts/proximanovacond-black-webfont.html') format('woff2'), url('fonts/proximanovacond-black-webfont.woff') format('woff'), url('fonts/proximanovacond-black-webfont.svg#proxima_cn_black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    cursor: default;
+    background-color: #f1f1f1;
+    color: #333333;
+}
+
+img {
+    border: 0;
+}
+
+a {
+    border: 0;
+}
+
+.img {
+    width: 100%;
+    max-width: 600px;
+}
+
+.contentE {
+    width: 100%;
+    max-width: 580px;
+    margin: 0 auto;
+}
+
+.contentE1 {
+    width: 100%;
+    max-width: 600px;
+    text-align: center
+}
+
+.leftE {
+    text-align: left;
+}
+
+.title1 {
+    font-family: 'proxima_cn_bold';
+    padding: 0 10px;
+    font-size: 2vw;
+    letter-spacing: -0.5px;
+}
+
+.yazi {
+    font-family: 'proxima_cn_regular';
+    padding: 0 10px;
+    font-size: 1.4vw;
+    text-align: left;
+    letter-spacing: -0.5px;
+}
+
+.yaziE {
+    font-family: 'proxima_cn_regular';
+    padding: 0 10px;
+    font-size: 18px;
+    text-align: left;
+    letter-spacing: -0.5px;
+}
+
+._cb {
+    clear: both
+}
+
+.hanryimg {
+    width: 100%
+}
+
+.hanryimg1 {
+    width: 50%
+}
+
+.hanrytxt {
+    width: 98%;
+    margin-right: 1%;
+    margin-left: 1%
+}
+
+.txt {
+    font-family: 'proxima_cn_regular', sans-serif;
+    font-size: 4.4vw;
+}
+
+.txt1 {
+    font-family: 'proxima_cn_regular', sans-serif;
+    font-size: 5vw;
+    line-height: 1.1em;
+    padding-top: 5px;
+}
+
+.txt2 {
+    font-family: 'proxima_cn_regular', sans-serif;
+    font-size: 3.8vw;
+    line-height: 1.1em;
+}
+
+.txt3 {
+    font-family: 'proxima_cn_regular', sans-serif;
+    font-size: 5.2vw;
+    line-height: 1.1em;
+    padding-top: 5px;
+    text-align: center
+}
+
+.txt4 {
+    font-family: 'proxima_cn_regular', sans-serif;
+    font-size: 4.3vw;
+    line-height: 1.1em;
+    text-align: center
+}
+
+.golge {
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.18);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.18);
+}
+
+.mblRes {
+    display: none
+}
+
+.mblRes1 {
+    display: block
+}
+
+.tagline {
+    border: none !important;
+    height: auto !important;
+    font-family: 'proxima_cn_bold'
+}
+
+.tagline:before {
+    content: '';
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #CFCFCF;
+    top: 50%
+}
+
+.tagline span {
+    padding: 0 2% !important;
+    top: 0 !important;
+    font-size: 24px !important
+}
+
+.smart-forms .frm-row .colm {
+    float: left !important;
+    width: 100% !important;
+    margin-bottom: 4% !important
+}
+
+.smart-forms .option {
+    margin: 15px !important;
+    padding: 0 !important;
+    float: left !important;
+    width: 100% !important
+}
+
+.asd {
+    float: left !important;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'proxima_cn_regular';
+    padding-left: 10px;
+}
+
+.smart-forms .select>select {
+    float: left !important;
+    width: 100% !important;
+    padding: 2% !important;
+    height: 51px !important;
+    font-size: 19px !important;
+    background: #fff;
+}
+
+.smart-forms .select {
+    height: auto !important;
+    float: left !important;
+    width: 100% !important
+}
+
+.smart-forms .select .arrow {
+    width: 26px !important;
+    height: 26px !important;
+    top: 20% !important;
+    right: 0 !important
+}
+
+.not {
+    font-family: 'proxima_cn_regular', serif;
+    float: left !important;
+    text-align: center !important;
+    width: 100% !important;
+    font-size: 25px !important;
+    line-height: 1em !important
+}
+
+.smart-forms .field {
+    height: auto !important;
+    float: left !important;
+    width: 100% !important
+}
+
+.smart-forms .prepend-icon>input {
+    font-family: 'proxima_cn_regular', serif;
+    padding: 0 0 0 10% !important;
+    font-size: 20px !important;
+    float: left;
+    width: 100% !important;
+    height: 51px !important
+}
+
+.smart-forms .gui-textarea {
+    font-family: 'proxima_cn_regular', serif;
+    padding: 3% 3% 0 10% !important;
+    font-size: 22px !important;
+    float: left !important;
+    width: 100% !important;
+    line-height: normal !important;
+    height: 120px !important
+}
+
+.smart-forms .section {
+    float: left !important;
+    width: 100% !important;
+    margin-bottom: 4% !important
+}
+
+.smart-forms .btn-primary {
+    float: left !important;
+    font-size: 24px !important;
+    height: auto !important;
+    padding: 3% 0 !important;
+    font-family: 'proxima_cn_bold';
+    border-radius: 15px !important;
+    margin: 0 0 2% !important
+}
+
+.smart-forms .checkbox {
+    margin-right: 2% !important;
+    top: 0 !important;
+    margin-top: 1px !important;
+    width: 25px !important;
+    height: 25px !important;
+    float: left !important
+}
+
+.smart-forms .checkbox:before {
+    width: 8px !important;
+    height: 6px !important;
+    top: 3px !important;
+    left: 4px !important
+}
+
+.sozlesmeyazi {
+    float: left !important;
+    width: 90% !important;
+    margin: 0 !important;
+    font-size: 19px !important;
+    text-align: left;
+}
+
+.smart-forms .prepend-icon .field-icon {
+    height: auto !important;
+    width: 10% !important;
+}
+
+/*/////////////////////////////////////////*/
+
+.formsatir {
+    float: left;
+    width: 100%
+}
+
+.formicerikler {
+    float: left;
+    width: 100%;
+    margin: 2% 0;
+    font-size: 4vw
+}
+
+.formiceriklertam {
+    float: left;
+    width: 100%;
+    margin: 2% 0;
+    font-size: 4vw
+}
+
+.formiceriklertam textarea {
+    float: left;
+    width: 100% !important;
+    height: 15vw !important;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+    margin-top: 1% !important;
+    font-size: 4vw;
+    padding: 2% !important;
+    border: 1px solid #000 !important;
+    color: #000
+}
+
+.formicerikler select {
+    float: left;
+    width: 100%;
+    margin-top: 2%;
+    height: 9vw;
+    outline: none;
+    font-size: 4vw;
+    padding-left: 2%;
+    border-radius: 5px;
+    border: 1px solid #000
+}
+
+.formicerikler input {
+    float: left;
+    width: 100%;
+    margin-top: 2%;
+    height: 9vw;
+    outline: none;
+    font-size: 3.5vw;
+    padding-left: 2%;
+    border-radius: 5px;
+    border: 1px solid #000;
+    font-family: 'proxima_cn_regular', serif;
+    color: #000
+}
+
+.sozlesme {
+    float: left;
+    width: 100%;
+    margin: 2% 0;
+    font-size: 4vw;
+    color: #000
+}
+
+.formicerikler {
+    float: left;
+    width: 100%;
+    margin: 2% 0;
+    font-size: 4vw
+}
+
+.sozlesme input {
+    display: inline-block;
+    margin: 0 1% 0 0;
+    height: 5vw;
+    width: 5vw;
+    float: left
+}
+
+.buttonGonder {
+    float: left;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 2% 0;
+    font-size: 5vw;
+    background: #ffba00;
+    margin-bottom: 5%;
+    outline: none;
+    font-family: 'proxima_cn_bold'
+}
+
+.sozlesme b a {
+    font-family: 'proxima_cn_bold';
+    color: #000
+}
+
+::-webkit-input-placeholder {
+    color: #000
+}
+
+:-moz-placeholder {
+    color: #000
+}
+
+::-moz-placeholder {
+    color: #000
+}
+
+:-ms-input-placeholder {
+    color: #000
+}
+
+.harita {
+    float: left;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin: 3% 0 0
+}
+
+.modal-body {
+    position: relative;
+    padding: 0 !important;
+    height: 100%;
+    float: left;
+    width: 100%;
+}
+
+.modal-content {
+    height: 60%;
+    float: left;
+    width: 100%;
+    border-radius: 0 !important;
+    max-height: 60%;
+    min-height: 60%;
+}
+
+.modal.in .modal-dialog {
+    height: 100%;
+    margin: 12px auto;
+}
+
+.btn-default {
+    color: #fff;
+    background-color: #fa9d00;
+    border-color: rgb(255, 122, 2);
+    margin-top: -10px;
+    font-weight: bold;
+    width: 25%;
+}
+
+.asd {
+    width: 90% !important;
+}
+
+.smart-forms .option>input {
+    display: none;
+}
+
+.modal-body iframe {
+    float: left;
+    width: 100%;
+}
+
+.modal-footer {
+    float: left;
+    width: 100%;
+    padding: 3% !important;
+    border: none !important;
+    background: #fff
+}
+
+.hilu {
+    float: right;
+    margin: 8px !important;
+    padding: 1% 5% !important;
+    font-size: 18px !important;
+    width: auto !important;
+    font-family: 'proxima_cn_bold';
+}
+
+@media(max-width:450px) {
+    .title1 {
+        font-family: 'proxima_cn_bold';
+        padding: 0 10px;
+        font-size: 6.5vw;
+        letter-spacing: -0.5px;
+    }
+    .yazi {
+        font-family: 'proxima_cn_regular';
+        padding: 0 10px;
+        font-size: 4.8vw;
+        text-align: justify;
+        letter-spacing: -0.5px;
+    }
+    .yaziE {
+        font-family: 'proxima_cn_regular';
+        padding: 0 10px;
+        font-size: 4.8vw;
+        text-align: left;
+        letter-spacing: -0.5px;
+    }
+    .mblRes {
+        display: block
+    }
+    .mblRes1 {
+        display: none
+    }
+    .tagline {
+        border: none !important;
+        height: auto !important;
+        font-family: 'proxima_cn_bold'
+    }
+    .tagline:before {
+        content: '';
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background: #CFCFCF;
+        top: 50%
+    }
+    .tagline span {
+        padding: 0 2% !important;
+        top: 0 !important;
+        font-size: 5.5vw !important
+    }
+    .smart-forms .frm-row .colm {
+        float: left !important;
+        width: 100% !important;
+        margin-bottom: 4% !important
+    }
+    .smart-forms .option {
+        margin: 6px !important;
+        padding: 0 !important;
+        float: left !important;
+        width: 100% !important
+    }
+    .asd {
+        float: left !important;
+        font-size: 5vw;
+        text-align: left;
+        font-family: 'proxima_cn_regular';
+        padding-left: 10px;
+    }
+    .smart-forms .select>select {
+        float: left !important;
+        width: 100% !important;
+        padding: 2% !important;
+        height: 11vw !important;
+        font-size: 4.5vw !important
+    }
+    .smart-forms .select {
+        height: auto !important;
+        float: left !important;
+        width: 100% !important
+    }
+    .smart-forms .select .arrow {
+        width: 6vw !important;
+        height: 6vw !important;
+        top: 20% !important;
+        right: 0 !important
+    }
+    .not {
+        font-family: 'proxima_cn_regular', serif;
+        float: left !important;
+        text-align: center !important;
+        width: 100% !important;
+        font-size: 5vw !important;
+        line-height: 4vw !important
+    }
+    .smart-forms .field {
+        height: auto !important;
+        float: left !important;
+        width: 100% !important
+    }
+    .smart-forms .prepend-icon>input {
+        font-family: 'proxima_cn_regular', serif;
+        padding: 0 0 0 10% !important;
+        font-size: 4vw !important;
+        float: left;
+        width: 100% !important;
+        height: 11vw !important
+    }
+    .smart-forms .gui-textarea {
+        font-family: 'proxima_cn_regular', serif;
+        padding: 3% 3% 0 10% !important;
+        font-size: 4vw !important;
+        float: left !important;
+        width: 100% !important;
+        line-height: normal !important;
+        height: 20vw !important
+    }
+    .smart-forms .section {
+        float: left !important;
+        width: 100% !important;
+        margin-bottom: 4% !important
+    }
+    .smart-forms .btn-primary {
+        float: left !important;
+        font-size: 5vw !important;
+        height: auto !important;
+        padding: 3% 0 !important;
+        font-family: 'proxima_cn_bold';
+        border-radius: 15px !important;
+        margin: 0 0 2% !important
+    }
+    .smart-forms .checkbox {
+        margin-right: 2% !important;
+        top: 0 !important;
+        margin-top: 1% !important;
+        width: 6vw !important;
+        height: 6vw !important;
+        float: left !important
+    }
+    .smart-forms .checkbox:before {
+        width: 2.5vw !important;
+        height: 1vw !important;
+        top: 1vw !important;
+        left: .5vw !important
+    }
+    .sozlesmeyazi {
+        float: left !important;
+        width: 90% !important;
+        margin: 0 !important;
+        font-size: 4vw !important
+    }
+    .smart-forms .prepend-icon .field-icon {
+        height: auto !important;
+        width: 10% !important;
+        line-height: 11vw !important
+    }
+    /*/////////////////////////////////////////*/
+    .formsatir {
+        float: left;
+        width: 100%
+    }
+    .formicerikler {
+        float: left;
+        width: 100%;
+        margin: 2% 0;
+        font-size: 4vw
+    }
+    .formiceriklertam {
+        float: left;
+        width: 100%;
+        margin: 2% 0;
+        font-size: 4vw
+    }
+    .formiceriklertam textarea {
+        float: left;
+        width: 100% !important;
+        height: 15vw !important;
+        outline: none;
+        border-radius: 5px;
+        resize: none;
+        margin-top: 1% !important;
+        font-size: 4vw;
+        padding: 2% !important;
+        border: 1px solid #000 !important;
+        color: #000
+    }
+    .formicerikler select {
+        float: left;
+        width: 100%;
+        margin-top: 2%;
+        height: 9vw;
+        outline: none;
+        font-size: 4vw;
+        padding-left: 2%;
+        border-radius: 5px;
+        border: 1px solid #000
+    }
+    .formicerikler input {
+        float: left;
+        width: 100%;
+        margin-top: 2%;
+        height: 9vw;
+        outline: none;
+        font-size: 3.5vw;
+        padding-left: 2%;
+        border-radius: 5px;
+        border: 1px solid #000;
+        font-family: 'proxima_cn_regular', serif;
+        color: #000
+    }
+    .sozlesme {
+        float: left;
+        width: 100%;
+        margin: 2% 0;
+        font-size: 4vw;
+        color: #000
+    }
+    .formicerikler {
+        float: left;
+        width: 100%;
+        margin: 2% 0;
+        font-size: 4vw
+    }
+    .sozlesme input {
+        display: inline-block;
+        margin: 0 1% 0 0;
+        height: 5vw;
+        width: 5vw;
+        float: left
+    }
+    .buttonGonder {
+        float: left;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        padding: 2% 0;
+        font-size: 5vw;
+        background: #ffba00;
+        margin-bottom: 5%;
+        outline: none;
+        font-family: 'proxima_cn_bold'
+    }
+    .sozlesme b a {
+        font-family: 'proxima_cn_bold';
+        color: #000
+    }
+    ::-webkit-input-placeholder {
+        color: #000
+    }
+    :-moz-placeholder {
+        color: #000
+    }
+    ::-moz-placeholder {
+        color: #000
+    }
+    :-ms-input-placeholder {
+        color: #000
+    }
+    .harita {
+        float: left;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        margin: 3% 0 0
+    }
+    .modal-body {
+        position: relative;
+        padding: 0 !important;
+        height: 100%;
+        float: left;
+        width: 100%;
+    }
+    .modal-content {
+        height: 60%;
+        float: left;
+        width: 100%;
+        border-radius: 0 !important;
+        max-height: 60%;
+        min-height: 60%;
+    }
+    .modal.in .modal-dialog {
+        height: 100%;
+        margin: 6% 2% 0 2%;
+    }
+    .btn-default {
+        color: #fff;
+        background-color: #fa9d00;
+        border-color: rgb(255, 122, 2);
+        margin-top: -10px;
+        font-weight: bold;
+        width: 25%;
+    }
+    .asd {
+        width: 90% !important;
+    }
+    .smart-forms .option>input {
+        display: none;
+    }
+    .modal-body iframe {
+        float: left;
+        width: 100%;
+    }
+    .modal-footer {
+        float: left;
+        width: 100%;
+        padding: 3% !important;
+        border: none !important;
+        background: #fff
+    }
+    .hilu {
+        float: right;
+        margin: 0 !important;
+        padding: 2% 5% !important;
+        font-size: 4vw !important;
+        width: auto !important;
+        font-family: 'proxima_cn_bold';
+    }
+}
