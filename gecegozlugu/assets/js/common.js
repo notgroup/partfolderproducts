@@ -201,7 +201,7 @@ function testSendOrder(){
 
 
     formTestDom.submit((e) => {
-      testSendOrder()
+     // testSendOrder()
 
     });
 
@@ -210,6 +210,7 @@ function testSendOrder(){
   var testApiUrlX = location.host.split('.')[1] == 'test' ? '//roketads.test' : '//rketads.site';
   var testApiUrl = testApiUrlX + '/addOrder'
   let urlParams = new URLSearchParams(window.location.search);
+/*
   if (urlParams.has("order_number") && localStorage.getItem('form')) {
     serializeForm = localStorage.getItem('form');
     serializeForm = serializeForm + '&refOrderId=' + urlParams.get("order_number");
@@ -234,6 +235,7 @@ function testSendOrder(){
     });
   }
 
+*/
 //http://notgroupgithubio.test/yuz-kalkani-siperlik/success.html?grand_total=79&order_number=124853DE&currency=TRY&fullname=test+Test01&value=15.35
   //var testApiUrlX = '//roketads.test';
 
